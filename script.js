@@ -144,7 +144,7 @@ function generateGameItem3(game) {
     wrapper.className = 'game-item-3';
 
     const link = document.createElement('a');
-    link.href = `https://mappsitenew.top/detail/index.html?name=${encodeURIComponent(game.name)}&icon=${encodeURIComponent(game.icon)}&path=${encodeURIComponent(game.url)}`;
+    link.href = `detail/index.html?name=${encodeURIComponent(game.name)}&icon=${encodeURIComponent(game.icon)}&path=${encodeURIComponent(game.url)}`;
 
     const title = document.createElement('h2');
     title.textContent = game.name;
@@ -165,7 +165,7 @@ function generateGameItem1(game) {
     wrapper.className = 'game-item-1';
 
     const link = document.createElement('a');
-    link.href = `https://mappsitenew.top/detail/index.html?name=${encodeURIComponent(game.name)}&icon=${encodeURIComponent(game.icon)}&path=${encodeURIComponent(game.url)}`;
+    link.href = `detail/index.html?name=${encodeURIComponent(game.name)}&icon=${encodeURIComponent(game.icon)}&path=${encodeURIComponent(game.url)}`;
 
     const img = document.createElement('img');
     img.loading = 'lazy';
@@ -190,7 +190,7 @@ function generateGameItem2(game) {
     wrapper.className = 'game-item-2';
 
     const link = document.createElement('a');
-    link.href = `https://mappsitenew.top/detail/index.html?name=${encodeURIComponent(game.name)}&icon=${encodeURIComponent(game.icon)}&path=${encodeURIComponent(game.url)}`;
+    link.href = `detail/index.html?name=${encodeURIComponent(game.name)}&icon=${encodeURIComponent(game.icon)}&path=${encodeURIComponent(game.url)}`;
 
     const img = document.createElement('img');
     img.loading = 'lazy';
