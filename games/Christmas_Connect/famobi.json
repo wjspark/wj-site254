@@ -1,0 +1,85 @@
+{
+	"features": {
+		"highscores": 1,
+		"credits": 0,
+		"leaderboard": 0,
+		"multiplayer": 0,
+		"rewarded": 1,
+		"standalone": 1,
+		"multiplayer_local": 0
+	},
+	"game_info": {
+		"client_version": "1.0",
+		"api_version": "2.1",
+		"forced_mode": {
+			"state": {
+				"level": {
+					"description": "Level of the game.",
+					"type": "number"
+				},
+				"score": {
+					"description": "Score of the game.",
+					"type": "number"
+				},
+				"tip": {
+					"description": "Tip is the button that finds matches and shows to the player.",
+					"type": "number"
+				},
+				"shuffle": {
+					"description": "Shuffle is the button that shuffles the board.",
+					"type": "number"
+				},
+				"timerInit": {
+					"description": "It's the timer for the game.",
+					"type": "number"
+				}
+			},
+			"override": {
+				"hide_ui": {
+					"level": {
+						"description": "Level of the game."
+					},
+					"score": {
+						"description": "Score of the game."
+					},
+					"timer": {
+						"description": "Tip is the button that finds matches and shows to the player."
+					},
+					"shuffle": {
+						"description": "Shuffle is the button that shuffles the board."
+					},
+					"tip": {
+						"description": "It's the timer for the game."
+					}
+				}
+			},
+			"track_stats": {
+				"match": {
+					"description": "Happens when player matches tiles. It sends the tile type with type option.",
+					"type": "number"
+				},
+				"gift": {
+					"description": "Happens when player opens a gift. It sends the gift type with the type option.",
+					"type": "string"
+				}
+			}
+		}
+	},
+	"aid": "A-12345",
+	"logging": false,
+	"api": "famobi",
+	"name": "Azerion / Game Distribution",
+	"more_games_url": "",
+	"more_games_button_image": "logo",
+	"show_splash": "",
+	"splash_duration": 3000,
+	"branch": "develop",
+	"gameParams": {
+		"ad_type": "off"
+	},
+	"menuless": true,
+	"disable_console": false,
+	"includeJS": [],
+	"version": "4a539d86",
+	"supportedLanguages": []
+}

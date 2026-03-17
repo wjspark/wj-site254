@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+
+		<title> Match Arena </title>
+
+	
+	
+
+	
+		<link href="assets/www/app.7e262c54ff33fe87bcee.css" rel="stylesheet">
+	
+	
+		<link rel="preload" href="assets/www/vendor.31d6d674f5a70908c1bc.js" as="script">
+	
+		<link rel="preload" href="assets/www/config.a2c80d7d1c3676ec790c.js" as="script">
+	
+		<link rel="preload" href="assets/www/app.4b6acab1a884c43abcd8.js" as="script">
+	
+	<link rel="preload" href="assets/wasm/app.a13f7bec3cef9aec.js" as="script" >
+<link rel="preload" href="assets/wasm/app.9d7c355afea827df.wasm" as="fetch" crossorigin = "same-origin" >
+<link rel="prefetch" href="assets/game/index/list.7ae7ed9c69219395" as="fetch" >
+	
+	
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+		
+
+		<script>
+		window.MA_CONFIG = {"embed": "poki", "partner": "poki", "fb_app": {"app-id": "1809423206020497", "client-token": "", "approved-permissions": ["user_friends"]}, "my_app": null, "fb_apps": {"mobile": {"app-id": "113615332621218", "client-token": "ba513adf9f7da06d77b6a95dbd5e39d9", "approved-permissions": ["user_friends"]}, "online": {"app-id": "1809423206020497", "client-token": "", "approved-permissions": ["user_friends"]}}, "vk_apps": {"iframe": {"app-id": "7891261", "test-mode": false}, "standalone": {"app-id": "7891262", "test-mode": false}}, "ok_apps": {"main": {"app-id": "512000855205", "public-key": "CGKNACKGDIHBABABA"}, "mobile": {"app-id": "512001003132", "public-key": "CNHPEEKGDIHBABABA"}}, "my_apps": {"main": {"app-id": "", "private": ""}}, "build_id": "release-r/1.170.0607-20240607-113610", "resources_id": "7ae7ed9c69219395", "texts_path": {"ar-SA": "assets/game/index/a5/59f56ed8e1cbdbfed5c3f6f31bdd7c23a9f4b1", "bg-BG": "assets/game/index/76/374f704d7599f1e5b1ac313ed9166f752dd145", "ca-ES": "assets/game/index/dd/a59b1b573c19c794ad1d0566665fc0b74e6c63", "cs-CZ": "assets/game/index/f7/57735cc0d9fb48f9e96b570d12e0a5d0c86dc2", "da-DK": "assets/game/index/4c/c8a7a086a6bb7350b949b6a88139139ede5209", "de-DE": "assets/game/index/69/e5753be74c4781b328cb35a57ce59651f35101", "el-GR": "assets/game/index/55/e9567268e2661cdf0c30d3d54f49e404f6cc40", "en-US": "assets/game/index/8b/19a46452109d8d19aacbb515d0a93f07c5926e", "es-ES": "assets/game/index/84/6d6c6fc932a61a09e142c715e61dace7389f9a", "fi-FI": "assets/game/index/5e/2327b46322bc6768546ec8d29e04e28098670a", "fil-PH": "assets/game/index/b0/a8281a427789d86482f759fcfca66dd43d0f82", "fr-FR": "assets/game/index/73/639be066fef8ba0b4c15598bc6f964a0f91e3f", "hi-IN": "assets/game/index/49/369c25984ccc87162ded8cba3d746a1ea4bb44", "hr-HR": "assets/game/index/9e/4ef9183fbcc28009fa93c79f7a2724cbd6d7d4", "hu-HU": "assets/game/index/d5/4f70c359ae4094eb010b3d12c4927dac385f2c", "id-ID": "assets/game/index/df/cdc995198ec575b327eecbff2204eb946cc581", "it-IT": "assets/game/index/75/7f1635d81b5cb804d99d378e1316f2274c20bc", "iw-IL": "assets/game/index/3e/71611e5897e80cdc4ba7c882e24b8a5e42d71b", "ja-JP": "assets/game/index/88/96a916aab9ce85ed823b9e0f4a3ca20be9941e", "ka-GE": "assets/game/index/e0/0feeb0d4490d268f2e2f66219555c3f8b85d33", "ko-KR": "assets/game/index/65/83d01c1296f95424f4d952b690a7b9feeb1e37", "ms-MY": "assets/game/index/8c/b47fa45d008e0d0f7ed3960c0194358f3e074b", "nb-NO": "assets/game/index/c0/cfd7c3c4b050825f49c4e32f3b3d19dcb54e95", "nl-NL": "assets/game/index/87/11a253ccbb298a75487944dba0dcbec7eec136", "pl-PL": "assets/game/index/f6/a61f6c1c7fa616b46aa18abd683e037a997bf5", "pt-BR": "assets/game/index/bd/2f624979efcb2cb5e2ceecfcc558218f385f94", "ro-RO": "assets/game/index/32/1365c946a63032e5e7c205731885b41e01426f", "ru-RU": "assets/game/index/c8/23b1b3f3889223824588c151aec7e36d572e9e", "sk-SK": "assets/game/index/0d/a8d9d372f25b0e0297dc333cc8a7adfd7afcf8", "sv-SE": "assets/game/index/f5/dc0401202e38d4c4718c9978ada46a10fff01a", "tr-TR": "assets/game/index/b7/8fde323a211363be3c835a98a566767eec7a7a", "uk-UA": "assets/game/index/3a/1b60fa9694eb09fe0f7fffd23276c8118d5411", "vi-VN": "assets/game/index/dc/ba0b91c1978364ac8b1d5cc6950dddbd9da6d1", "zh-CN": "assets/game/index/16/ada66b3c2d4fb1f93d900cef0ef420d021ebcc"}, "post_data": {}, "requires_POST": false, "full_referrer": "", "referrer": "", "wasm_hash": {"app.js": "app.a13f7bec3cef9aec.js", "app.wasm": "app.9d7c355afea827df.wasm"}, "assets_url": "assets/game"}
+		</script>
+		<style>
+		
+		</style>
+	</head>
+	
+	<body>
+		<div id="wasm-wrapper">
+			<canvas id="wasm-canvas" />
+		</div>
+
+		<div id="wasm-loader-wrapper">
+			<div id="wasm-loader">
+				<div id="wasm-loader-overlay" >
+				</div>
+				<div id="wasm-loader-progress-aligner">
+					<div id="wasm-loader-progres-wrapper">
+						<div id="wasm-loader-title">
+							<div id="wasm-loader-title-content">
+								<span id="wasm-loader-title-text">Loading</span>
+								<span id="wasm-loader-dot-1" class="wasm-loader-dot"></span>
+								<span id="wasm-loader-dot-2" class="wasm-loader-dot"></span>
+								<span id="wasm-loader-dot-3" class="wasm-loader-dot"></span>
+							</div>
+						</div>
+						<div id="wasm-loader-progress">
+							<div id="wasm-loader-progress-background"></div>
+							<div id="wasm-loader-progress-foreground"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div id="wasm-preloader" >
+				<div id="wasm-preloader-overlay" >
+				</div>
+				<div id="wasm-preloader-spinner" >
+					<div id="wasm-preloader-spinner-anim">
+						<div class="cssload-jumping">
+							<span></span><span></span><span></span><span></span><span></span>
+						</div>
+					</div>
+				</div>
+				
+				<div id="wasm-preloader-hint" >
+				</div>
+			</div>
+		</div>
+		
+		<div id="wasm-context-lost-wrapper" style="display:none" >
+			<div id="wasm-context-lost-text">
+				WebGL context lost, restoring...
+			</div>
+		</div>
+		
+		<div id="modal-shadow-overlay" class="shadow_overlay">
+		</div>
+		
+		<div id="demo-popup" class="demo">
+			<div class="demo-content">
+				<div class="demo-text">
+					<p id="demo-popup-text"></p>
+				</div>
+			</div>
+		</div>
+		
+		<div id="modal-popup" class="modal">
+			<div class="modal-content">
+				<div id="modal-popup-header" class="modal-header"></div>
+				<div class="modal-text">
+					<p id="modal-popup-text"></p>
+				</div>
+				<button id="modal-popup-button" class="modal-button"></button>
+			</div>
+		</div>
+		
+		<div id="preroll-play-wrapper" style="display:none" >
+			<div id="preroll-overlay-character" class="fullscreen-overlay-character" >
+			</div>
+			<div id="preroll-play-button" >
+			</div>
+		</div>
+	
+		<div id="shadow-overlay" class="shadow_overlay">
+		</div>
+		
+		<div id="fullscreen-loading" style="display:none;" >
+			<div class="loading-spinner" >
+			</div>
+			<div class="loading-timer-wrapper" >
+				<div id="fullscreen-loading-timer" class="loading-timer" >
+					15
+				</div>
+			</div>
+			<div id="fullscreen-loading-close" class="loading-close-wrapper" >
+				<div class="loading-close-x" >X</div>
+				<div class="loading-close-border" ></div>
+			</div>
+		</div>
+		
+		<div id="fullscreen-wrapper" style="display:none">
+			<video id="fullscreen-video">
+			</video>
+		</div>
+		
+		<div id="vkcustom_fullscreen" style="display:none"> 
+			<div id="vkcustom_wrap">
+				<div id="vkcustom_container">
+				</div>
+				<div id="vkcustom_skip_wrapper">
+					<div id="vkcustom_timer"></div>
+					<div id="vkcustom_skip"></div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="promo-wrapper"></div>
+		
+		<div id="yandex-wrapper"></div>
+
+		<script src="./runtime-config.js"></script>
+	
+		<script src="assets/www/vendor.31d6d674f5a70908c1bc.js"></script>
+	
+		<script src="assets/www/config.a2c80d7d1c3676ec790c.js"></script>
+	
+		<script src="assets/www/app.4b6acab1a884c43abcd8.js"></script>
+	
+	</body>
+</html>

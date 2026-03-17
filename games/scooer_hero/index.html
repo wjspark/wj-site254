@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>scooer hero</title>
+  <meta name="viewport"
+    content="width=device-width,user-scalable=no,initial-scale=1, minimum-scale=1,maximum-scale=1" />
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="format-detection" content="telephone=no">
+
+  <meta name="renderer" content="webkit" />
+  <meta name="force-rendering" content="webkit" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="full-screen" content="yes" />
+  <meta name="x5-fullscreen" content="true" />
+  <meta name="360-fullscreen" content="true" />
+  <meta name="screen-orientation" content="" />
+  <meta name="x5-orientation" content="">
+
+  <meta name="x5-page-mode" content="app">
+  <link rel="stylesheet" type="text/css" href="style-mobile.css" />
+</head>
+
+<body>
+  <canvas id="GameCanvas" oncontextmenu="event.preventDefault()" tabindex="0"></canvas>
+  <div id="splash">
+    <div class="progress-bar stripes">
+      <span style="width: 0%"></span>
+    </div>
+  </div>
+  <img id="adTips"
+    style="width: 50%;z-index:999;position: absolute;left: 0;right: 0;top:0;bottom:0;margin: auto;display: none;"
+    src="adTips.png" alt="No ads yet">
+  <script src="src/settings.js" charset="utf-8"></script>
+  <script src="main.js" charset="utf-8"></script>
+  <script type="text/javascript">
+
+    // console.log = function () { }
+
+    function showFloat() {
+      window.parent.postMessage({ "type": 3 }, '*');
+    }
+    function hideFloat() {
+      window.parent.postMessage({ "type": 4 }, '*');
+    }
+
+    //插屏
+    var isFirstPlay = true;
+    var timeInterval = 40;
+    var timeVideo = 0;
+    setInterval(function () {
+      if (timeInterval > 0) {
+        timeInterval--;
+      }
+      if (timeVideo > 0) {
+        timeVideo--;
+      }
+    }, 1000)
+    window.playInterCy = function () {
+      console.log('=========播放插屏')
+      if (timeInterval > 0) {
+        console.log("时间间隔未到" + timeInterval);
+        return;
+      }
+      console.log('=========播放插屏成功');
+      window.parent.postMessage({ "type": 1 }, '*');
+      timeInterval = 30;
+    }
+    //视频广告
+    window.call = null;
+    window.playVideoCy = function (call) {
+      console.log('播放视频');
+      if (timeVideo > 0) {
+        console.log("视频时间间隔未到" + timeVideo);
+        showAdTips();
+        return;
+      }
+      timeVideo = 10;
+      window.call = call;
+      window.parent.postMessage({ "type": 2 }, '*');
+    }
+
+    window.addEventListener("message", (e) => {
+      if (e.data == 1) {
+        if (window.call) window.call(true);
+        timeInterval = 30;
+      } else {
+        showAdTips();
+        if (window.call) window.call(false);
+      }
+      window.call = null;
+    });
+
+    var canShowTips = true;
+    function showAdTips() {
+      if (!canShowTips) return;
+      canShowTips = false;
+      document.getElementById("adTips").style.display = "block";
+      setTimeout(function () {
+        canShowTips = true;
+        document.getElementById("adTips").style.display = "none";
+      }, 1500)
+    }
+
+
+
+    (function () {
+      var debug = window._CCSettings.debug;
+      var splash = document.getElementById('splash');
+      splash.style.display = 'block';
+
+      function loadScript(moduleName, cb) {
+        function scriptLoaded() {
+          document.body.removeChild(domScript);
+          domScript.removeEventListener('load', scriptLoaded, false);
+          cb && cb();
+        };
+        var domScript = document.createElement('script');
+        domScript.async = true;
+        domScript.src = moduleName;
+        domScript.addEventListener('load', scriptLoaded, false);
+        document.body.appendChild(domScript);
+      }
+
+      loadScript(debug ? 'cocos2d-js.js' : 'cocos2d-js-min.js', function () {
+        if (CC_PHYSICS_BUILTIN || CC_PHYSICS_CANNON) {
+          loadScript(debug ? 'physics.js' : 'physics-min.js', window.boot);
+        }
+        else {
+          window.boot();
+        }
+      });
+    })();
+  </script>
+</body>
+
+</html>

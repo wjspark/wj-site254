@@ -1,0 +1,24 @@
+{
+    "paths": {},
+    "types": [],
+    "uuids": ["704vU4vSJKKYZaXWp/67lA", "84Lz6B+RtOrJUtosNiQtoj", "b92hCsCDFH2pujlm+w7vYH", "c5msoACuNBvafOZN3p/Hds", "f79NrGLbJGp4ugVAZE+Eiv", "fdBXe4XT9MLpOFj6ZTPPSr", "6c2kCmcHROzKMnw7MUFC+g", "7a/QZLET9IDreTiBfRn2PD", "c2oJoATdFOS53s/67YXHQW", "ecpdLyjvZBwrvm+cedCcQy", "f30GVZz5ZPHIrzdd2hGtr+"],
+    "scenes": {
+        "db://assets/Scenes/GameLaunch.fire": 4
+    },
+    "redirect": [7, 0, 9, 0],
+    "deps": ["internal"],
+    "packs": {
+        "0c1a42804": [0, 1, 2, 5],
+        "0e19d88c8": [6, 8, 3, 10, 4]
+    },
+    "name": "main",
+    "importBase": "import",
+    "nativeBase": "native",
+    "debug": false,
+    "isZip": false,
+    "encrypted": false,
+    "versions": {
+        "import": ["0c1a42804", "8ff53", "0e19d88c8", "df44f"],
+        "native": [0, "cf281", 1, "53555", 2, "486c0", 3, "3099d", 5, "80d2b"]
+    }
+}

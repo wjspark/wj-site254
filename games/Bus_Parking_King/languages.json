@@ -1,0 +1,75 @@
+{
+	"en": {
+		"go": "Go!",
+		"level": "LEVEL",
+		"lf": "LEVEL FAILED",
+		"lc": "LEVEL COMPLETED",
+		"coins": "COINS",
+		"health": "HEALTH",
+		"paused": "PAUSED",
+		"skip": "SKIP LEVEL"
+	},
+	"ru": {
+		"go": "Давайте!",
+		"level": "УРОВЕНЬ",
+		"lf": "УРОВЕНЬ ПРОВАЛЕН",
+		"lc": "УРОВЕНЬ ПРОЙДЕН",
+		"coins": "МОНЕТЫ",
+		"health": "ЗДОРОВЬЕ",
+		"paused": "ПРИОСТАНОВЛЕНО",
+		"skip": "ПРОПУСТИТЬ УРОВЕНЬ"
+	},
+	"fr": {
+		"go": "Aller!",
+		"level": "NIVEAU",
+		"lf": "NIVEAU ÉCHOUÉ",
+		"lc": "NIVEAU TERMINÉ",
+		"coins": "ARGENT",
+		"health": "SANTÉ",
+		"paused": "EN PAUSE",
+		"skip": "SAUTER UN NIVEAU"
+	},
+	"it": {
+		"go": "andare!",
+		"level": "LIVELLO",
+		"lf": "LIVELLO FALLITO",
+		"lc": "LIVELLO COMPLETATO",
+		"coins": "MONETE",
+		"health": "SALUTE",
+		"paused": "IN PAUSA",
+		"skip": "SALTA LIVELLO"
+	},
+	"de": {
+		"go": "Los!",
+		"level": "LEVEL",
+		"lf": "LEVEL GESCHEITERT",
+		"lc": "LEVEL GESCHAFFT",
+		"coins": "MÜNZEN",
+		"health": "DIE GESUNDHEIT",
+		"paused": "PAUSIERT",
+		"skip": "LEVEL ÜBERSPRINGEN"
+	},
+	"es": {
+		"go": "Vamos!",
+		"level": "NIVEL",
+		"lf": "NIVEL FRACASADO",
+		"lc": "NIVEL COMPLETADO",
+		"coins": "MONEDAS",
+		"health": "SALUD",
+		"paused": "EN PAUSA",
+		"skip": "SALTAR NIVEL"
+	},
+	"tr": {
+		"go": "Basla!",
+		"level": "SEVIYE",
+		"lf": "SEVIYE GECILEMEDI",
+		"lc": "SEVIYE TAMAMLANDI",
+		"coins": "KURUSLAR",
+		"health": "CAN",
+		"paused": "DURAKLATILDI",
+		"skip": "SEVIYEYI ATLA"
+	}
+	
+	
+	
+}

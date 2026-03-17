@@ -1,0 +1,109 @@
+{
+	"type": "Scene",
+	"props": {
+		"width": 640,
+		"height": 1136
+	},
+	"compId": 2,
+	"child": [
+		{
+			"type": "Image",
+			"props": {
+				"y": 0,
+				"x": 0,
+				"width": 640,
+				"var": "_bg",
+				"height": 1136
+			},
+			"compId": 3
+		},
+		{
+			"type": "Image",
+			"props": {
+				"y": 80,
+				"x": 0,
+				"width": 640,
+				"var": "_logo",
+				"height": 224
+			},
+			"compId": 13
+		},
+		{
+			"type": "Image",
+			"props": {
+				"width": 533,
+				"var": "_bar_bg",
+				"height": 60,
+				"centerX": 0,
+				"bottom": 150
+			},
+			"compId": 7,
+			"child": [
+				{
+					"type": "Image",
+					"props": {
+						"x": 30,
+						"width": 475,
+						"var": "_bar",
+						"skin": "image/ui/bar2.png",
+						"height": 29,
+						"centerY": -2
+					},
+					"compId": 6,
+					"child": [
+						{
+							"type": "Image",
+							"props": {
+								"y": 0,
+								"x": 0,
+								"var": "_car",
+								"skin": "image/ui/car.png",
+								"scaleY": 0.7,
+								"scaleX": 0.7,
+								"anchorY": 0.3,
+								"anchorX": 0.9
+							},
+							"compId": 11
+						}
+					]
+				},
+				{
+					"type": "Image",
+					"props": {
+						"y": -35,
+						"x": 160,
+						"var": "_anim",
+						"skin": "image/ui/load_bg.png"
+					},
+					"compId": 8
+				},
+				{
+					"type": "Label",
+					"props": {
+						"y": -34,
+						"x": 301,
+						"width": 124,
+						"var": "_loadingNumber",
+						"valign": "middle",
+						"text": "100%",
+						"strokeColor": "#000000",
+						"stroke": 3,
+						"italic": true,
+						"height": 35,
+						"fontSize": 30,
+						"color": "#ffffff",
+						"bold": true,
+						"align": "left"
+					},
+					"compId": 12
+				}
+			]
+		}
+	],
+	"loadList": [
+		"image/ui/bar2.png",
+		"image/ui/car.png",
+		"image/ui/load_bg.png"
+	],
+	"loadList3D": []
+}

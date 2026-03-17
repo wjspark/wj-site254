@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Find Differences</title>
+    <script src="miniplay_1.0.0.19.js" data-mode="index"></script>
+    <script>
+        miniplay.initAsync().then(() => {
+            console.log("index初始化SDK成功")
+        }).catch(e => {
+            console.log("index初始化SDK失败:" + e)
+        })
+    </script>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden; /* 这将确保没有额外的滚动条出现 */
+        }
+
+        #miniplay_game_iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            bottom: 70px; /* 这会使iframe的底部距离容器70px */
+            height: calc(100% - 70px); /* 这将计算iframe的高度，使其距离容器底部60px */
+            border: none; /* 可以移除iframe的默认边框 */
+        }
+
+
+        #miniplay_dialog {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            border-radius: 4px;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            display: none;
+            width: 300px;
+        }
+
+        #miniplay_dialog_title {
+            margin: 0;
+            padding-bottom: 20px;
+            font-size: 20px;
+            font-weight: 500;
+            color: #00897b; /* 绿色标题 */
+        }
+
+        #miniplay_dialog_buttons {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        #miniplay_dialog_buttons button {
+            margin-left: 10px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #miniplay_cancel_button {
+            background-color: #f0f0f0;
+        }
+
+        #miniplay_cancel_button:hover {
+            background-color: #e0e0e0;
+        }
+
+        #miniplay_confirm_button {
+            background-color: #00c853; /* 绿色按钮 */
+            color: #fff;
+        }
+
+        #miniplay_confirm_button:hover {
+            background-color: #009624; /* 深绿色按钮悬停 */
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+<iframe name="game" id="miniplay_game_iframe" src="game.html"></iframe>
+
+<div id="miniplay_dialog">
+    <div id="miniplay_dialog_title">This game must run in Landscape Mode.</div>
+    <div id="miniplay_dialog_buttons">
+        <button id="miniplay_cancel_button" onclick="miniPlayCancel()">Cancel</button>
+        <button id="miniplay_confirm_button" onclick="miniPlayConfirm()">Switch Landscape</button>
+    </div>
+</div>
+
+</body>
+</html>

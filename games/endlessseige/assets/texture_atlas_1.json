@@ -1,0 +1,1091 @@
+{
+	"textures": [
+		{
+			"image": "texture_atlas_1.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 1024,
+				"h": 1024
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "banner_red",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 535,
+						"h": 120
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 535,
+						"h": 120
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 535,
+						"h": 120
+					}
+				},
+				{
+					"filename": "box_results",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 344,
+						"h": 81
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 344,
+						"h": 81
+					},
+					"frame": {
+						"x": 538,
+						"y": 1,
+						"w": 344,
+						"h": 81
+					}
+				},
+				{
+					"filename": "pose_runner",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 225,
+						"h": 433
+					},
+					"spriteSourceSize": {
+						"x": 113,
+						"y": 122,
+						"w": 112,
+						"h": 227
+					},
+					"frame": {
+						"x": 884,
+						"y": 1,
+						"w": 112,
+						"h": 227
+					}
+				},
+				{
+					"filename": "shadow_side",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 60,
+						"h": 60
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 15,
+						"h": 60
+					},
+					"frame": {
+						"x": 998,
+						"y": 1,
+						"w": 15,
+						"h": 60
+					}
+				},
+				{
+					"filename": "shadow_corner",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 60,
+						"h": 60
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 46,
+						"w": 13,
+						"h": 14
+					},
+					"frame": {
+						"x": 998,
+						"y": 63,
+						"w": 13,
+						"h": 14
+					}
+				},
+				{
+					"filename": "pose_blob",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 225,
+						"h": 433
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 31,
+						"w": 225,
+						"h": 356
+					},
+					"frame": {
+						"x": 538,
+						"y": 84,
+						"w": 225,
+						"h": 356
+					}
+				},
+				{
+					"filename": "smoke_particle",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 70,
+						"h": 70
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 2,
+						"w": 70,
+						"h": 67
+					},
+					"frame": {
+						"x": 765,
+						"y": 84,
+						"w": 70,
+						"h": 67
+					}
+				},
+				{
+					"filename": "obstacle_05",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 44,
+						"h": 77
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 44,
+						"h": 77
+					},
+					"frame": {
+						"x": 837,
+						"y": 84,
+						"w": 44,
+						"h": 77
+					}
+				},
+				{
+					"filename": "obstacle_07",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 69,
+						"h": 67
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 69,
+						"h": 67
+					},
+					"frame": {
+						"x": 765,
+						"y": 153,
+						"w": 69,
+						"h": 67
+					}
+				},
+				{
+					"filename": "obstacle_09",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 46,
+						"h": 52
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 46,
+						"h": 52
+					},
+					"frame": {
+						"x": 836,
+						"y": 163,
+						"w": 46,
+						"h": 52
+					}
+				},
+				{
+					"filename": "obstacle_01",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 43,
+						"h": 73
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 43,
+						"h": 73
+					},
+					"frame": {
+						"x": 836,
+						"y": 217,
+						"w": 43,
+						"h": 73
+					}
+				},
+				{
+					"filename": "cell_dirt",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 60,
+						"h": 60
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 60,
+						"h": 60
+					},
+					"frame": {
+						"x": 765,
+						"y": 222,
+						"w": 60,
+						"h": 60
+					}
+				},
+				{
+					"filename": "cell_grass_1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 60,
+						"h": 60
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 60,
+						"h": 60
+					},
+					"frame": {
+						"x": 765,
+						"y": 284,
+						"w": 60,
+						"h": 60
+					}
+				},
+				{
+					"filename": "btn_play_void",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 190,
+						"h": 92
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 190,
+						"h": 92
+					},
+					"frame": {
+						"x": 827,
+						"y": 292,
+						"w": 190,
+						"h": 92
+					}
+				},
+				{
+					"filename": "cell_grass_2",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 60,
+						"h": 60
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 60,
+						"h": 60
+					},
+					"frame": {
+						"x": 881,
+						"y": 230,
+						"w": 60,
+						"h": 60
+					}
+				},
+				{
+					"filename": "cell_water_01",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 60,
+						"h": 60
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 60,
+						"h": 60
+					},
+					"frame": {
+						"x": 943,
+						"y": 230,
+						"w": 60,
+						"h": 60
+					}
+				},
+				{
+					"filename": "cell_water_02",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 60,
+						"h": 60
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 60,
+						"h": 60
+					},
+					"frame": {
+						"x": 765,
+						"y": 346,
+						"w": 60,
+						"h": 60
+					}
+				},
+				{
+					"filename": "btn_resume_off",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 190,
+						"h": 92
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 190,
+						"h": 92
+					},
+					"frame": {
+						"x": 827,
+						"y": 386,
+						"w": 190,
+						"h": 92
+					}
+				},
+				{
+					"filename": "cell_water_03",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 60,
+						"h": 60
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 60,
+						"h": 60
+					},
+					"frame": {
+						"x": 765,
+						"y": 408,
+						"w": 60,
+						"h": 60
+					}
+				},
+				{
+					"filename": "pose_flier",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 225,
+						"h": 433
+					},
+					"spriteSourceSize": {
+						"x": 81,
+						"y": 0,
+						"w": 144,
+						"h": 433
+					},
+					"frame": {
+						"x": 1,
+						"y": 480,
+						"w": 144,
+						"h": 433
+					}
+				},
+				{
+					"filename": "btn_resume_on",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 190,
+						"h": 92
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 190,
+						"h": 92
+					},
+					"frame": {
+						"x": 1,
+						"y": 915,
+						"w": 190,
+						"h": 92
+					}
+				},
+				{
+					"filename": "pose_healer",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 225,
+						"h": 433
+					},
+					"spriteSourceSize": {
+						"x": 60,
+						"y": 13,
+						"w": 165,
+						"h": 369
+					},
+					"frame": {
+						"x": 147,
+						"y": 480,
+						"w": 165,
+						"h": 369
+					}
+				},
+				{
+					"filename": "cell_water_04",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 60,
+						"h": 60
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 60,
+						"h": 60
+					},
+					"frame": {
+						"x": 147,
+						"y": 851,
+						"w": 60,
+						"h": 60
+					}
+				},
+				{
+					"filename": "gradient",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 200,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 54,
+						"w": 200,
+						"h": 46
+					},
+					"frame": {
+						"x": 314,
+						"y": 123,
+						"w": 200,
+						"h": 46
+					}
+				},
+				{
+					"filename": "pose_normal",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 225,
+						"h": 433
+					},
+					"spriteSourceSize": {
+						"x": 27,
+						"y": 118,
+						"w": 198,
+						"h": 265
+					},
+					"frame": {
+						"x": 314,
+						"y": 171,
+						"w": 198,
+						"h": 265
+					}
+				},
+				{
+					"filename": "obstacle_02",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 43,
+						"h": 73
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 43,
+						"h": 73
+					},
+					"frame": {
+						"x": 193,
+						"y": 913,
+						"w": 43,
+						"h": 73
+					}
+				},
+				{
+					"filename": "cell_water_05",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 60,
+						"h": 60
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 60,
+						"h": 60
+					},
+					"frame": {
+						"x": 209,
+						"y": 851,
+						"w": 60,
+						"h": 60
+					}
+				},
+				{
+					"filename": "obstacle_03",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 53,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 53,
+						"h": 64
+					},
+					"frame": {
+						"x": 238,
+						"y": 913,
+						"w": 53,
+						"h": 64
+					}
+				},
+				{
+					"filename": "cell_water_06",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 60,
+						"h": 60
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 60,
+						"h": 60
+					},
+					"frame": {
+						"x": 271,
+						"y": 851,
+						"w": 60,
+						"h": 60
+					}
+				},
+				{
+					"filename": "obstacle_04",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 53,
+						"h": 63
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 53,
+						"h": 63
+					},
+					"frame": {
+						"x": 293,
+						"y": 913,
+						"w": 53,
+						"h": 63
+					}
+				},
+				{
+					"filename": "cell_water_07",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 60,
+						"h": 60
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 60,
+						"h": 60
+					},
+					"frame": {
+						"x": 348,
+						"y": 438,
+						"w": 60,
+						"h": 60
+					}
+				},
+				{
+					"filename": "cell_water_08",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 60,
+						"h": 60
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 60,
+						"h": 60
+					},
+					"frame": {
+						"x": 410,
+						"y": 438,
+						"w": 60,
+						"h": 60
+					}
+				},
+				{
+					"filename": "cell_water_09",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 60,
+						"h": 60
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 60,
+						"h": 60
+					},
+					"frame": {
+						"x": 472,
+						"y": 438,
+						"w": 60,
+						"h": 60
+					}
+				},
+				{
+					"filename": "cell_water_10",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 60,
+						"h": 60
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 60,
+						"h": 60
+					},
+					"frame": {
+						"x": 534,
+						"y": 442,
+						"w": 60,
+						"h": 60
+					}
+				},
+				{
+					"filename": "cell_water_11",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 60,
+						"h": 60
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 60,
+						"h": 60
+					},
+					"frame": {
+						"x": 596,
+						"y": 442,
+						"w": 60,
+						"h": 60
+					}
+				},
+				{
+					"filename": "cell_water_12",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 60,
+						"h": 60
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 60,
+						"h": 60
+					},
+					"frame": {
+						"x": 658,
+						"y": 442,
+						"w": 60,
+						"h": 60
+					}
+				},
+				{
+					"filename": "cell_water_13",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 60,
+						"h": 60
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 60,
+						"h": 60
+					},
+					"frame": {
+						"x": 720,
+						"y": 470,
+						"w": 60,
+						"h": 60
+					}
+				},
+				{
+					"filename": "cell_water_14",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 60,
+						"h": 60
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 60,
+						"h": 60
+					},
+					"frame": {
+						"x": 348,
+						"y": 500,
+						"w": 60,
+						"h": 60
+					}
+				},
+				{
+					"filename": "cell_water_15",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 60,
+						"h": 60
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 60,
+						"h": 60
+					},
+					"frame": {
+						"x": 410,
+						"y": 500,
+						"w": 60,
+						"h": 60
+					}
+				},
+				{
+					"filename": "cell_water_16",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 60,
+						"h": 60
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 60,
+						"h": 60
+					},
+					"frame": {
+						"x": 472,
+						"y": 500,
+						"w": 60,
+						"h": 60
+					}
+				},
+				{
+					"filename": "cell_water_17",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 60,
+						"h": 60
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 60,
+						"h": 60
+					},
+					"frame": {
+						"x": 534,
+						"y": 504,
+						"w": 60,
+						"h": 60
+					}
+				},
+				{
+					"filename": "cell_water_18",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 60,
+						"h": 60
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 60,
+						"h": 60
+					},
+					"frame": {
+						"x": 596,
+						"y": 504,
+						"w": 60,
+						"h": 60
+					}
+				},
+				{
+					"filename": "cell_water_19",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 60,
+						"h": 60
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 60,
+						"h": 60
+					},
+					"frame": {
+						"x": 658,
+						"y": 504,
+						"w": 60,
+						"h": 60
+					}
+				},
+				{
+					"filename": "cell_water_20",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 60,
+						"h": 60
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 60,
+						"h": 60
+					},
+					"frame": {
+						"x": 348,
+						"y": 562,
+						"w": 60,
+						"h": 60
+					}
+				},
+				{
+					"filename": "cell_water_21",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 60,
+						"h": 60
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 60,
+						"h": 60
+					},
+					"frame": {
+						"x": 410,
+						"y": 562,
+						"w": 60,
+						"h": 60
+					}
+				},
+				{
+					"filename": "cell_water_22",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 60,
+						"h": 60
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 60,
+						"h": 60
+					},
+					"frame": {
+						"x": 472,
+						"y": 562,
+						"w": 60,
+						"h": 60
+					}
+				},
+				{
+					"filename": "cell_water_23",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 60,
+						"h": 60
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 60,
+						"h": 60
+					},
+					"frame": {
+						"x": 314,
+						"y": 624,
+						"w": 60,
+						"h": 60
+					}
+				},
+				{
+					"filename": "cell_water_24",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 60,
+						"h": 60
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 60,
+						"h": 60
+					},
+					"frame": {
+						"x": 314,
+						"y": 686,
+						"w": 60,
+						"h": 60
+					}
+				},
+				{
+					"filename": "cell_water_25",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 60,
+						"h": 60
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 60,
+						"h": 60
+					},
+					"frame": {
+						"x": 314,
+						"y": 748,
+						"w": 60,
+						"h": 60
+					}
+				},
+				{
+					"filename": "obstacle_06",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 56,
+						"h": 58
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 56,
+						"h": 58
+					},
+					"frame": {
+						"x": 333,
+						"y": 810,
+						"w": 56,
+						"h": 58
+					}
+				},
+				{
+					"filename": "obstacle_08",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 56,
+						"h": 58
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 56,
+						"h": 58
+					},
+					"frame": {
+						"x": 348,
+						"y": 870,
+						"w": 56,
+						"h": 58
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:a691ad72049fd8f23a5f600aa55ecce1:3ffef9b818aee687158b39731ae607b3:1bd3fbbbdaf54e41cf80e3e904578de4$"
+	}
+}

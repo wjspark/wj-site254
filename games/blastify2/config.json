@@ -1,0 +1,116 @@
+{
+    "MaxNumToGetOneBooster": 8,
+    "StartingCoins": 50,
+    "BuyMovesCount": 5,
+    "BuyMovesPrice": 100,
+    "StarsPercents": [
+        30,
+        60,
+        100
+    ],
+    "ScoreCalc": {
+        "BlockDel": 10,
+        "BlockWithPrize": 15,
+        "Box-1": 40,
+        "Tree-1": 30,
+        "BoxDel": 100,
+        "TreeDel": 100,
+        "SnowmanDel": 120
+    },
+    "CoinValues": {
+        "Block": 1,
+        "Box": 3,
+        "Tree": 2,
+        "Snowman": 2
+    },
+    "PrizesPercents": [
+        [
+            "",
+            99
+        ],
+        [
+            "Hammer",
+            1
+        ],
+        [
+            "Glove",
+            1
+        ],
+        [
+            "Boot",
+            1
+        ],
+        [
+            "Dice",
+            1
+        ]
+    ],
+    "StartingBoostersValue": {
+        "Hammer": 0,
+        "Glove": 0,
+        "Boot": 0,
+        "Dice": 0
+    },
+    "BuyBoostersValue": {
+        "Hammer": 50,
+        "Glove": 100,
+        "Boot": 120,
+        "Dice": 70
+    },
+    "BoostersUnlockLevel": {
+        "Hammer": 6,
+        "Glove": 13,
+        "Boot": 18,
+        "Dice": 10
+    },
+    "GiftProgress": {
+        "1": {
+            "Item": "Block1",
+            "Count": 20,
+            "Gifts": [
+                [
+                    "Coin",
+                    100
+                ]
+            ]
+        },
+        "2": {
+            "Item": "Snowman",
+            "Count": 12,
+            "Gifts": [
+                [
+                    "Coin",
+                    200
+                ],
+                [
+                    "Hammer",
+                    2
+                ]
+            ]
+        },
+        "3": {
+            "Item": "Box",
+            "Count": 20,
+            "Gifts": [
+                [
+                    "Hammer",
+                    2
+                ],
+                [
+                    "Coin",
+                    800
+                ]
+            ]
+        }
+    },
+    "TutLevels": {
+        "Blocks": 1,
+        "Snowman": 3,
+        "Hammer": 6,
+        "Box": 7,
+        "Dice": 10,
+        "Tree": 12,
+        "Glove": 13,
+        "Boot": 18
+    }
+}

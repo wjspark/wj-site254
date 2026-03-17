@@ -1,0 +1,83 @@
+{ "frames": {
+   "0": {
+    "frame": { "x": 112, "y": 69, "w": 21, "h": 8 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 77, "y": 122, "w": 21, "h": 8 },
+    "sourceSize": { "w": 184, "h": 137 },
+    "duration": 100
+   },
+   "1": {
+    "frame": { "x": 1, "y": 119, "w": 54, "h": 28 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 61, "y": 102, "w": 54, "h": 28 },
+    "sourceSize": { "w": 184, "h": 137 },
+    "duration": 100
+   },
+   "2": {
+    "frame": { "x": 1, "y": 69, "w": 109, "h": 48 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 28, "y": 76, "w": 109, "h": 48 },
+    "sourceSize": { "w": 184, "h": 137 },
+    "duration": 100
+   },
+   "3": {
+    "frame": { "x": 141, "y": 1, "w": 143, "h": 63 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 23, "y": 59, "w": 143, "h": 63 },
+    "sourceSize": { "w": 184, "h": 137 },
+    "duration": 100
+   },
+   "4": {
+    "frame": { "x": 286, "y": 63, "w": 146, "h": 56 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 20, "y": 54, "w": 146, "h": 56 },
+    "sourceSize": { "w": 184, "h": 137 },
+    "duration": 100
+   },
+   "5": {
+    "frame": { "x": 141, "y": 66, "w": 143, "h": 51 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 16, "y": 61, "w": 143, "h": 51 },
+    "sourceSize": { "w": 184, "h": 137 },
+    "duration": 100
+   },
+   "6": {
+    "frame": { "x": 286, "y": 1, "w": 142, "h": 60 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 16, "y": 56, "w": 142, "h": 60 },
+    "sourceSize": { "w": 184, "h": 137 },
+    "duration": 100
+   },
+   "7": {
+    "frame": { "x": 1, "y": 1, "w": 138, "h": 66 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 21, "y": 42, "w": 138, "h": 66 },
+    "sourceSize": { "w": 184, "h": 137 },
+    "duration": 100
+   }
+ },
+ "meta": {
+  "app": "https://www.aseprite.org/",
+  "version": "1.2.33-x64",
+  "image": "splash.png",
+  "format": "RGBA8888",
+  "size": { "w": 433, "h": 148 },
+  "scale": "1",
+  "frameTags": [
+   { "name": "splash", "from": 0, "to": 7, "direction": "forward" }
+  ],
+  "layers": [
+   { "name": "Layer", "opacity": 255, "blendMode": "normal" }
+  ],
+  "slices": [
+  ]
+ }
+}

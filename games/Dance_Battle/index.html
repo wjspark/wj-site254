@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Dance Battle</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,viewport-fit=cover">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta http-equiv="cleartype" content="on">
+  <meta name="format-detection" content="telephone=no">
+  <style>
+    html,
+    .app {
+      height: 100vh
+    }
+
+    body {
+      background: linear-gradient(210deg, #3eecff, #ff7aff); 
+      padding: 0px;
+      margin: 0px;
+      overflow: hidden;
+    }
+
+    @font-face {
+      font-family: arial;
+      src: url('assets/fonts/arial.woff2');
+      font-weight: 400;
+      font-weight: normal;
+    }
+
+    @font-face {
+      font-family: blambot;
+      src: url('assets/fonts/blambot.woff2');
+      font-weight: 400;
+      font-weight: normal;
+    }
+
+    @font-face {
+      font-family: grandstander;
+      src: url('assets/fonts/grandstander_regular.ttf');
+      font-weight: 400;
+      font-weight: normal;
+    }
+  </style>
+
+  
+    <script>
+      // TODO This doesn't work yet.
+      window.famobi_gameID = "dance-battle";
+      window.famobi_gameJS = [
+      "js/1.bundle.js",
+			"js/bundle.js",
+        function () {
+          window.startGame();
+        }
+      ];
+
+      (function (document, url, fgJS, firstJS) {
+        fgJS = document.createElement('script');
+        firstJS = document.getElementsByTagName('script')[0];
+        fgJS.src = url + encodeURIComponent(document.location.href);
+        firstJS.parentNode.insertBefore(fgJS, firstJS);
+      })(document, './html5games/gameapi/v1.js?e=');
+    </script>
+</head>
+
+<body>
+
+  <div id="content"></div>
+  <div style="font-family:arial; position:absolute; left:-1000px; visibility:hidden;">.</div>
+  <div style="font-family:blambot; position:absolute; left:-1000px; visibility:hidden;">.</div>
+  <div style="font-family:grandstander; position:absolute; left:-1000px; visibility:hidden;">.</div>
+</body>
+
+</html>

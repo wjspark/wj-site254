@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Om Nom Connect Christmas</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+<meta name="generator" content="Construct 3">
+
+	<link rel="manifest" href="appmanifest.json">
+	<link rel="stylesheet" href="style.css">
+
+
+	
+	
+	<!-- <script src="azerion.js"></script> -->
+</head>
+<body>
+
+	<script type="text/javascript" src="./Moto_X3M_Christmas/sdk/ad.min.js"></script>
+	<script>
+		window.famobi_gameID = "om-nom-connect-christmas";
+		window.famobi_gameJS = [
+			"common.js",
+			"scripts/supportcheck.js",
+			"scripts/offlineclient.js",
+			"scripts/main.js",
+			"scripts/register-sw.js",
+			function(){
+				// do nothing, be happy
+			}
+		];
+		(function (document, url, fgJS, firstJS) {
+				fgJS = document.createElement('script');
+				firstJS = document.getElementsByTagName('script')[0];
+				fgJS.src = url + encodeURIComponent(document.location.href);
+				firstJS.parentNode.insertBefore(fgJS, firstJS);
+		})(document, 'html5games/gameapi/v1.js?e=');
+
+		
+</script>
+
+</body>
+</html>

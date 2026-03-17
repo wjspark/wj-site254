@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" style="height:100%">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Stick Merge</title>
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="full-screen" content="yes" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="360-fullscreen" content="true" />
+    <meta name="screen-orientation" content="landscape" />
+    <meta name="x5-orientation" content="landscape" />
+    <meta name='unity webgl' screenorientation='landscape' />
+    <meta name="x5-page-mode" content="app" />
+    <link rel="stylesheet" href="game.css">
+    <style>
+        #rotate-device {
+            display: none;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            position: absolute;
+            background-color: white;
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+
+        #tipContainer {
+            margin-top: 150px;
+            text-align: center;
+        }
+
+        .h2 {
+            align-items: center;
+        }
+
+        #landscape_btn {
+            align-items: center;
+        }
+
+        #rotate-device img {
+            width: 60%;
+            height: auto;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="tipContainer">
+        <h2>In order to experience the game better, please click OK to use landscape mode.</h2>
+        <button id="landscape_btn" style="width:100px;height:40px;font-size: 30px;"><b>OK</b></button>
+    </div>
+    <div id="div_iframe_game">
+        <div id="iframe_bg"></div>
+        <iframe id='game_iframe' src="" webkitallowfullscreen='true' mozallowfullscreen='true' allowfullscreen='true'
+            webkit-playsinline='true' scrolling='no' seamless frameborder='0'></iframe>
+    </div>
+    <script src="orientation.js"></script>
+
+    <script>
+        var appName = document.title;
+        var game_iframe = document.getElementById("game_iframe");
+        var button = document.getElementById('landscape_btn');
+
+        button.onclick = function () {
+            var div = document.getElementById('tipContainer');
+            div.parentNode.removeChild(div);
+            onResize();
+            doFullScreen();
+            window['gameFrame']['src'] = "glgame/glgame.html";
+        };
+        function checkOrientation() {
+            var div = document.getElementById('tipContainer');
+            if (window.innerHeight < window.innerWidth) {
+                var div = document.getElementById('tipContainer');
+                if(div)div.parentNode.removeChild(div);
+                onResize();
+                window['gameFrame']['src'] = "glgame/glgame.html";
+            } else {
+                if(div)div.style.display = "block";
+            }
+        }
+        checkOrientation();
+    </script>
+
+</body>
+
+</html>

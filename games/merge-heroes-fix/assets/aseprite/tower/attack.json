@@ -1,0 +1,154 @@
+{ "frames": [
+   {
+    "filename": "0",
+    "frame": { "x": 107, "y": 219, "w": 100, "h": 106 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 15, "y": 21, "w": 100, "h": 106 },
+    "sourceSize": { "w": 134, "h": 147 },
+    "duration": 100
+   },
+   {
+    "filename": "1",
+    "frame": { "x": 104, "y": 113, "w": 103, "h": 104 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 13, "y": 23, "w": 103, "h": 104 },
+    "sourceSize": { "w": 134, "h": 147 },
+    "duration": 100
+   },
+   {
+    "filename": "2",
+    "frame": { "x": 436, "y": 1, "w": 108, "h": 103 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 12, "y": 23, "w": 108, "h": 103 },
+    "sourceSize": { "w": 134, "h": 147 },
+    "duration": 100
+   },
+   {
+    "filename": "3",
+    "frame": { "x": 324, "y": 1, "w": 110, "h": 102 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 12, "y": 23, "w": 110, "h": 102 },
+    "sourceSize": { "w": 134, "h": 147 },
+    "duration": 100
+   },
+   {
+    "filename": "4",
+    "frame": { "x": 209, "y": 213, "w": 104, "h": 102 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 12, "y": 22, "w": 104, "h": 102 },
+    "sourceSize": { "w": 134, "h": 147 },
+    "duration": 100
+   },
+   {
+    "filename": "5",
+    "frame": { "x": 212, "y": 106, "w": 104, "h": 105 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 13, "y": 21, "w": 104, "h": 105 },
+    "sourceSize": { "w": 134, "h": 147 },
+    "duration": 100
+   },
+   {
+    "filename": "6",
+    "frame": { "x": 107, "y": 1, "w": 103, "h": 110 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 14, "y": 20, "w": 103, "h": 110 },
+    "sourceSize": { "w": 134, "h": 147 },
+    "duration": 100
+   },
+   {
+    "filename": "7",
+    "frame": { "x": 1, "y": 112, "w": 101, "h": 107 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 16, "y": 21, "w": 101, "h": 107 },
+    "sourceSize": { "w": 134, "h": 147 },
+    "duration": 100
+   },
+   {
+    "filename": "8",
+    "frame": { "x": 318, "y": 208, "w": 103, "h": 104 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 15, "y": 21, "w": 103, "h": 104 },
+    "sourceSize": { "w": 134, "h": 147 },
+    "duration": 100
+   },
+   {
+    "filename": "9",
+    "frame": { "x": 435, "y": 106, "w": 105, "h": 104 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 14, "y": 21, "w": 105, "h": 104 },
+    "sourceSize": { "w": 134, "h": 147 },
+    "duration": 100
+   },
+   {
+    "filename": "10",
+    "frame": { "x": 212, "y": 1, "w": 110, "h": 103 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 10, "y": 22, "w": 110, "h": 103 },
+    "sourceSize": { "w": 134, "h": 147 },
+    "duration": 100
+   },
+   {
+    "filename": "11",
+    "frame": { "x": 324, "y": 105, "w": 109, "h": 101 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 10, "y": 24, "w": 109, "h": 101 },
+    "sourceSize": { "w": 134, "h": 147 },
+    "duration": 100
+   },
+   {
+    "filename": "12",
+    "frame": { "x": 1, "y": 221, "w": 104, "h": 102 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 15, "y": 24, "w": 104, "h": 102 },
+    "sourceSize": { "w": 134, "h": 147 },
+    "duration": 100
+   },
+   {
+    "filename": "13",
+    "frame": { "x": 423, "y": 212, "w": 104, "h": 103 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 15, "y": 24, "w": 104, "h": 103 },
+    "sourceSize": { "w": 134, "h": 147 },
+    "duration": 100
+   },
+   {
+    "filename": "14",
+    "frame": { "x": 1, "y": 1, "w": 104, "h": 109 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 14, "y": 19, "w": 104, "h": 109 },
+    "sourceSize": { "w": 134, "h": 147 },
+    "duration": 100
+   }
+ ],
+ "meta": {
+  "app": "https://www.aseprite.org/",
+  "version": "1.2.34.1-x64",
+  "image": "attack.png",
+  "format": "RGBA8888",
+  "size": { "w": 545, "h": 326 },
+  "scale": "1",
+  "frameTags": [
+   { "name": "attack", "from": 0, "to": 14, "direction": "forward" }
+  ],
+  "layers": [
+   { "name": "Layer", "opacity": 255, "blendMode": "normal" }
+  ],
+  "slices": [
+  ]
+ }
+}

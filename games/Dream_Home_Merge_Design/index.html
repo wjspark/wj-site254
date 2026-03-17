@@ -1,0 +1,571 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dream Home Merge Design</title>
+  <script>
+    const cyGameConfig = {
+      showBanner: "true" !== "false",
+      floatingBanner: "{#floating_banner#}" === "true",
+      preloadDuration: parseInt("5000", 10),
+      orientation: "portrait",
+      gameOrigin: location.origin,
+      gameName: "Dream Home Merge Design",
+      adsenseConfig: {
+        client: "ca-pub-2270136017335510",
+        frequencyHint: "45s",
+        channel: "8896468696",
+      },
+      gaId: "UA-120043346-123",
+      appKey: "4712382",
+    };
+  </script>
+  <script type="module" crossorigin>
+    const R=()=>{document.body.classList.add("ad-break-showing")},H=()=>{document.body.classList.remove("ad-break-showing")};let z=!1,P=!1;const ge=500,me=10*1e3;let f=null;const fe=e=>{z=e},j=()=>{P=!0},he=e=>(f=e,f);class pe{constructor(){this._promise=new Promise((t,n)=>{this._resolve=t,this._reject=n})}get promise(){return this._promise}get resolve(){return this._resolve}get reject(){return this._reject}}class we{constructor(t){this.config=t,this._ready=!1,this._readyDeferred=new pe,this.readyPromise.then(()=>{this._ready=!0}),this.adsenseConfig={client:t.adsenseConfig.client,"data-ad-frequency-hint":t.adsenseConfig.frequencyHint,callback:()=>{throw new Error("callback should be set")}},t.adsenseConfig.host&&(this.adsenseConfig.host=t.adsenseConfig.host),this.config.adsenseConfig.channel&&(this.adsenseConfig["data-ad-channel"]=t.adsenseConfig.channel),z||(this.adsenseConfig["data-adbreak-test"]="on")}get ready(){return this._ready}get readyPromise(){return this._readyDeferred.promise}sendEvent(t,...n){}adConfig(t){}adBreak(t){}}const m=(e,t)=>{f&&f.sendEvent(e,t)},Z=e=>{f&&f.adBreak(e)},be=({adIntention:e,adPosition:t,onShowSuccess:n,onClose:o,onFail:a})=>{let s=!1,r=!1,i=!1,l=!1;const d=()=>{s||r||l||(s=!0,i||(console.log(`interstitial: ${e} call show success for timeout`),setTimeout(()=>{i||l||(console.log(`interstitial: ${e} call closed for timeout`),h())},2e3)),n&&n())},h=()=>{r||(r=!0,o&&o(!0))};setTimeout(d,1e3),Z({type:e,name:t,beforeAd:()=>{console.log("%c Interstitial AD BeforeAd","color: #0000FF;font-size: 12px;"),i=!0,R(),d()},afterAd:()=>{console.log("%c Interstitial AD AfterAd","color: #FFA500;font-size: 12px;"),H()},adBreakDone:k=>{l=!0,console.log(`interstitial: ${e} adBreakDone`,k),k.breakStatus==="viewed"?h():a&&a(k.breakStatus)}})},ye=({onShowSuccess:e,onClosed:t,onFail:n,adPosition:o})=>{Z({type:"reward",name:o,beforeAd:()=>{console.log("%c Reward AD BeforeAd","color: #0000FF;font-size: 14px;"),R(),e&&e()},afterAd:()=>{H(),console.log("%c Reward AD AfterAd","color: #FFA500;font-size: 14px;")},beforeReward:a=>{console.log("%c Reward AD BeforeReward","color: #FFA500;font-size: 14px;"),a()},adDismissed:()=>{t&&t(!0)},adViewed:()=>{t&&t(!1)},adBreakDone:a=>{const s=a.breakStatus;console.log("reward adBreakDone",a),s==="viewed"||s==="dismissed"||n&&n(s)}})},ke=2e3,x=100;let N=!1,ee=!1,q,te,U,S=0,G=!1,A,C=[],oe={start:0,total:0,duration:300,progress:0};const ve=()=>Date.now()-A>=ke,ne=(e,t)=>Math.floor(Math.random()*(t-e+1))+e,W=(e,t)=>{const n=[],o=Math.floor(e/t*.5),a=Math.floor(e/t*1.5);let s=e;for(let r=0;r<t;r++){const i=ne(o,Math.min(a,s));n.push(i),s-=i}return n},F=(e,t,n)=>{e.start=t,ae(e,n)},Ce=e=>{e.progress=e.total},ae=(e,t)=>{e.progress=Math.min(e.total,(t-e.start)/e.duration*e.total)},Le=(e,t)=>t>=e.start&&t<=e.start+e.duration,V=()=>C.reduce((e,t)=>e+t.progress,0)+oe.progress,Q=()=>{ee=!0,q(1),te()},se=()=>{if(ee)return;const e=Date.now();let t;if(G&&(ve()||f&&f.ready)?(console.log("preload: start quick finish"),t=oe,t.start===0&&(t.total=x-V(),F(t,e,e))):t=C[S],Le(t,e))ae(t,e);else{if(G){Q();return}if(Ce(t),S++,S>=C.length){Q();return}F(C[S],t.start+t.duration,e)}const n=Math.min(1,V()/x);q(n),requestAnimationFrame(se)};function Se(e){if(N)return;N=!0,U=e,A=Date.now();const t=ne(3,8),n=W(x,t);W(U,t).forEach((o,a)=>{C.push({start:0,total:n[a],duration:o,progress:0})}),F(C[0],A,A),se()}function M(){setTimeout(()=>{G=!0},300)}function _e(e){q=e}function Ee(e){te=e}var b=(e=>(e.EventGameStart="game_start",e.EventLoadingBegin="loading_begin",e.EventLoadingEnd="loading_end",e.EventLoadGoogleAdScriptStart="load_adsbygoogle",e.EventLoadGoogleAdScriptComplete="loaded_adsbygoogle",e.EventTurnScreenShow="turn_screen",e.EventHorizontalScreen="horizontal",e.EventEnterMainScene="game_page",e.EventLevelStart="level_begin",e.EventLevelEnd="level_end",e.EventLevelReward="level_reward",e.EventLevelNext="level_next",e.EventRewardClick="reward_click",e))(b||{});const re=["loading_end","game_page"],y=e=>{const t=e.name;switch(t){case"loading_end":P||(M(),j()),m(t);break;case"game_page":P||(M(),j()),m(t);break;case"level_begin":m(t,e.levelNum);break;case"level_end":m(t,e.result);break;case"level_reward":m(t,e.withReward);break;case"level_next":m(t,e.levelNum);break;case"reward_click":m(t,e.sceneName);break;case"game_start":m(t,e.title);break;case"horizontal":case"loading_begin":case"load_adsbygoogle":case"loaded_adsbygoogle":case"turn_screen":m(t);break;default:throw new Error(`unknown event name: ${t}`)}},ie=["http://localhost","http://127.0.0.1","http://192.168","https://doxh.net","https://cdn.imagehost.top/"],Te=(()=>{const e=new URLSearchParams(window.location.search);return(t,n="")=>{const o=e.get(t);return o===null||o===""?n:o}})();function De(e){let t;return ie.some(n=>e.indexOf(n)===0)?t=!1:t=Te("ad_env")!=="preview",t}const Ae=({targetOrigin:e,gameOrigin:t})=>e===t?!0:ie.some(n=>e.startsWith(n)),O=()=>window.innerWidth>window.innerHeight?"landscape":"portrait",Pe=e=>e===O(),le=e=>new Promise(t=>{if(O()===e)t();else{const n=()=>{setTimeout(()=>{O()===e&&(self.removeEventListener("resize",n),e==="landscape"&&y({name:b.EventHorizontalScreen}),t())},0)};self.addEventListener("resize",n)}});function de(){return window.navigator.onLine===!1}const ce=e=>{const t=e.firstElementChild;return document.body.appendChild(e),t},J=()=>window.innerHeight,u=(e,t=document)=>{const n=t.querySelector(e);if(!n)throw new Error(`${e} not found`);return n},v=(e,t)=>{e&&(e.textContent=t||"")},Be=e=>{e&&(e.style.display="none")},$e=e=>{e&&(e.style.display="block")},xe=e=>{e&&(e.style.opacity="1")},Ge=e=>{e&&(e.style.opacity="0")},p=(e,t)=>{e&&e.classList.add(t)},B=(e,t)=>{e&&e.classList.remove(t)},ue=e=>t=>e.querySelector(t),Fe=e=>t=>e.querySelectorAll(t),Me=u("#progress"),w=u("#loading");u("img",w);u("h1",w);const Oe=u("#gameFrame"),Re=u(".game-main"),$=u("#game-banner"),X=u(".game-content"),He=u("#tpl-dialog"),ze=u("#tpl-loading");let _=null,E,T,D;const qe=({message:e,duration:t})=>{const n=t!==0?3e3:1500;console.debug("showToast: ",e);const o=document.createElement("div");p(o,"toast");const a=document.createElement("span");v(a,e),o.appendChild(a),document.body.appendChild(o),_&&(document.body.removeChild(_),E&&clearTimeout(E),T&&clearTimeout(T),D&&clearTimeout(D)),E=setTimeout(function(){xe(o),E=0},100),T=setTimeout(function(){Ge(o),T=0,D=setTimeout(function(){document.body.removeChild(o),_=null,D=0},400)},n),_=o},Ie=({title:e,content:t,confirmText:n,cancelText:o,showCancel:a=!0})=>{const s=He.content.cloneNode(!0),r=ue(s),i=`dialog-buttons-${a?"2":"1"}`;p(r(".dialog"),i),v(r(".dialog-title"),e),v(r(".dialog-text"),t);const l=r(".dialog-button[data-action=cancel]");return l&&(a?v(l,o):Be(l)),v(r(".dialog-button[data-action=confirm]"),n),s};let c=null,Y=!1;const Ke=e=>{const{showCancel:t=!0,success:n,complete:o}=e;c&&document.body.removeChild(c),Y||(p(document.documentElement,"ios"),Y=!0);const a=Ie({...e,showCancel:t});c=ce(a);const s=ue(c),r=s(".dialog-backdrop"),i=s(".dialog"),l=Fe(c)(".dialog-button");if(!r||!i||!l||!c)throw new Error("dialog not found");const d=l.item(l.length-1),h=()=>{B(r,"backdrop-in"),B(i,"modal-in"),p(i,"modal-out")},k=()=>{c&&document.body.removeChild(c),c=null},I=g=>{p(g,"active-state")},K=g=>{B(g,"active-state")};if(d.addEventListener("touchstart",()=>I(d)),d.addEventListener("touchend",()=>K(d)),d.addEventListener("click",()=>{h(),setTimeout(()=>{k(),n&&n({confirm:!0,cancel:!1}),o&&o()},400)}),t){const g=l.item(0);g.addEventListener("touchstart",()=>I(g)),g.addEventListener("touchend",()=>K(g)),g.addEventListener("click",()=>{h(),setTimeout(()=>{k(),n&&n({confirm:!1,cancel:!0}),o&&o()},400)})}p(r,"backdrop-in"),$e(i),p(i,"modal-in"),window.$dialog=c},je=e=>{const t=ze.content.cloneNode(!0);return v(t.querySelector(".loading-text"),e),t};let L=null;const Ne=e=>{const{title:t,success:n,fail:o,complete:a}=e;console.debug(`loading: ${t}`);try{L&&document.body.removeChild(L);const s=je(t);L=ce(s),setTimeout(()=>{n&&n(),a&&a()},100)}catch{setTimeout(()=>{o&&o(),a&&a()},100)}},Ue=()=>{L&&(document.body.removeChild(L),L=null)},We=({gameOrigin:e,sdk:t})=>{window.addEventListener("message",n=>{if(console.log("gameIndex onMessage: ",n),!Ae({targetOrigin:n.origin,gameOrigin:e})||!n.source)return;const o=n.data,a=n.source;if(!o||!o.action)return;const s=(d,...h)=>a.postMessage({action:"call-callback",params:[d,...h]},n.origin),r=()=>s(o.onSuccess),i=d=>s(o.onFail,d),l=d=>s(o.onClosed,d);switch(o.action){case"showAd":if(!t.ready){i("sdk not ready");return}if(de()){i("offline");return}switch(o.adType){case"interstitial":be({adIntention:o.adIntention,adPosition:o.adPosition,onShowSuccess:r,onClose:l,onFail:i});break;case"banner":r();break;case"reward":ye({adPosition:o.adPosition,onShowSuccess:r,onClosed:l,onFail:i});break;default:i(`unknown adType: ${o.adType}`)}break;case"hideAd":o.adType==="banner"&&r();break;case"renderStart":M();break;case"sendEvent":y({name:o.eventName,...o.param||{}});break;case"showToast":qe(o.param);break;case"showLoading":Ne({...o.param,success:()=>s(o.param.success),fail:()=>s(o.param.fail),complete:()=>s(o.param.complete)});break;case"hideLoading":Ue();break;case"showDialog":Ke({...o.param,success:d=>s(o.param.success,d),fail:()=>s(o.param.fail),complete:()=>s(o.param.complete)});break;default:i(`unknown action: ${o.action}`)}},!1)};class Ve extends we{constructor(t){super(t),this.h5sdk=window.h5sdk,this.gameLoadingCompletedCalled=!1,this.init()}_handleSDKReady(){y({name:b.EventLoadGoogleAdScriptComplete}),this._readyDeferred.resolve(),this.adConfig({preloadAdBreaks:"on",sound:"on",onReady:()=>{R(),this.adBreak({type:"preroll",name:"loading",adBreakDone:t=>{H(),console.log("preroll adBreakDone",t)}})}})}init(){le(this.config.orientation).then(()=>{de()?setTimeout(()=>this._readyDeferred.resolve(),0):(setTimeout(this._readyDeferred.resolve,ge),this.adsenseConfig.callback=()=>{this._handleSDKReady()},y({name:b.EventLoadGoogleAdScriptStart}))})}sendEvent(t,...n){if(re.includes(t)&&!this.gameLoadingCompletedCalled){this.gameLoadingCompletedCalled=!0;return}}adConfig(t){this.h5sdk.adConfig(t)}adBreak(t){}}function Qe(e){var n;e.showBanner?e.floatingBanner&&$.classList.add("game-ad--floating"):((n=$.parentNode)==null||n.removeChild($),window.adsbygoogle=[]);const t=50;le(e.orientation).then(()=>{!e.showBanner||e.floatingBanner||e.orientation==="landscape"?X.style.height=`${J()}px`:X.style.height=`${J()-t}px`})}function Je(e){Re.classList.add(`game-main--${e}`),Pe(e)||y({name:b.EventTurnScreenShow})}function Xe({sdk:e,preloadDuration:t,gameUrl:n}){let o=!1;const a=502.65,s="hidden",r="complete";function i(){o||(o=!0,Oe.src=n,Se(t),y({name:b.EventLoadingBegin}),w.classList.remove(r))}_e(l=>{const d=a*(1-l);Me.setAttribute("stroke-dashoffset",`${d}`)}),Ee(()=>{const l=()=>{w.removeEventListener("transitionend",l),w.classList.add(s)};w.addEventListener("transitionend",l),w.classList.add(r)}),e.readyPromise.then(i)}async function Ye(){console.log("xyx-hippoo-bridge: 3.0.6 start"),fe(De(cyGameConfig.gameOrigin)),Je(cyGameConfig.orientation);const e=he(new Ve(cyGameConfig));e.readyPromise.then(()=>{setTimeout(()=>{if(!P&&!z)throw new Error(`Game loading not finished in 10s, ${re.join(" or ")} potentially not sent?`)},me)}),We({gameOrigin:cyGameConfig.gameOrigin,sdk:e}),Qe(cyGameConfig),Xe({sdk:e,preloadDuration:cyGameConfig.preloadDuration,gameUrl:"./game/index.html"}),y({name:b.EventGameStart,title:cyGameConfig.gameName})}Ye();
+
+  </script>
+  <style>
+    * {
+      padding: 0;
+      margin: 0
+    }
+
+    html,
+    body {
+      color: #fff;
+      overflow: hidden;
+      touch-action: none;
+      -ms-touch-action: none;
+      width: 100%;
+      height: 100%
+    }
+
+    .game-main {
+      width: 100vw
+    }
+
+    .game-content {
+      position: relative;
+      background-color: #000
+    }
+
+    .game-content iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none
+    }
+
+    .game-ad {
+      height: 50px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #fff;
+      position: fixed;
+      bottom: 0;
+      z-index: 100
+    }
+
+    .game-main--portrait .game-ad {
+      width: 100vw
+    }
+
+    .game-main--landscape .game-ad,
+    .game-ad--floating {
+      width: 320px;
+      left: 50%;
+      transform: translate(-50%)
+    }
+
+    #loading {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: #000;
+      z-index: 40;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column
+    }
+
+    #loading.complete {
+      top: 100vh;
+      opacity: 0;
+      transition-property: opacity, top;
+      transition-duration: .3s;
+      transition-timing-function: ease-out
+    }
+
+    #loading.hidden {
+      display: none
+    }
+
+    #loading div {
+      width: 200px;
+      height: 200px;
+      position: relative
+    }
+
+    #loading img {
+      width: 152px;
+      height: 152px;
+      border-radius: 50%;
+      overflow: hidden;
+      position: absolute;
+      top: 24px;
+      left: 24px
+    }
+
+    #loading h1 {
+      font-family: serif
+    }
+
+    #orientation {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: #000;
+      z-index: 150;
+      display: none;
+      justify-content: center;
+      align-items: center
+    }
+
+    #orientation div {
+      background-image: url(/rotate.png);
+      background-size: contain;
+      aspect-ratio: 289/282;
+      width: 25vw;
+      display: block;
+      transform: rotate(90deg)
+    }
+
+    .game-main--landscape #orientation div {
+      transform: rotate(0)
+    }
+
+    @media (orientation: portrait) {
+      .game-main--landscape #orientation {
+        display: flex
+      }
+    }
+
+    @media (orientation: landscape) {
+      .game-main--portrait #orientation {
+        display: flex
+      }
+    }
+
+    body.ad-break-showing .game-main #orientation {
+      display: none !important
+    }
+
+    .toast {
+      position: absolute;
+      z-index: 9999;
+      left: 0;
+      bottom: 20%;
+      color: #fff;
+      font-size: 4vmin;
+      transition: opacity .3s ease 0s;
+      opacity: 1;
+      width: 100%;
+      text-align: center;
+      pointer-events: none;
+      font-family: sans-serif
+    }
+
+    .toast span {
+      display: inline-block;
+      max-width: 80vw;
+      background: #000000ad;
+      padding: .2em 1em .22em;
+      border-radius: 1em
+    }
+
+    * {
+      -webkit-tap-highlight-color: transparent;
+      -webkit-touch-callout: none
+    }
+
+    :root {
+      --f7-theme-color: #007aff;
+      --f7-theme-color-shade: #0066d6;
+      --f7-theme-color-tint: #298fff;
+      --f7-device-pixel-ratio: 1;
+      --f7-font-family: -apple-system, SF Pro Text, SF UI Text, system-ui, Helvetica Neue, Helvetica, Arial, sans-serif;
+      --f7-dialog-box-shadow: none;
+      --f7-dialog-width: 270px;
+      --f7-dialog-inner-padding: 16px;
+      --f7-dialog-text-color: #000;
+      --f7-dialog-text-align: center;
+      --f7-dialog-font-size: 14px;
+      --f7-dialog-title-text-color: inherit;
+      --f7-dialog-title-font-size: 18px;
+      --f7-dialog-title-font-weight: 600;
+      --f7-dialog-title-line-height: inherit;
+      --f7-dialog-button-font-size: 17px;
+      --f7-dialog-button-height: 44px;
+      --f7-dialog-button-letter-spacing: 0;
+      --f7-dialog-button-font-weight: 400;
+      --f7-dialog-button-text-transform: none;
+      --f7-dialog-button-text-color: var(--f7-theme-color);
+      --f7-dialog-button-text-align: center;
+      --f7-dialog-button-pressed-bg-color: rgba(0, 0, 0, .1);
+      --f7-dialog-bg-color: rgba(255, 255, 255, .95);
+      --f7-dialog-bg-color-rgb: 255, 255, 255;
+      --f7-dialog-border-divider-color: rgba(0, 0, 0, .2);
+      --f7-dialog-border-radius: 13px
+    }
+
+    @media (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution:2dppx) {
+      :root {
+        --f7-device-pixel-ratio: 2
+      }
+    }
+
+    @media (-webkit-min-device-pixel-ratio: 3),
+    (min-resolution:3dppx) {
+      :root {
+        --f7-device-pixel-ratio: 3
+      }
+    }
+
+    .ios {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100vw;
+      height: 100vh
+    }
+
+    .dialog-backdrop {
+      width: 100%;
+      height: 100%;
+      background: #0006;
+      z-index: 13000;
+      visibility: hidden;
+      opacity: 0;
+      transition-duration: .4s;
+      transition-property: opacity, visibility
+    }
+
+    .backdrop-in {
+      visibility: visible;
+      opacity: 1
+    }
+
+    .dialog {
+      position: absolute;
+      z-index: 13500;
+      left: 50%;
+      margin-top: 0;
+      top: 65%;
+      overflow: hidden;
+      opacity: 0;
+      transform: translate3d(0, -50%, 0) scale(1.185);
+      transition-property: transform, opacity;
+      display: none;
+      transition-duration: .4s;
+      box-shadow: var(--f7-dialog-box-shadow);
+      width: var(--f7-dialog-width);
+      margin-left: calc(-1 * var(--f7-dialog-width)/ 2);
+      border-radius: var(--f7-dialog-border-radius);
+      text-align: var(--f7-dialog-text-align);
+      color: var(--f7-dialog-text-color);
+      font-size: var(--f7-dialog-font-size);
+      font-family: var(--f7-font-family);
+      background: var(--f7-dialog-bg-color);
+      will-change: transform, opacity
+    }
+
+    .dialog.modal-in {
+      opacity: 1;
+      transform: translate3d(0, -50%, 0) scale(1)
+    }
+
+    .dialog-inner {
+      position: relative;
+      padding: var(--f7-dialog-inner-padding)
+    }
+
+    .dialog-title {
+      color: var(--f7-dialog-title-text-color);
+      font-size: var(--f7-dialog-title-font-size);
+      font-weight: var(--f7-dialog-title-font-weight);
+      line-height: var(--f7-dialog-title-line-height)
+    }
+
+    .dialog-buttons {
+      position: relative;
+      display: flex
+    }
+
+    .dialog-button {
+      box-sizing: border-box;
+      overflow: hidden;
+      position: relative;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      color: var(--f7-dialog-button-text-color);
+      font-size: var(--f7-dialog-button-font-size);
+      height: var(--f7-dialog-button-height);
+      line-height: var(--f7-dialog-button-height);
+      letter-spacing: var(--f7-dialog-button-letter-spacing);
+      text-align: var(--f7-dialog-button-text-align);
+      font-weight: var(--f7-dialog-button-font-weight);
+      text-transform: var(--f7-dialog-button-text-transform);
+      display: block;
+      cursor: pointer;
+      -webkit-user-select: none;
+      user-select: none
+    }
+
+    .dialog-button.active-state {
+      background-color: var(--f7-dialog-button-pressed-bg-color)
+    }
+
+    .dialog-no-buttons .dialog-buttons {
+      display: none
+    }
+
+    .ios .dialog.modal-out {
+      transform: translate3d(0, -50%, 0) scale(1)
+    }
+
+    .ios .dialog-inner {
+      border-radius: var(--f7-dialog-border-radius) var(--f7-dialog-border-radius) 0 0
+    }
+
+    .ios .dialog-inner:after {
+      content: "";
+      position: absolute;
+      background-color: var(--f7-dialog-border-divider-color);
+      display: block;
+      z-index: 15;
+      top: auto;
+      right: auto;
+      bottom: 0;
+      left: 0;
+      height: 1px;
+      width: 100%;
+      transform-origin: 50% 100%;
+      transform: scaleY(calc(1 / var(--f7-device-pixel-ratio)))
+    }
+
+    .ios .dialog-title+.dialog-text {
+      margin-top: 5px
+    }
+
+    .ios .dialog-buttons {
+      height: 44px;
+      justify-content: center
+    }
+
+    .ios .dialog-button {
+      width: 100%;
+      padding: 0 5px;
+      -webkit-box-flex: 1;
+      -ms-flex: 1
+    }
+
+    .ios .dialog-button:after {
+      content: "";
+      position: absolute;
+      background-color: var(--f7-dialog-border-divider-color);
+      display: block;
+      z-index: 15;
+      top: 0;
+      right: 0;
+      bottom: auto;
+      left: auto;
+      width: 1px;
+      height: 100%;
+      transform-origin: 100% 50%;
+      transform: scaleX(calc(1 / var(--f7-device-pixel-ratio)))
+    }
+
+    .ios .dialog-button:first-child {
+      border-radius: 0 0 0 var(--f7-dialog-border-radius)
+    }
+
+    .ios .dialog-button:last-child {
+      border-radius: 0 0 var(--f7-dialog-border-radius) 0
+    }
+
+    .ios .dialog-button:last-child:after {
+      display: none !important
+    }
+
+    .ios .dialog-button:first-child:last-child {
+      border-radius: 0 0 var(--f7-dialog-border-radius) var(--f7-dialog-border-radius)
+    }
+
+    .ios .dialog-button.dialog-button-bold {
+      font-weight: 500
+    }
+
+    .ios .dialog-button[class*=color-] {
+      --f7-dialog-button-text-color: var(--f7-theme-color)
+    }
+
+    .ios .dialog-buttons-vertical .dialog-buttons {
+      height: auto
+    }
+
+    .ios .dialog-buttons-vertical .dialog-button {
+      border-radius: 0
+    }
+
+    .ios .dialog-buttons-vertical .dialog-button:after {
+      content: "";
+      position: absolute;
+      background-color: var(--f7-dialog-border-divider-color);
+      display: block;
+      z-index: 15;
+      top: auto;
+      right: auto;
+      bottom: 0;
+      left: 0;
+      height: 1px;
+      width: 100%;
+      transform-origin: 50% 100%;
+      transform: scaleY(calc(1 / var(--f7-device-pixel-ratio)))
+    }
+
+    .ios .dialog-buttons-vertical .dialog-button:last-child {
+      border-radius: 0 0 var(--f7-dialog-border-radius) var(--f7-dialog-border-radius)
+    }
+
+    .ios .dialog-buttons-vertical .dialog-button:last-child:after {
+      display: none !important
+    }
+
+    .ios .dialog-no-buttons .dialog-inner {
+      border-radius: var(--f7-dialog-border-radius)
+    }
+
+    .ios .dialog-no-buttons .dialog-inner:after {
+      display: none !important
+    }
+
+    .loading {
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 999;
+      right: 0;
+      bottom: 0;
+      background: #0000004d
+    }
+
+    .loading .loading-inner {
+      bottom: 20%;
+      left: 0;
+      z-index: 999;
+      text-align: center;
+      width: 100%;
+      position: absolute
+    }
+
+    .loading .loading-text {
+      font-size: 4vmin;
+      font-family: sans-serif
+    }
+
+    .xyx-loading-svg {
+      animation: xyx-loading-svg-rotate 1.4s ease-in infinite;
+      width: 10vmin;
+      height: 10vmin
+    }
+
+    @keyframes xyx-loading-svg-rotate {
+      0% {
+        transform: rotate(0)
+      }
+
+      to {
+        transform: rotate(360deg)
+      }
+    }
+
+    #orientation div {
+      background-image: url(./rotate.png)
+    }
+  </style>
+</head>
+
+<body>
+  <div class="game-main">
+    <div id="orientation">
+      <div></div>
+    </div>
+    <div id="loading" class="complete">
+      <div>
+        <svg width="200" height="200">
+          <circle cx="100" cy="100" r="80" stroke-width="10" fill="none" stroke="#ccc" />
+          <circle id="progress" cx="100" cy="100" r="80" stroke-width="10" fill="none" stroke="#1e90ff"
+            stroke-dasharray="502.65" stroke-dashoffset="50" transform="rotate(-90, 100, 100)" />
+        </svg>
+        <img src="./game/logo.png" />
+      </div>
+      <h1>Dream Home Merge Design</h1>
+    </div>
+    <div class="game-content">
+      <iframe id="gameFrame" src="" scrolling="none" frameborder="0" width="100%" height="100%"></iframe>
+    </div>
+    <div class="game-ad" id="game-banner">
+      <ins class="adsbygoogle" style="display:inline-block;width:320px;height:50px"
+        data-ad-client="ca-pub-2270136017335510" data-ad-slot="7650286892"></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+  </div>
+  <template id="tpl-dialog">
+    <div>
+      <div class="dialog-backdrop"></div>
+      <div class="dialog">
+        <div class="dialog-inner">
+          <div class="dialog-title"></div>
+          <div class="dialog-text"></div>
+        </div>
+        <div class="dialog-buttons">
+          <div data-action="cancel" class="dialog-button"></div>
+          <div data-action="confirm" class="dialog-button dialog-button-bold"></div>
+        </div>
+      </div>
+    </div>
+  </template>
+  <template id="tpl-loading">
+    <div id="xyx-loading" class="loading">
+      <div class="loading-inner">
+        <svg class="xyx-loading-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" fill="#f3ca7e">
+          <path
+            d="M512 85.333c235.648 0 426.667 191.019 426.667 426.667S747.648 938.667 512 938.667 85.333 747.648 85.333 512 276.352 85.333 512 85.333zm0 128a298.667 298.667 0 1 0 0 597.333 298.667 298.667 0 0 0 0-597.333z"
+            fill-opacity=".05" />
+          <path
+            d="M813.696 813.696c166.613-166.613 166.613-436.779 0-603.392s-436.779-166.613-603.392 0A64 64 0 0 0 300.8 300.8a298.667 298.667 0 1 1 422.4 422.4 64 64 0 0 0 90.496 90.496z" />
+        </svg>
+        <div class="loading-text"></div>
+      </div>
+    </div>
+  </template>
+
+</body>
+
+</html>

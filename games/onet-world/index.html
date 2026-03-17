@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Onet World</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+	<link rel="manifest" href="appmanifest.json">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+
+
+<link rel="stylesheet" href="style.css">
+
+<script>
+    // Package-ID
+    window.famobi_gameID = "onet-world";
+    window.famobi_gameJS = ['js/all.js',
+        "firebase-app.js?ignore",
+        "firebase-auth.js?ignore",
+        "firebase-database.js?ignore",
+        "firebase-firestore.js?ignore",
+        "firebase-functions.js?ignore",
+        "firebase-messaging.js?ignore",
+        "moment.js?ignore",
+        "common.js?ignore",
+        "scripts/supportcheck.js?ignore",
+        "scripts/offlineclient.js?ignore",
+        "scripts/main.js?ignore",
+        "scripts/register-sw.js?ignore",
+        function(){
+            // do nothing, be happy
+        }
+    ];
+
+    (function (document, url, fgJS, firstJS) {
+            fgJS = document.createElement('script');
+            firstJS = document.getElementsByTagName('script')[0];
+            fgJS.src = url + encodeURIComponent(document.location.href);
+            firstJS.parentNode.insertBefore(fgJS, firstJS);
+    })(document, './html5games/gameapi/v1.js?e=');
+</script>
+
+
+</head>
+<body>
+<div id="fb-root"></div>
+	<noscript>
+		<div id="notSupportedWrap">
+			<h2 id="notSupportedTitle">This content requires JavaScript</h2>
+			<p class="notSupportedMessage">JavaScript appears to be disabled. Please enable it to view this content.</p>
+		</div>
+	</noscript>
+</body>
+</html>

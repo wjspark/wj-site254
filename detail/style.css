@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 10px 10px 0;
+  font-family: Arial, sans-serif;
+  background-color: #5BA3F1;
+  font-size: 4vw;
+}
+
+.ad-section,
+.top-section,
+.play-section,
+.tips-section {
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 12px;
+}
+
+.play-section {
+  max-width: 480px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 25vh;
+  overflow: hidden;
+  border: none;
+  display: none;
+}
+
+.play-section iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.top-section {
+  display: flex;
+  background-color: #124f8f;
+  color: white;
+  padding: 16px 0;
+  margin-top: 0px;
+  margin-bottom: 8px;
+}
+
+.top-icon {
+  flex: 0 0 40%;
+  max-width: 80px;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background-color: transparent;
+  margin: 0;
+  padding-left: 2vw;
+  box-sizing: border-box;
+}
+
+.top-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+  display: block;
+}
+
+.game-info {
+  flex: 0 0 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-left: 20px;
+}
+
+.top-name {
+  margin: 0 0 1.5vw 0;
+  font-size: 16px;
+  line-height: 1.2;
+  word-break: break-word;
+  max-width: 280px;
+}
+
+.play-button {
+  width: 80%;
+  max-width: 200px;
+  height: 8vw;
+  max-height: 36px;
+  border: 2px solid white;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #e5e5e5;
+  margin: 0 auto;
+}
+
+.play-progress {
+  height: 100%;
+  width: 0%;
+  background-color: #10b981;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: width 8s linear;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.ad-section {
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  box-sizing: border-box;
+}
+
+.tips-section {
+  background-color: #124f8f;
+  color: white;
+  padding: 16px 0;
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+
+.tips-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: white;
+  margin: 10px 0 4px 0;
+}
+
+.tips-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tips-list li {
+  font-size: 12px;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+}
+
+.tips-list li strong {
+  color: #F28484;
+}
+

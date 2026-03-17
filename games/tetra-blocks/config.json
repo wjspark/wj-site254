@@ -1,0 +1,10 @@
+{
+	"Scoring": [100,300,500,800],
+	"MoveTime": {
+		"Start": 1.6,
+		"Min": 0.4,
+		"ReduceMoveTimeEveryXLines" : 20,
+		"ReduceTime" : 0.2
+	}
+		
+}

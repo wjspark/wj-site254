@@ -1,0 +1,130 @@
+{
+	"Loaded": true,
+	"InitCoins": 100,
+	"PlayOnPrice": 20,
+	"PlayOnAddBalls": 5,
+	"Boosters": {
+		"UnlockLevel": {
+			"Bomb": 5,
+			"Rainbow": 13,
+			"Lightning": 17,
+			"Rocket": 9
+		},
+		"Price": {
+			"Bomb": 20,
+			"Rainbow": 15,
+			"Lightning": 40,
+			"Rocket": 30
+		},
+		"InitCount": {
+			"Bomb": 1,
+			"Rainbow": 1,
+			"Lightning": 1,
+			"Rocket": 1
+		},
+		"Progress": {
+			"Bomb": 1.2,
+			"Rainbow": false,
+			"Lightning": false,
+			"Rocket": 0.7
+		}
+	},
+	"Scores": {
+		"NormalBubble": 20,
+		"NormalBubble_Drop": 200,
+		"RemainBubbles": 300
+	},
+	"StarsOnProgressBar": {
+		"1": 60,
+		"2": 75,
+		"3": 90
+	},
+	"GuideShow_Level": {
+		"1": "Simple Gameplay",
+		"2": "Reflection",
+		"3": "Change Ball",
+		"5": "Bomb",
+		"7": "Spider's Web",
+		"9": "Rocket",
+		"11": "Collect Gems",
+		"13": "Rainbow Ball",
+		"15": "Stone",
+		"17": "Lightning",
+		"19": "Bush",
+		"21": "White Bubble",
+		"23": "Little Fire",
+		"25": "Paint Bottle", 
+		"27": "Paint Bottle(Random)"
+	},
+	"Chest": {
+		"Stars": [
+			{
+				"Target": 8,
+				"Gifts": [
+					"20-Coins"
+				]
+			},
+			{
+				"Target": 15,
+				"Gifts": [
+					"10-Coins",
+					"1-Bomb",
+					"1-Lightning"
+					
+				]
+			},
+			{
+				"Target": 14,
+				"Gifts": [
+					"15-Coins",
+					"1-Rainbow",
+					"1-Rocket"
+				]
+			},
+			{
+				"Target": 15,
+				"Gifts": [
+					"1-Rainbow",
+					"1-Rocket",
+					"1-Lightning"
+				]
+			},
+			{
+				"Target": 15,
+				"Gifts": [
+					"5-Coins",
+					"2-Bomb",
+					"2-Rainbow"
+				]
+			}
+			
+		],
+		"Bubbles": [
+			{
+				"Target": 1000,
+				"Gifts": [
+					"25-Coins",
+					"1-Rainbow"
+				]
+			},
+			{
+				"Target": 1300,
+				"Gifts": [
+					"25-Coins",
+					"1-Bomb",
+					"1-Rocket"
+				]
+			},
+			{
+				"Target": 1500,
+				"Gifts": [
+					"25-Coins",
+					"1-Bomb",
+					"1-Rainbow",
+					"1-Rocket",
+					"1-Lightning"
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,204 @@
+{
+	"signInRewards": [
+		{
+			"id": 1,
+			"reward": 100
+		},
+		{
+			"id": 2,
+			"reward": 200
+		},
+		{
+			"id": 3,
+			"reward": 300
+		},
+		{
+			"id": 4,
+			"reward": 300
+		},
+		{
+			"id": 5,
+			"reward": 400
+		},
+		{
+			"id": 6,
+			"reward": 400
+		},
+		{
+			"id": 7,
+			"reward": 500
+		}
+	],
+	"adData":[
+		{"name":"全民打枪","appid":"wxa130ce97a4e25837","icon":"adIcon/app_icon144.png"},
+		{"name":"枪火工厂","appid":"wxa130ce97a4e25837","icon":"adIcon/icon003.jpg"},
+		{"name":"超级枪王","appid":"wxa130ce97a4e25837","icon":"adIcon/icon004.jpg"},
+		{"name":"王者枪皇","appid":"wxa130ce97a4e25837","icon":"adIcon/icon005.jpg"},
+		{"name":"抢手来了","appid":"wxa130ce97a4e25837","icon":"adIcon/qiangwangchuanqi.png"},
+		{"name":"神枪射击","appid":"wxa130ce97a4e25837","icon":"adIcon/zhijianqiangshen.png"}
+	],
+	"talentdata": [
+		{
+			"id": 1,
+			"name": "Discount",
+			"type": 1,
+			"level": 0,
+			"max":10,
+			"data":[-5,-10,-15,-20,-25,-30,-35,-40,-45,-50],
+			"tip":"Purchase",
+   			"icon":"talent/icon_tianfu_01.png",
+   			"colour":"57cb0a"
+		},
+		{
+			"id": 2,
+			"name": "Efficiency",
+			"type": 1,
+			"level": 0,
+			"max":10,
+			"data":[10,20,30,40,50,60,70,80,90,100],
+			"tip":"Max Offline Gain+",
+   			"icon":"talent/icon_tianfu_02.png",
+   			"colour":"57cb0a"
+		},
+		{
+			"id": 3,
+			"name": "Gains",
+			"type": 1,
+			"level": 0,
+			"max":10,
+			"data":[0.5,1,1.5,2,2.5,3,3.5,4,4.5,5],
+			"tip":"Highest Offline Gain+",
+   			"icon":"talent/icon_tianfu_03.png",
+   			"colour":"57cb0a"
+		},
+		{
+			"id": 4,
+			"name": "Coins",
+			"type": 2,
+			"level": 0,
+			"max":10,
+			"data":[50,100,150,200,250,300,350,400,450,500],
+			"tip":"Settlement",
+   			"icon":"talent/icon_tianfu_05.png",
+   			"colour":"47a9ee"
+		},
+		{
+			"id": 5,
+			"name": "Diamonds",
+			"type": 2,
+			"level": 0,
+			"max":10,
+			"data":[50,100,150,200,250,300,350,400,450,500],
+			"tip":"Gained in battle",
+   			"icon":"talent/icon_tianfu_04.png",
+   			"colour":"47a9ee"
+		},
+		{
+			"id": 6,
+			"name": "Time",
+			"type": 2,
+			"level": 0,
+			"max":4,
+			"data":[2,4,6,8,10],
+			"tip":"Time in Battle",
+   			"icon":"talent/icon_tianfu_06.png",
+   			"colour":"47a9ee"
+		},
+		{
+			"id": 7,
+			"name": "Strength",
+			"type": 3,
+			"level": 0,
+			"max":10,
+			"data":[5,10,15,20,25,30,35,40,45,50],
+			"tip":"Weapon Boost",
+   			"icon":"talent/icon_tianfu_07.png",
+   			"colour":"a824fc"
+		},
+		{
+			"id": 8,
+			"name": "Stopwatch",
+			"type": 3,
+			"level": 0,
+			"max":10,
+			"data":[-5,-10,-15,-20,-25,-30,-35,-40,-45,-50],
+			"tip":"Refresh Time",
+   			"icon":"talent/icon_tianfu_08.png",
+   			"colour":"a824fc"
+		},
+		{
+			"id": 9,
+			"name": "Lucky",
+			"type": 3,
+			"level": 0,
+			"max":10,
+			"data":[1,2,3,4,5,6,7,8,9,10],
+			"tip":"Upgrade event quality",
+   			"icon":"talent/icon_tianfu_09.png",
+   			"colour":"a824fc"
+		}
+	],
+	"randomData":[
+		{
+			"id":1,
+			"data":[{"type":7,"flag":0}]
+		},
+		{
+			"id":2,
+			"data":[{"type":6,"flag":0}]
+		},
+		{
+			"id":3,
+			"data":[{"type":4,"flag":0},{"type":5,"flag":0}]
+		},
+		{
+			"id":4,
+			"data":[{"type":2,"flag":0},{"type":4,"flag":0}]
+		},
+		{
+			"id":5,
+			"data":[{"type":1,"flag":0},{"type":3,"flag":0},{"type":5,"flag":0}]
+		},
+		{
+			"id":6,
+			"data":[{"type":4,"flag":0},{"type":1,"flag":0},{"type":6,"flag":0},{"type":2,"flag":0},{"type":3,"flag":0},{"type":7,"flag":0}]
+		},
+		{
+			"id":7,
+			"data":[{"type":4,"flag":0},{"type":1,"flag":0},{"type":6,"flag":0},{"type":2,"flag":0},{"type":3,"flag":0},{"type":5,"flag":0},{"type":7,"flag":0}]
+		},
+		{
+			"id":8,
+			"data":[{"type":4,"flag":0},{"type":1,"flag":0},{"type":2,"flag":0},{"type":3,"flag":0},{"type":5,"flag":0},{"type":7,"flag":0}]
+		},
+		{
+			"id":9,
+			"data":[{"type":4,"flag":0},{"type":6,"flag":0},{"type":1,"flag":0},{"type":2,"flag":0},{"type":3,"flag":0},{"type":5,"flag":0},{"type":7,"flag":0}]
+		},
+		{
+			"id":10,
+			"data":[{"type":4,"flag":0},{"type":1,"flag":0},{"type":2,"flag":0},{"type":3,"flag":0},{"type":5,"flag":0},{"type":7,"flag":0}]
+		},
+		{
+			"id":11,
+			"data":[{"type":4,"flag":0},{"type":1,"flag":0},{"type":2,"flag":0},{"type":3,"flag":0},{"type":5,"flag":0},{"type":7,"flag":0}]
+		},
+		{
+			"id":12,
+			"data":[{"type":4,"flag":0},{"type":1,"flag":0},{"type":2,"flag":0},{"type":3,"flag":0},{"type":5,"flag":0},{"type":7,"flag":0}]
+		},
+		{
+			"id":13,
+			"data":[{"type":4,"flag":0},{"type":1,"flag":0},{"type":2,"flag":0},{"type":3,"flag":0},{"type":5,"flag":0},{"type":7,"flag":0}]
+		},
+		{
+			"id":14,
+			"data":[{"type":1,"flag":0},{"type":2,"flag":0},{"type":3,"flag":0},{"type":5,"flag":0},{"type":7,"flag":0}]
+		}
+	],
+	"levelUp":[100,150,200,220,240,260,280,300,320,340,360,380,400,420,440,460,480,500,
+		500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,
+		500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,
+		500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,
+		500,500,500,500,500,500,500,500,500,500,500,500]
+}

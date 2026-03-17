@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Space Shooter</title>
+
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1, minimum-scale=1,maximum-scale=1" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- force webkit on 360 -->
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <!-- force edge on IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- force full screen on some browser -->
+    <meta name="full-screen" content="yes" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="360-fullscreen" content="true" />
+
+    <!-- force screen orientation on some browser -->
+    <meta name="screen-orientation" content="" />
+    <meta name="x5-orientation" content="">
+
+    <!--fix fireball/issues/3568 -->
+    <!--<meta name="browsermode" content="application">-->
+    <meta name="x5-page-mode" content="app">
+
+    <!--<link rel="apple-touch-icon" href=".png" />-->
+    <!--<link rel="apple-touch-icon-precomposed" href=".png" />-->
+
+    <link rel="stylesheet" type="text/css" href="style-mobile.css" />
+</head>
+
+<body>
+    <div id="ad-warning" style="overflow: hidden; word-break: break-all; overflow-wrap: break-word; font-family: Arial; padding: 10px; min-height: 20px; color: rgb(255, 255, 255); line-height: 20px; text-align: center; border-radius: 4px; position: fixed; top: 40%; left: 50%; transform: translate(-50%, -50%); z-index: 999999; background: rgba(0, 0, 0, 0.7); font-size: 18px; width: 280px; display: none; opacity: 0; transition: -webkit-transform 0.5s ease-in 0s, opacity 0.5s ease-in 0s;">No Available Video</div>
+
+    <canvas id="GameCanvas" oncontextmenu="event.preventDefault()" tabindex="0"></canvas>
+    <div id="splash">
+        <div class="progress-bar stripes">
+            <span style="width: 0%"></span>
+        </div>
+    </div>
+    
+    <script src="tga.min.js"></script>
+    <script src="ig/index.js"></script>
+    <script src="ig/platform-config.js"></script>
+    <script src="version.js"></script>
+    <script src="src/settings.js" charset="utf-8"></script>
+
+    <script src="main.js" charset="utf-8"></script>
+
+    <script type="text/javascript">
+        //传音广告
+        function loadLib(url) {
+            var script = document.createElement("script");
+            script.async = false;
+            script.src = url;
+            document.body.appendChild(script);
+        }
+
+        //  ---------------- 广告
+        window.success = null;
+        window.failure = null;
+
+        function showVideo(call) {
+            console.info("播放视频");
+            // call(true);//测试专用，测试完成请注释
+            window.success = call;
+            window.failure = call;
+            window.parent.postMessage({
+                "type": 2
+            }, '*');
+        }
+
+        function showInter() {
+            console.info("播放插屏");
+            window.parent.postMessage({
+                "type": 1
+            }, '*');
+        }
+
+        window.addEventListener("message", (e) => {
+            if (e.data == 1) {
+                if (window.success) window.success(true);
+            } else {
+                if (window.failure) window.failure(false);
+            }
+            window.success = null;
+            window.failure = null;
+        });
+    </script>
+    <script>
+        let adWarning = document.querySelector('#ad-warning');
+        function showRewardFail() {
+            adWarning.style.display = 'inline';
+            adWarning.style.opacity = '1';
+            setTimeout(() => {
+                adWarning.style.display = 'none';
+                adWarning.style.opacity = '0';
+            }, 1000)
+        }
+    </script>
+</body>
+
+</html>

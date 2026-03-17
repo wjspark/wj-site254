@@ -1,0 +1,59 @@
+{ "frames": {
+   "0": {
+    "frame": { "x": 1, "y": 1, "w": 116, "h": 192 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 19, "y": 27, "w": 116, "h": 192 },
+    "sourceSize": { "w": 153, "h": 233 },
+    "duration": 100
+   },
+   "1": {
+    "frame": { "x": 119, "y": 1, "w": 94, "h": 195 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 29, "y": 12, "w": 94, "h": 195 },
+    "sourceSize": { "w": 153, "h": 233 },
+    "duration": 100
+   },
+   "2": {
+    "frame": { "x": 215, "y": 1, "w": 100, "h": 219 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 32, "y": 0, "w": 100, "h": 219 },
+    "sourceSize": { "w": 153, "h": 233 },
+    "duration": 100
+   },
+   "3": {
+    "frame": { "x": 317, "y": 1, "w": 101, "h": 187 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 25, "y": 31, "w": 101, "h": 187 },
+    "sourceSize": { "w": 153, "h": 233 },
+    "duration": 100
+   },
+   "4": {
+    "frame": { "x": 420, "y": 1, "w": 90, "h": 213 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 32, "y": 0, "w": 90, "h": 213 },
+    "sourceSize": { "w": 153, "h": 233 },
+    "duration": 100
+   }
+ },
+ "meta": {
+  "app": "https://www.aseprite.org/",
+  "version": "1.2.33-x64",
+  "image": "fireball.png",
+  "format": "RGBA8888",
+  "size": { "w": 511, "h": 221 },
+  "scale": "1",
+  "frameTags": [
+   { "name": "fireball", "from": 0, "to": 4, "direction": "forward" }
+  ],
+  "layers": [
+   { "name": "Layer", "opacity": 255, "blendMode": "normal" }
+  ],
+  "slices": [
+  ]
+ }
+}

@@ -1,0 +1,124 @@
+{
+	"Boosters": {
+		"Shuffle": {
+			"UnlockLevel": 3,
+			"Count": 3
+		},
+		"Hint": {
+			"UnlockLevel": 5,
+			"Count": 3
+		},
+		"Undo": {
+			"UnlockLevel": 8,
+			"Count": -1
+		}	
+	},
+
+	"General": {
+		"DarknessPercent": 0.6,
+		"ScorePerMatch": 10,
+		"FirstSeasonTilesLevel": 10,
+		"FirstFlowerTilesLevel": 11
+	},
+	
+	"Levels": [
+		{
+			"StartLevel": 1,
+			"Board": {
+				"Width": 3,
+				"Height": 4
+			},
+			"MaxLayers": 2,
+			"DelBaseLayer": true,
+			"DelPercent": [0.4, 0.6],
+			"SeasonTilesChance": 0,
+			"FlowerTilesChance": 0
+		},
+		{
+			"StartLevel": 2,
+			"Board": {
+				"Width": 4,
+				"Height": 4
+			},
+			"MaxLayers": 2,
+			"DelBaseLayer": true,
+			"DelPercent": [0.4, 0.6],
+			"SeasonTilesChance": 0,
+			"FlowerTilesChance": 0
+		},
+		{
+			"StartLevel": 10,
+			"Board": {
+				"Width": 4,
+				"Height": 5
+			},
+			"MaxLayers": 3,
+			"DelBaseLayer": true,
+			"DelPercent": [0.4, 0.6],
+			"SeasonTilesChance": 0.3,
+			"FlowerTilesChance": 0.3
+		},
+		{
+			"StartLevel": 20,
+			"Board": {
+				"Width": [4,5],
+				"Height": 5
+			},
+			"MaxLayers": 3,
+			"DelBaseLayer": true,
+			"DelPercent": [0.4, 0.6],
+			"SeasonTilesChance": 0.3,
+			"FlowerTilesChance": 0.3
+		},
+		{
+			"StartLevel": 40,
+			"Board": {
+				"Width": [4,5],
+				"Height": 5
+			},
+			"MaxLayers": 4,
+			"DelBaseLayer": true,
+			"DelPercent": [0.4, 0.6],
+			"SeasonTilesChance": 0.3,
+			"FlowerTilesChance": 0.3
+		},
+		{
+			"StartLevel": 60,
+			"Board": {
+				"Width": [4,6],
+				"Height": [5,6]
+			},
+			"MaxLayers": 4,
+			"DelBaseLayer": true,
+			"DelPercent": [0.4, 0.6],
+			"SeasonTilesChance": 0.4,
+			"FlowerTilesChance": 0.4
+		},
+		{
+			"StartLevel": 200,
+			"Board": {
+				"Width": [4,6],
+				"Height": [5,6]
+			},
+			"MaxLayers": [4,5],
+			"DelBaseLayer": true,
+			"DelPercent": [0.3, 0.8],
+			"SeasonTilesChance": 0.4,
+			"FlowerTilesChance": 0.4
+		},
+		{
+			"StartLevel": 250,
+			"Board": {
+				"Width": [4,6],
+				"Height": [5,7]
+			},
+			"MaxLayers": [4,6],
+			"DelBaseLayer": true,
+			"DelPercent": [0.3, 0.7],
+			"SeasonTilesChance": 0.4,
+			"FlowerTilesChance": 0.4
+		}
+	]
+	
+	
+}

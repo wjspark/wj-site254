@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<font>
+  <info face="Arial" size="32" bold="0" italic="0" charset="" unicode="1" stretchH="100" smooth="1" aa="1" padding="0,0,0,0" spacing="1,1" outline="0"/>
+  <common lineHeight="32" base="26" scaleW="128" scaleH="128" pages="1" packed="0" alphaChnl="0" redChnl="4" greenChnl="4" blueChnl="4"/>
+  <pages>
+    <page id="0" file="font_num.png" />
+  </pages>
+  <chars count="22">
+		<char id="48" x="49" y="48" width="15" height="19" xoffset="0" yoffset="2" xadvance="15" /><!-- 0 -->
+		<char id="49" x="81" y="0" width="11" height="19" xoffset="0" yoffset="2" xadvance="11" /><!-- 1 -->
+		<char id="50" x="73" y="21" width="14" height="19" xoffset="0" yoffset="2" xadvance="14" /><!-- 2 -->
+		<char id="51" x="81" y="41" width="14" height="20" xoffset="0" yoffset="2" xadvance="14" /><!-- 3 -->
+		<char id="52" x="65" y="68" width="15" height="19" xoffset="0" yoffset="2" xadvance="15" /><!-- 4 -->
+		<char id="53" x="81" y="62" width="13" height="19" xoffset="0" yoffset="2" xadvance="13" /><!-- 5 -->
+		<char id="54" x="65" y="48" width="15" height="19" xoffset="0" yoffset="2" xadvance="15" /><!-- 6 -->
+		<char id="55" x="66" y="0" width="14" height="20" xoffset="0" yoffset="2" xadvance="14" /><!-- 7 -->
+		<char id="56" x="50" y="0" width="15" height="19" xoffset="0" yoffset="2" xadvance="15" /><!-- 8 -->
+		<char id="57" x="49" y="68" width="15" height="20" xoffset="0" yoffset="2" xadvance="15" /><!-- 9 -->
+		<char id="120" x="81" y="82" width="12" height="13" xoffset="0" yoffset="8" xadvance="12" /><!-- x -->
+		<char id="38075" x="0" y="24" width="24" height="23" xoffset="0" yoffset="0" xadvance="24" /><!-- 钻 -->
+		<char id="30707" x="25" y="72" width="23" height="21" xoffset="0" yoffset="2" xadvance="23" /><!-- 石 -->
+		<char id="34917" x="25" y="0" width="24" height="23" xoffset="0" yoffset="0" xadvance="24" /><!-- 补 -->
+		<char id="32473" x="0" y="72" width="24" height="23" xoffset="0" yoffset="0" xadvance="24" /><!-- 给 -->
+		<char id="21253" x="25" y="48" width="23" height="23" xoffset="0" yoffset="0" xadvance="23" /><!-- 包 -->
+		<char id="25903" x="49" y="24" width="23" height="23" xoffset="0" yoffset="0" xadvance="23" /><!-- 支 -->
+		<char id="25588" x="0" y="48" width="24" height="23" xoffset="0" yoffset="0" xadvance="24" /><!-- 援 -->
+		<char id="25112" x="25" y="24" width="23" height="23" xoffset="0" yoffset="0" xadvance="23" /><!-- 战 -->
+		<char id="26426" x="0" y="0" width="24" height="23" xoffset="0" yoffset="0" xadvance="24" /><!-- 机 -->
+		<char id="32" x="0" y="0" width="0" height="0" xoffset="0" yoffset="0" xadvance="20" /><!--   -->
+		<char id="9" x="0" y="0" width="0" height="0" xoffset="0" yoffset="0" xadvance="160" /><!-- 	 -->
+  
+  
+  </chars>
+</font>

@@ -1,0 +1,20 @@
+{
+	"Boosters":
+	{
+		"Bomb":
+		{
+			"Price":250,
+			"Inventory":3
+		},
+		"Gravity":
+		{
+			"Price":300,
+			"Inventory":3
+		},
+		"Refresh":
+		{
+			"Price":150,
+			"Inventory":3
+		}
+	}
+}

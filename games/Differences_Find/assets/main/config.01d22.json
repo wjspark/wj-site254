@@ -1,0 +1,24 @@
+{
+    "paths": {},
+    "types": [],
+    "uuids": ["7exbYnA3dDY4roZJqTuMrm", "66JprG6uhLLakxTW1sn6HY", "88/JyfFZ1GL5rG4Waf2cWF", "c0YdpS5TdGVa0lb9+SJ1KI", "d1PlhT1gxCs6ILZkm03iWx", "c8FQ3qwg1ALp/fIxtI/eCk", "d6dzDT9ipB27joU4yWeiqR", "ce9TTqT+FKlbOhBhyqFCKJ", "31GO7Fm3xI6pWqA25BOv6W", "ecpdLyjvZBwrvm+cedCcQy", "c7pANprqxIcrEuAldXxr4r", "7a/QZLET9IDreTiBfRn2PD", "b3ulTDCPRKVZvVwXl0Mn2v", "cfgFz1VnVAhoofXoNJhsaF", "6dzjIJXWhH4ovsR9qIU7ZO", "5bLsrU8LlM45YFCcN9IJ27", "39nv8M8edJGIruePTqX5tz", "79AwSg+YhAv7B4ZCjvQ6In", "4dQknw9exP7JP+mX87Db+5", "9d50nWjBtE6YuRNw9AOWoE", "a2MjXRFdtLlYQ5ouAFv/+R", "acOqRaRPZO/rmHrxSwpPQn", "5f3XYUqHZOVpQ5yspfY9pS", "78fRNh1CdCmZK6RoiIMc1t", "29DZ0yEFtHNZGPhzNLZ02S", "3aaRurK0FAJojFz2WBPzb2", "ca6IIIiBlGwqxLIhrf5Q4L", "b1RQqZmKpGh73u3QI2sQFE", "3bz1yx/6RDy7ioTfNbyBcN", "94kzQCgohGY71V3bMruFgY", "08JNAK2BRFhb9McZSGq3fI", "14r1UwCl5HabfPt6GyERM7", "achsQpdTdKlr7HmW9a9i25"],
+    "scenes": {
+        "db://assets/Scene/GameScene.fire": 0
+    },
+    "redirect": [9, 0, 11, 0, 12, 1, 17, 1, 20, 1, 22, 1, 23, 1, 24, 1, 25, 1, 26, 1, 27, 1, 28, 1, 29, 1, 30, 1, 31, 1, 32, 1],
+    "deps": ["internal", "resources"],
+    "packs": {
+        "0d66fe204": [16, 18, 15, 14, 0, 19, 21, 10, 13],
+        "0b1d61533": [8, 1, 2, 3, 5, 7, 4, 6]
+    },
+    "name": "main",
+    "importBase": "import",
+    "nativeBase": "native",
+    "debug": false,
+    "isZip": false,
+    "encrypted": false,
+    "versions": {
+        "import": ["0b1d61533", "fc990", "0d66fe204", "eb135"],
+        "native": [8, "67cea", 1, "28ba0", 2, "3c8be", 3, "5466e", 5, "b9fb3", 7, "bfe0a", 4, "25bda", 6, "16d72"]
+    }
+}

@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<font>
+  <info face="Arial" size="32" bold="0" italic="0" charset="" unicode="1" stretchH="100" smooth="1" aa="1" padding="0,0,0,0" spacing="1,1" outline="0"/>
+  <common lineHeight="32" base="26" scaleW="128" scaleH="128" pages="1" packed="0" alphaChnl="0" redChnl="4" greenChnl="4" blueChnl="4"/>
+  <pages>
+    <page id="0" file="font_num.png" />
+  </pages>
+  <chars count="35">
+	<char id="30456" x="80" y="76" width="25" height="24" xoffset="0" yoffset="0" xadvance="22" /><!-- 相 -->
+		<char id="20301" x="54" y="74" width="25" height="25" xoffset="0" yoffset="-1" xadvance="22" /><!-- 位 -->
+		<char id="36716" x="0" y="25" width="26" height="24" xoffset="0" yoffset="0" xadvance="23" /><!-- 转 -->
+		<char id="31227" x="55" y="0" width="25" height="24" xoffset="0" yoffset="0" xadvance="22" /><!-- 移 -->
+		<char id="37327" x="0" y="50" width="26" height="23" xoffset="0" yoffset="0" xadvance="23" /><!-- 量 -->
+		<char id="23376" x="81" y="25" width="24" height="23" xoffset="0" yoffset="0" xadvance="21" /><!-- 子 -->
+		<char id="31435" x="0" y="99" width="26" height="24" xoffset="0" yoffset="-1" xadvance="23" /><!-- 立 -->
+		<char id="22330" x="80" y="101" width="25" height="23" xoffset="0" yoffset="0" xadvance="22" /><!-- 场 -->
+		<char id="21327" x="81" y="0" width="24" height="24" xoffset="0" yoffset="-1" xadvance="21" /><!-- 协 -->
+		<char id="21516" x="0" y="74" width="26" height="24" xoffset="0" yoffset="0" xadvance="23" /><!-- 同 -->
+		<char id="20316" x="27" y="77" width="26" height="25" xoffset="0" yoffset="-1" xadvance="21" /><!-- 作 -->
+		<char id="25112" x="54" y="25" width="26" height="25" xoffset="0" yoffset="0" xadvance="23" /><!-- 战 -->
+		<char id="35013" x="28" y="0" width="26" height="24" xoffset="0" yoffset="0" xadvance="23" /><!-- 装 -->
+		<char id="30002" x="80" y="51" width="25" height="24" xoffset="0" yoffset="1" xadvance="22" /><!-- 甲 -->
+		<char id="20462" x="54" y="100" width="25" height="24" xoffset="0" yoffset="1" xadvance="22" /><!-- 修 -->
+		<char id="22797" x="27" y="51" width="26" height="25" xoffset="0" yoffset="0" xadvance="23" /><!-- 复 -->
+		<char id="21306" x="54" y="51" width="25" height="22" xoffset="0" yoffset="2" xadvance="22" /><!-- 区 -->
+		<char id="22495" x="0" y="0" width="27" height="24" xoffset="0" yoffset="0" xadvance="24" /><!-- 域 -->
+		<char id="36720" x="27" y="103" width="26" height="25" xoffset="0" yoffset="0" xadvance="23" /><!-- 轰 -->
+		<char id="28856" x="27" y="25" width="26" height="25" xoffset="0" yoffset="0" xadvance="23" /><!-- 炸 -->
+		<char id="108" x="126" y="0" width="12" height="23" xoffset="0" yoffset="1" xadvance="9" /><!-- l -->
+		<char id="118" x="54" y="125" width="17" height="18" xoffset="0" yoffset="6" xadvance="14" /><!-- v -->
+		<char id="48" x="106" y="47" width="18" height="23" xoffset="0" yoffset="1" xadvance="15" /><!-- 0 -->
+		<char id="49" x="125" y="119" width="14" height="23" xoffset="0" yoffset="1" xadvance="11" /><!-- 1 -->
+		<char id="50" x="106" y="0" width="19" height="23" xoffset="0" yoffset="1" xadvance="16" /><!-- 2 -->
+		<char id="51" x="106" y="94" width="18" height="23" xoffset="0" yoffset="1" xadvance="15" /><!-- 3 -->
+		<char id="52" x="106" y="118" width="18" height="23" xoffset="0" yoffset="1" xadvance="15" /><!-- 4 -->
+		<char id="53" x="106" y="24" width="19" height="22" xoffset="0" yoffset="2" xadvance="16" /><!-- 5 -->
+		<char id="54" x="125" y="71" width="18" height="23" xoffset="0" yoffset="1" xadvance="15" /><!-- 6 -->
+		<char id="55" x="106" y="71" width="18" height="22" xoffset="0" yoffset="2" xadvance="15" /><!-- 7 -->
+		<char id="56" x="125" y="47" width="18" height="23" xoffset="0" yoffset="1" xadvance="15" /><!-- 8 -->
+		<char id="57" x="125" y="95" width="18" height="23" xoffset="0" yoffset="1" xadvance="15" /><!-- 9 -->
+		<char id="46" x="0" y="124" width="9" height="9" xoffset="0" yoffset="15" xadvance="6" /><!-- . -->
+		<char id="32" x="0" y="0" width="0" height="0" xoffset="0" yoffset="0" xadvance="20" /><!--   -->
+		<char id="9" x="0" y="0" width="0" height="0" xoffset="0" yoffset="0" xadvance="160" /><!-- 	 -->
+  
+  
+  </chars>
+</font>

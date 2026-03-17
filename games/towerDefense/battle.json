@@ -1,0 +1,6497 @@
+{
+	"type": "Scene",
+	"props": {
+		"width": 640,
+		"height": 1136
+	},
+	"compId": 2,
+	"child": [
+		{
+			"type": "Image",
+			"props": {
+				"var": "_bg",
+				"centerY": 0.5,
+				"centerX": 0.5,
+				"anchorY": 0.5,
+				"anchorX": 0.5
+			},
+			"compId": 3
+		},
+		{
+			"type": "Image",
+			"props": {
+				"width": 478,
+				"var": "_mesh",
+				"height": 752,
+				"centerY": 33,
+				"centerX": 0,
+				"anchorY": 0.5,
+				"anchorX": 0.5,
+				"alpha": 0.5
+			},
+			"compId": 155
+		},
+		{
+			"type": "Image",
+			"props": {
+				"width": 478,
+				"var": "_Point",
+				"rotation": 0,
+				"height": 752,
+				"centerY": 33,
+				"centerX": 0,
+				"anchorY": 0.5,
+				"anchorX": 0.5,
+				"alpha": 1
+			},
+			"compId": 895
+		},
+		{
+			"type": "Box",
+			"props": {
+				"y": 601,
+				"x": 320,
+				"width": 478,
+				"var": "_tower",
+				"height": 752,
+				"centerY": 33,
+				"centerX": 0,
+				"anchorY": 0.5,
+				"anchorX": 0.5
+			},
+			"compId": 34
+		},
+		{
+			"type": "Box",
+			"props": {
+				"y": 601,
+				"x": 320,
+				"width": 478,
+				"var": "_bullet",
+				"height": 752,
+				"centerY": 33,
+				"centerX": 0,
+				"anchorY": 0.5,
+				"anchorX": 0.5
+			},
+			"compId": 1010
+		},
+		{
+			"type": "Box",
+			"props": {
+				"width": 478,
+				"var": "_monster",
+				"height": 752,
+				"centerY": 34,
+				"centerX": 1,
+				"anchorY": 0.5,
+				"anchorX": 0.5
+			},
+			"compId": 32
+		},
+		{
+			"type": "Box",
+			"props": {
+				"width": 478,
+				"var": "_air",
+				"height": 752,
+				"centerY": 33,
+				"centerX": 3,
+				"anchorY": 0.5,
+				"anchorX": 0.5
+			},
+			"compId": 125
+		},
+		{
+			"type": "Box",
+			"props": {
+				"width": 478,
+				"var": "_effect",
+				"height": 752,
+				"centerY": 33,
+				"centerX": 0,
+				"anchorY": 0.5,
+				"anchorX": 0.5
+			},
+			"compId": 896
+		},
+		{
+			"type": "Box",
+			"props": {
+				"width": 640,
+				"var": "_build_buff",
+				"height": 1136
+			},
+			"compId": 905
+		},
+		{
+			"type": "Box",
+			"props": {
+				"width": 478,
+				"var": "_path",
+				"hitTestPrior": false,
+				"height": 752,
+				"centerY": 32,
+				"centerX": 0,
+				"anchorY": 0.5,
+				"anchorX": 0.5
+			},
+			"compId": 5,
+			"child": [
+				{
+					"type": "Box",
+					"props": {
+						"y": 382,
+						"x": 239,
+						"width": 640,
+						"var": "_build_bg",
+						"hitTestPrior": false,
+						"height": 1136,
+						"centerY": 6,
+						"centerX": 0,
+						"anchorY": 0.5,
+						"anchorX": 0.5
+					},
+					"compId": 66
+				},
+				{
+					"type": "Image",
+					"props": {
+						"var": "btn_pause",
+						"top": 209,
+						"skin": "image/ui/pause.png",
+						"left": -70
+					},
+					"compId": 136
+				},
+				{
+					"type": "Image",
+					"props": {
+						"var": "btn_speed",
+						"top": 285,
+						"skin": "image/ui/speed.png",
+						"left": -70
+					},
+					"compId": 135
+				},
+				{
+					"type": "Image",
+					"props": {
+						"var": "btn_setting",
+						"top": 129,
+						"skin": "image/ui/setting1.png",
+						"rotation": 0,
+						"left": -70
+					},
+					"compId": 208
+				},
+				{
+					"type": "Image",
+					"props": {
+						"var": "btn_buff",
+						"skin": "image/ui/buff_icon.png",
+						"right": -63,
+						"name": "btn_buff",
+						"bottom": 277
+					},
+					"compId": 897,
+					"child": [
+						{
+							"type": "Image",
+							"props": {
+								"y": 83,
+								"x": -4,
+								"var": "buff_text",
+								"skin": "image/ui/buff_number.png"
+							},
+							"compId": 898
+						},
+						{
+							"type": "Image",
+							"props": {
+								"y": 0,
+								"x": 0,
+								"var": "_buff_bg2",
+								"skin": "image/ui/buff_icon.png"
+							},
+							"compId": 902
+						},
+						{
+							"type": "Image",
+							"props": {
+								"y": 0,
+								"x": 0,
+								"var": "buff_bg",
+								"skin": "image/ui/buff_icon.png"
+							},
+							"compId": 901
+						},
+						{
+							"type": "Image",
+							"props": {
+								"y": 46,
+								"x": -14.5,
+								"visible": true,
+								"var": "buff_ads",
+								"skin": "image/ui/buff_ads.png",
+								"name": "buff_ads"
+							},
+							"compId": 900
+						},
+						{
+							"type": "Label",
+							"props": {
+								"y": 22,
+								"x": 5.5,
+								"width": 67,
+								"var": "buff_time_lable",
+								"underlineColor": "#ffffff",
+								"text": "60",
+								"strokeColor": "#000000",
+								"stroke": 4,
+								"height": 24,
+								"fontSize": 40,
+								"color": "#ffffff",
+								"align": "center"
+							},
+							"compId": 906
+						}
+					]
+				},
+				{
+					"type": "Image",
+					"props": {
+						"var": "_prop0",
+						"skin": "image/main/ss.png",
+						"right": -70,
+						"centerY": 184
+					},
+					"compId": 455,
+					"child": [
+						{
+							"type": "Image",
+							"props": {
+								"var": "btn_item1",
+								"skin": "image/main/55_1.png",
+								"centerY": 0,
+								"centerX": 0
+							},
+							"compId": 137
+						},
+						{
+							"type": "Image",
+							"props": {
+								"y": 48,
+								"x": 46,
+								"visible": false,
+								"var": "_GK1",
+								"skin": "image/main/kanshipin.png",
+								"centerY": 0,
+								"centerX": 0,
+								"anchorY": 0.5,
+								"anchorX": 0.5
+							},
+							"compId": 823
+						},
+						{
+							"type": "Label",
+							"props": {
+								"y": -5,
+								"x": 0,
+								"width": 43,
+								"valign": "middle",
+								"text": "Bomb",
+								"strokeColor": "#57616B",
+								"stroke": 2,
+								"height": 29,
+								"fontSize": 24,
+								"font": "Microsoft YaHei",
+								"color": "#fffced",
+								"bold": true,
+								"align": "center"
+							},
+							"compId": 560
+						},
+						{
+							"type": "Image",
+							"props": {
+								"y": 77,
+								"x": 9,
+								"width": 72,
+								"var": "_prop_bg1",
+								"skin": "image/main/19.png",
+								"scaleY": 1,
+								"scaleX": 1,
+								"height": 35
+							},
+							"compId": 741
+						},
+						{
+							"type": "Label",
+							"props": {
+								"y": 83,
+								"x": 19,
+								"width": 54,
+								"var": "_lable_num_item1",
+								"valign": "middle",
+								"text": "20",
+								"stroke": 0,
+								"height": 18,
+								"fontSize": 18,
+								"color": "#fffced",
+								"bold": true,
+								"align": "center"
+							},
+							"compId": 456
+						},
+						{
+							"type": "Image",
+							"props": {
+								"y": 81,
+								"x": 0.5,
+								"width": 31,
+								"var": "_prop_diamond_0",
+								"skin": "image/main/Jewels.png",
+								"height": 24
+							},
+							"compId": 1103
+						}
+					]
+				},
+				{
+					"type": "Image",
+					"props": {
+						"visible": false,
+						"var": "_prop2",
+						"skin": "image/main/ss.png",
+						"right": -70,
+						"centerY": 307
+					},
+					"compId": 458,
+					"child": [
+						{
+							"type": "Image",
+							"props": {
+								"var": "btn_item3",
+								"skin": "image/main/32_1.png",
+								"centerY": 3,
+								"centerX": 0
+							},
+							"compId": 139
+						},
+						{
+							"type": "Image",
+							"props": {
+								"visible": false,
+								"var": "_GK3",
+								"skin": "image/main/kanshipin.png",
+								"centerY": 3,
+								"centerX": 0,
+								"anchorY": 0.5,
+								"anchorX": 0.5
+							},
+							"compId": 824
+						},
+						{
+							"type": "Label",
+							"props": {
+								"y": -1,
+								"x": 5,
+								"width": 80,
+								"valign": "middle",
+								"text": "Light Tower",
+								"strokeColor": "#4C3D36",
+								"stroke": 1,
+								"height": 29,
+								"fontSize": 24,
+								"font": "Microsoft YaHei",
+								"color": "#fffced",
+								"bold": true,
+								"align": "center"
+							},
+							"compId": 562
+						},
+						{
+							"type": "Image",
+							"props": {
+								"y": 80,
+								"x": 9,
+								"width": 72,
+								"skin": "image/main/19.png",
+								"scaleY": 1,
+								"scaleX": 1,
+								"height": 35
+							},
+							"compId": 743
+						},
+						{
+							"type": "Label",
+							"props": {
+								"y": 85,
+								"x": 19,
+								"width": 54,
+								"var": "_lable_num_item3",
+								"valign": "middle",
+								"text": "20",
+								"stroke": 0,
+								"height": 18,
+								"fontSize": 18,
+								"color": "#fffced",
+								"bold": true,
+								"align": "center"
+							},
+							"compId": 460
+						}
+					]
+				},
+				{
+					"type": "Image",
+					"props": {
+						"var": "_prop1",
+						"skin": "image/main/ss.png",
+						"right": -70,
+						"centerY": 307
+					},
+					"compId": 457,
+					"child": [
+						{
+							"type": "Image",
+							"props": {
+								"var": "btn_item2",
+								"skin": "image/main/31_1.png",
+								"centerY": 1,
+								"centerX": 0
+							},
+							"compId": 138
+						},
+						{
+							"type": "Image",
+							"props": {
+								"visible": false,
+								"var": "_GK2",
+								"skin": "image/main/kanshipin.png",
+								"centerY": 1,
+								"centerX": 0,
+								"anchorY": 0.5,
+								"anchorX": 0.5
+							},
+							"compId": 825
+						},
+						{
+							"type": "Label",
+							"props": {
+								"y": -4,
+								"x": 0,
+								"width": 43,
+								"valign": "middle",
+								"text": "Frozen",
+								"strokeColor": "#4C3D36",
+								"stroke": 1,
+								"height": 29,
+								"fontSize": 24,
+								"font": "Microsoft YaHei",
+								"color": "#fffced",
+								"bold": true,
+								"align": "center"
+							},
+							"compId": 561
+						},
+						{
+							"type": "Image",
+							"props": {
+								"y": 78,
+								"x": 9,
+								"width": 72,
+								"var": "_prop_ng2",
+								"skin": "image/main/19.png",
+								"scaleY": 1,
+								"scaleX": 1,
+								"height": 35
+							},
+							"compId": 742
+						},
+						{
+							"type": "Label",
+							"props": {
+								"y": 84,
+								"x": 19,
+								"width": 54,
+								"var": "_lable_num_item2",
+								"valign": "middle",
+								"text": "20",
+								"stroke": 0,
+								"height": 18,
+								"fontSize": 18,
+								"color": "#fffced",
+								"bold": true,
+								"align": "center"
+							},
+							"compId": 459
+						},
+						{
+							"type": "Image",
+							"props": {
+								"y": 81,
+								"x": 0.5,
+								"width": 31,
+								"var": "_prop_diamond_1",
+								"skin": "image/main/Jewels.png",
+								"height": 24
+							},
+							"compId": 1104
+						}
+					]
+				},
+				{
+					"type": "Image",
+					"props": {
+						"y": 244,
+						"x": 306,
+						"visible": false,
+						"var": "_build_ui",
+						"skin": "image/ui/select1.png",
+						"anchorY": 0.5,
+						"anchorX": 0.5
+					},
+					"compId": 118
+				},
+				{
+					"type": "Box",
+					"props": {
+						"y": 53,
+						"x": 158,
+						"width": 1,
+						"visible": false,
+						"var": "_ui_tower",
+						"height": 1
+					},
+					"compId": 54,
+					"child": [
+						{
+							"type": "Image",
+							"props": {
+								"var": "_sp",
+								"skin": "image/ui/choose.png",
+								"scaleY": 1,
+								"scaleX": 1,
+								"centerY": 2,
+								"centerX": -4,
+								"anchorY": 0.5,
+								"anchorX": 0.5,
+								"alpha": 0.5
+							},
+							"compId": 55,
+							"child": [
+								{
+									"type": "Image",
+									"props": {
+										"width": 211,
+										"skin": "image/ui/choose2.png",
+										"scaleX": 1,
+										"height": 120,
+										"centerY": -43,
+										"centerX": 0,
+										"anchorY": 0.5,
+										"anchorX": 0.5,
+										"alpha": 0.5
+									},
+									"compId": 555
+								}
+							]
+						},
+						{
+							"type": "Button",
+							"props": {
+								"var": "btn_levelup",
+								"stateNum": 1,
+								"skin": "image/ui/levelup.png",
+								"scaleY": 1,
+								"scaleX": 1,
+								"centerY": -1,
+								"centerX": 74,
+								"anchorY": 0.5,
+								"anchorX": 0.5
+							},
+							"compId": 56,
+							"child": [
+								{
+									"type": "Image",
+									"props": {
+										"y": 50,
+										"x": -2,
+										"skin": "image/main/19_1.png"
+									},
+									"compId": 644
+								},
+								{
+									"type": "Label",
+									"props": {
+										"y": 54,
+										"x": 8,
+										"width": 54,
+										"var": "lab_levelup",
+										"valign": "middle",
+										"text": "$100",
+										"strokeColor": "#48160E",
+										"stroke": 2,
+										"height": 21,
+										"fontSize": 20,
+										"font": "Helvetica",
+										"color": "#868686",
+										"bold": true,
+										"align": "center"
+									},
+									"compId": 149
+								}
+							]
+						},
+						{
+							"type": "Button",
+							"props": {
+								"var": "btn_sell",
+								"stateNum": 1,
+								"skin": "image/ui/sell.png",
+								"scaleY": 1,
+								"scaleX": 1,
+								"centerY": -1,
+								"centerX": -83,
+								"anchorY": 0.5,
+								"anchorX": 0.5
+							},
+							"compId": 57,
+							"child": [
+								{
+									"type": "Image",
+									"props": {
+										"y": 51,
+										"x": -2,
+										"skin": "image/main/19_1.png"
+									},
+									"compId": 645
+								},
+								{
+									"type": "Label",
+									"props": {
+										"y": 53,
+										"x": 5,
+										"width": 58,
+										"var": "lab_sell",
+										"valign": "middle",
+										"text": "$100",
+										"strokeColor": "#48160E",
+										"stroke": 2,
+										"height": 25,
+										"fontSize": 20,
+										"font": "Helvetica",
+										"color": "#FEE47E",
+										"bold": true,
+										"align": "center"
+									},
+									"compId": 150
+								}
+							]
+						},
+						{
+							"type": "Image",
+							"props": {
+								"visible": false,
+								"var": "btn_help",
+								"skin": "image/ui/help.png",
+								"scaleY": 1,
+								"scaleX": 1,
+								"centerY": -72,
+								"centerX": -4
+							},
+							"compId": 120
+						},
+						{
+							"type": "Image",
+							"props": {
+								"visible": false,
+								"var": "_tips_2",
+								"skin": "image/main/tips.png",
+								"centerY": 7,
+								"centerX": 0
+							},
+							"compId": 597,
+							"child": [
+								{
+									"type": "Image",
+									"props": {
+										"y": 53,
+										"x": 38,
+										"skin": "image/main/towernameback.png"
+									},
+									"compId": 598
+								},
+								{
+									"type": "Image",
+									"props": {
+										"y": -8,
+										"x": 145,
+										"skin": "image/main/tips_tower.png"
+									},
+									"compId": 721
+								},
+								{
+									"type": "Image",
+									"props": {
+										"y": 51,
+										"x": 148,
+										"skin": "image/main/tipsnei1.png"
+									},
+									"compId": 599,
+									"child": [
+										{
+											"type": "Image",
+											"props": {
+												"y": 103.5,
+												"x": 0,
+												"skin": "image/main/tipsnei4.png"
+											},
+											"compId": 719
+										},
+										{
+											"type": "Image",
+											"props": {
+												"y": 158,
+												"x": 0,
+												"skin": "image/main/tipsnei3.png"
+											},
+											"compId": 722
+										},
+										{
+											"type": "Image",
+											"props": {
+												"y": 110,
+												"x": 133,
+												"var": "atack2_fire1",
+												"skin": "image/main/Firenum.png",
+												"alpha": 0
+											},
+											"compId": 600
+										},
+										{
+											"type": "Image",
+											"props": {
+												"y": 110,
+												"x": 153,
+												"var": "atack2_fire2",
+												"skin": "image/main/Firenum.png",
+												"alpha": 0
+											},
+											"compId": 601
+										},
+										{
+											"type": "Image",
+											"props": {
+												"y": 110,
+												"x": 173,
+												"var": "atack2_fire3",
+												"skin": "image/main/Firenum.png",
+												"alpha": 0
+											},
+											"compId": 602
+										},
+										{
+											"type": "Image",
+											"props": {
+												"y": 175,
+												"x": 122,
+												"skin": "image/main/lineviewK.png"
+											},
+											"compId": 603,
+											"child": [
+												{
+													"type": "Image",
+													"props": {
+														"y": 0,
+														"x": 17,
+														"skin": "image/main/lineviewK.png"
+													},
+													"compId": 604
+												},
+												{
+													"type": "Image",
+													"props": {
+														"y": 0,
+														"x": 34,
+														"skin": "image/main/lineviewK.png"
+													},
+													"compId": 605
+												},
+												{
+													"type": "Image",
+													"props": {
+														"y": 0,
+														"x": 51,
+														"skin": "image/main/lineviewK.png"
+													},
+													"compId": 606
+												}
+											]
+										}
+									]
+								},
+								{
+									"type": "Label",
+									"props": {
+										"y": 53,
+										"width": 110,
+										"var": "_title_tips_2",
+										"valign": "middle",
+										"text": "Tower Name",
+										"strokeColor": "#7D4D15",
+										"stroke": 2,
+										"height": 24,
+										"fontSize": 20,
+										"color": "#ffffff",
+										"centerX": -125,
+										"align": "center"
+									},
+									"compId": 607
+								},
+								{
+									"type": "Image",
+									"props": {
+										"y": 226,
+										"x": 322,
+										"var": "tower2_range4",
+										"skin": "image/main/lineviewN.png",
+										"alpha": 0
+									},
+									"compId": 608
+								},
+								{
+									"type": "Image",
+									"props": {
+										"y": 226,
+										"x": 305,
+										"var": "tower2_range3",
+										"skin": "image/main/lineviewN.png",
+										"alpha": 0
+									},
+									"compId": 609
+								},
+								{
+									"type": "Image",
+									"props": {
+										"y": 226,
+										"x": 288,
+										"var": "tower2_range2",
+										"skin": "image/main/lineviewN.png",
+										"alpha": 0
+									},
+									"compId": 610
+								},
+								{
+									"type": "Image",
+									"props": {
+										"y": 226,
+										"x": 271,
+										"var": "tower2_range1",
+										"skin": "image/main/lineviewN.png",
+										"alpha": 0
+									},
+									"compId": 611
+								},
+								{
+									"type": "Image",
+									"props": {
+										"y": 96,
+										"x": 38,
+										"var": "tips2_icon",
+										"skin": "image/ui/tower2.png"
+									},
+									"compId": 612
+								},
+								{
+									"type": "Label",
+									"props": {
+										"y": 51,
+										"x": 153,
+										"wordWrap": true,
+										"width": 236,
+										"var": "_content_tips_2",
+										"valign": "middle",
+										"text": "塔的内容塔的内容塔的内容塔的内容塔的内容塔的内容塔的内容塔的内容",
+										"strokeColor": "#444342",
+										"stroke": 1,
+										"height": 83,
+										"fontSize": 20,
+										"color": "#ffffff",
+										"align": "center"
+									},
+									"compId": 613
+								},
+								{
+									"type": "Label",
+									"props": {
+										"y": 158.5,
+										"width": 134,
+										"var": "_p_tips_2",
+										"valign": "middle",
+										"text": "攻击力:255",
+										"strokeColor": "#4d270a",
+										"stroke": 1,
+										"height": 27,
+										"fontSize": 22,
+										"color": "#f5d245",
+										"centerX": 6,
+										"align": "center"
+									},
+									"compId": 614
+								},
+								{
+									"type": "Label",
+									"props": {
+										"y": 219.5,
+										"width": 115,
+										"valign": "middle",
+										"text": "View",
+										"strokeColor": "#083605",
+										"stroke": 1,
+										"height": 27,
+										"fontSize": 20,
+										"color": "#87DC2B",
+										"centerX": -6,
+										"align": "center"
+									},
+									"compId": 615
+								},
+								{
+									"type": "Image",
+									"props": {
+										"y": 12,
+										"x": 386,
+										"var": "_btn_close_tips_2",
+										"skin": "image/main/X.png"
+									},
+									"compId": 616
+								},
+								{
+									"type": "Image",
+									"props": {
+										"y": 219.5,
+										"x": 50,
+										"skin": "image/main/PriceD1.png"
+									},
+									"compId": 617,
+									"child": [
+										{
+											"type": "Image",
+											"props": {
+												"y": 0,
+												"x": 4,
+												"skin": "image/main/smallmoney.png"
+											},
+											"compId": 618
+										},
+										{
+											"type": "Label",
+											"props": {
+												"y": 4,
+												"x": 32,
+												"width": 48,
+												"var": "tips2_price",
+												"valign": "middle",
+												"text": "label",
+												"height": 20,
+												"fontSize": 16,
+												"color": "#fee47e",
+												"align": "center"
+											},
+											"compId": 619
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "Image",
+					"props": {
+						"y": 7,
+						"width": 520,
+						"visible": false,
+						"var": "_build_ui_2",
+						"height": 157,
+						"centerX": 0,
+						"anchorY": 0.5,
+						"anchorX": 0.5
+					},
+					"compId": 184,
+					"child": [
+						{
+							"type": "List",
+							"props": {
+								"y": 76,
+								"width": 498,
+								"var": "_list",
+								"spaceX": 10,
+								"scaleY": 1,
+								"scaleX": 1,
+								"repeatY": 1,
+								"repeatX": 9,
+								"height": 150,
+								"centerX": 0,
+								"anchorY": 0.5,
+								"anchorX": 0.5
+							},
+							"compId": 199,
+							"child": [
+								{
+									"type": "Box",
+									"props": {
+										"y": 1,
+										"x": 0,
+										"width": 100,
+										"renderType": "render",
+										"height": 150
+									},
+									"compId": 200,
+									"child": [
+										{
+											"type": "Box",
+											"props": {
+												"width": 100,
+												"scaleY": 1,
+												"scaleX": 1,
+												"name": "TMessage",
+												"height": 150,
+												"centerY": 1,
+												"centerX": 0,
+												"anchorY": 0.5,
+												"anchorX": 0.5
+											},
+											"compId": 877,
+											"child": [
+												{
+													"type": "Image",
+													"props": {
+														"y": 33,
+														"x": 3,
+														"width": 98,
+														"skin": "image/main/unlocktower.png",
+														"name": "unlock",
+														"height": 88
+													},
+													"compId": 546
+												},
+												{
+													"type": "Image",
+													"props": {
+														"y": 4,
+														"x": 0,
+														"skin": "image/ui/tower1.png",
+														"name": "icon"
+													},
+													"compId": 185,
+													"child": [
+														{
+															"type": "Image",
+															"props": {
+																"y": 86,
+																"x": 8,
+																"width": 90,
+																"skin": "image/main/towernameback.png",
+																"height": 26
+															},
+															"compId": 557
+														}
+													]
+												},
+												{
+													"type": "Label",
+													"props": {
+														"y": 89,
+														"x": 11,
+														"width": 83,
+														"valign": "middle",
+														"text": "label",
+														"strokeColor": "#7D4D15",
+														"stroke": 2,
+														"name": "TowerName",
+														"height": 23,
+														"fontSize": 20,
+														"color": "#ffffff",
+														"align": "center"
+													},
+													"compId": 558
+												},
+												{
+													"type": "Image",
+													"props": {
+														"y": 118,
+														"x": 9,
+														"skin": "image/main/PriceD1.png",
+														"name": "Priceback"
+													},
+													"compId": 547,
+													"child": [
+														{
+															"type": "Image",
+															"props": {
+																"skin": "image/main/smallmoney.png"
+															},
+															"compId": 548
+														}
+													]
+												},
+												{
+													"type": "Label",
+													"props": {
+														"y": 122,
+														"x": 38,
+														"width": 50,
+														"valign": "middle",
+														"text": "80",
+														"stroke": 2,
+														"name": "price",
+														"height": 20,
+														"fontSize": 20,
+														"font": "Helvetica",
+														"color": "#dba702",
+														"bold": false,
+														"align": "center"
+													},
+													"compId": 186
+												},
+												{
+													"type": "Image",
+													"props": {
+														"skin": "image/main/20.png",
+														"scaleY": 0.75,
+														"scaleX": 0.75,
+														"name": "lockicon",
+														"centerY": -17,
+														"centerX": 3
+													},
+													"compId": 891
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "Box",
+					"props": {
+						"var": "game_towerui",
+						"top": 0,
+						"right": 0,
+						"left": 0,
+						"bottom": 0
+					},
+					"compId": 1034,
+					"child": [
+						{
+							"type": "Image",
+							"props": {
+								"y": 782,
+								"x": -75,
+								"skin": "image/ui/game_itembg_1.png",
+								"name": "toweritem1",
+								"anchorY": 0,
+								"anchorX": 0
+							},
+							"compId": 1035,
+							"child": [
+								{
+									"type": "Image",
+									"props": {
+										"y": 43,
+										"x": 53.5,
+										"skin": "image/ui/game_tower_1.png",
+										"name": "toweriicon",
+										"anchorY": 0.5,
+										"anchorX": 0.5
+									},
+									"compId": 1036
+								},
+								{
+									"type": "Image",
+									"props": {
+										"y": 86,
+										"x": 10.5,
+										"skin": "image/ui/game_pricebg_1.png",
+										"name": "towerpricebg"
+									},
+									"compId": 1037,
+									"child": [
+										{
+											"type": "Image",
+											"props": {
+												"y": -1,
+												"x": -8,
+												"skin": "image/ui/gold.png",
+												"name": "towerpriceicon"
+											},
+											"compId": 1038
+										},
+										{
+											"type": "Label",
+											"props": {
+												"y": 6,
+												"x": 5,
+												"width": 75,
+												"text": "9999",
+												"name": "towerprice",
+												"height": 12,
+												"fontSize": 18,
+												"color": "#efef1f",
+												"align": "center"
+											},
+											"compId": 1039
+										}
+									]
+								},
+								{
+									"type": "Image",
+									"props": {
+										"y": 9.5,
+										"x": 21.5,
+										"skin": "image/main/lock.png",
+										"name": "towerlock"
+									},
+									"compId": 1066
+								}
+							]
+						},
+						{
+							"type": "Image",
+							"props": {
+								"y": 782,
+								"x": 32,
+								"skin": "image/ui/game_itembg_1.png",
+								"name": "toweritem2",
+								"anchorY": 0,
+								"anchorX": 0
+							},
+							"compId": 1040,
+							"child": [
+								{
+									"type": "Image",
+									"props": {
+										"y": 43,
+										"x": 53.5,
+										"skin": "image/ui/game_tower_1.png",
+										"name": "toweriicon",
+										"anchorY": 0.5,
+										"anchorX": 0.5
+									},
+									"compId": 1041
+								},
+								{
+									"type": "Image",
+									"props": {
+										"y": 86,
+										"x": 10.5,
+										"skin": "image/ui/game_pricebg_1.png",
+										"name": "towerpricebg"
+									},
+									"compId": 1042,
+									"child": [
+										{
+											"type": "Image",
+											"props": {
+												"y": -1,
+												"x": -8,
+												"skin": "image/ui/gold.png",
+												"name": "towerpriceicon"
+											},
+											"compId": 1043
+										},
+										{
+											"type": "Label",
+											"props": {
+												"y": 6,
+												"x": 5,
+												"width": 75,
+												"text": "9999",
+												"name": "towerprice",
+												"height": 12,
+												"fontSize": 18,
+												"color": "#efef1f",
+												"align": "center"
+											},
+											"compId": 1044
+										}
+									]
+								},
+								{
+									"type": "Image",
+									"props": {
+										"y": 10,
+										"x": 21,
+										"skin": "image/main/lock.png",
+										"name": "towerlock"
+									},
+									"compId": 1067
+								}
+							]
+						},
+						{
+							"type": "Image",
+							"props": {
+								"y": 782,
+								"x": 137,
+								"skin": "image/ui/game_itembg_1.png",
+								"name": "toweritem3",
+								"anchorY": 0,
+								"anchorX": 0
+							},
+							"compId": 1045,
+							"child": [
+								{
+									"type": "Image",
+									"props": {
+										"y": 43,
+										"x": 53.5,
+										"skin": "image/ui/game_tower_1.png",
+										"name": "toweriicon",
+										"anchorY": 0.5,
+										"anchorX": 0.5
+									},
+									"compId": 1046
+								},
+								{
+									"type": "Image",
+									"props": {
+										"y": 86,
+										"x": 10.5,
+										"skin": "image/ui/game_pricebg_1.png",
+										"name": "towerpricebg"
+									},
+									"compId": 1047,
+									"child": [
+										{
+											"type": "Image",
+											"props": {
+												"y": -1,
+												"x": -8,
+												"skin": "image/ui/gold.png",
+												"name": "towerpriceicon"
+											},
+											"compId": 1048
+										},
+										{
+											"type": "Label",
+											"props": {
+												"y": 6,
+												"x": 5,
+												"width": 75,
+												"text": "9999",
+												"name": "towerprice",
+												"height": 12,
+												"fontSize": 18,
+												"color": "#efef1f",
+												"align": "center"
+											},
+											"compId": 1049
+										}
+									]
+								},
+								{
+									"type": "Image",
+									"props": {
+										"y": 9.5,
+										"x": 21.5,
+										"skin": "image/main/lock.png",
+										"name": "towerlock"
+									},
+									"compId": 1068
+								}
+							]
+						},
+						{
+							"type": "Image",
+							"props": {
+								"y": 782,
+								"x": 242,
+								"skin": "image/ui/game_itembg_1.png",
+								"name": "toweritem4",
+								"anchorY": 0,
+								"anchorX": 0
+							},
+							"compId": 1050,
+							"child": [
+								{
+									"type": "Image",
+									"props": {
+										"y": 43,
+										"x": 53.5,
+										"skin": "image/ui/game_tower_1.png",
+										"name": "toweriicon",
+										"anchorY": 0.5,
+										"anchorX": 0.5
+									},
+									"compId": 1051
+								},
+								{
+									"type": "Image",
+									"props": {
+										"y": 86,
+										"x": 10.5,
+										"skin": "image/ui/game_pricebg_1.png",
+										"name": "towerpricebg"
+									},
+									"compId": 1052,
+									"child": [
+										{
+											"type": "Image",
+											"props": {
+												"y": -1,
+												"x": -8,
+												"skin": "image/ui/gold.png",
+												"name": "towerpriceicon"
+											},
+											"compId": 1053
+										},
+										{
+											"type": "Label",
+											"props": {
+												"y": 6,
+												"x": 5,
+												"width": 75,
+												"text": "9999",
+												"name": "towerprice",
+												"height": 12,
+												"fontSize": 18,
+												"color": "#efef1f",
+												"align": "center"
+											},
+											"compId": 1054
+										}
+									]
+								},
+								{
+									"type": "Image",
+									"props": {
+										"y": 9.5,
+										"x": 21.5,
+										"skin": "image/main/lock.png",
+										"name": "towerlock"
+									},
+									"compId": 1069
+								}
+							]
+						},
+						{
+							"type": "Image",
+							"props": {
+								"y": 782,
+								"x": 347,
+								"skin": "image/ui/game_itembg_1.png",
+								"name": "toweritem5",
+								"anchorY": 0,
+								"anchorX": 0
+							},
+							"compId": 1055,
+							"child": [
+								{
+									"type": "Image",
+									"props": {
+										"y": 43,
+										"x": 53.5,
+										"skin": "image/ui/game_tower_1.png",
+										"name": "toweriicon",
+										"anchorY": 0.5,
+										"anchorX": 0.5
+									},
+									"compId": 1056
+								},
+								{
+									"type": "Image",
+									"props": {
+										"y": 86,
+										"x": 10.5,
+										"skin": "image/ui/game_pricebg_1.png",
+										"name": "towerpricebg"
+									},
+									"compId": 1057,
+									"child": [
+										{
+											"type": "Image",
+											"props": {
+												"y": -1,
+												"x": -8,
+												"skin": "image/ui/gold.png",
+												"name": "towerpriceicon"
+											},
+											"compId": 1058
+										},
+										{
+											"type": "Label",
+											"props": {
+												"y": 6,
+												"x": 5,
+												"width": 75,
+												"text": "9999",
+												"name": "towerprice",
+												"height": 12,
+												"fontSize": 18,
+												"color": "#efef1f",
+												"align": "center"
+											},
+											"compId": 1059
+										}
+									]
+								},
+								{
+									"type": "Image",
+									"props": {
+										"y": 9.5,
+										"x": 21.5,
+										"skin": "image/main/lock.png",
+										"name": "towerlock"
+									},
+									"compId": 1070
+								}
+							]
+						},
+						{
+							"type": "Image",
+							"props": {
+								"y": 782,
+								"x": 452,
+								"skin": "image/ui/game_itembg_1.png",
+								"name": "toweritem6",
+								"anchorY": 0,
+								"anchorX": 0
+							},
+							"compId": 1060,
+							"child": [
+								{
+									"type": "Image",
+									"props": {
+										"y": 43,
+										"x": 53.5,
+										"skin": "image/ui/game_tower_1.png",
+										"name": "toweriicon",
+										"anchorY": 0.5,
+										"anchorX": 0.5
+									},
+									"compId": 1061
+								},
+								{
+									"type": "Image",
+									"props": {
+										"y": 86,
+										"x": 10.5,
+										"skin": "image/ui/game_pricebg_1.png",
+										"name": "towerpricebg"
+									},
+									"compId": 1062,
+									"child": [
+										{
+											"type": "Image",
+											"props": {
+												"y": -1,
+												"x": -8,
+												"skin": "image/ui/gold.png",
+												"name": "towerpriceicon"
+											},
+											"compId": 1063
+										},
+										{
+											"type": "Label",
+											"props": {
+												"y": 6,
+												"x": 5,
+												"width": 75,
+												"text": "9999",
+												"name": "towerprice",
+												"height": 12,
+												"fontSize": 18,
+												"color": "#efef1f",
+												"align": "center"
+											},
+											"compId": 1064
+										}
+									]
+								},
+								{
+									"type": "Image",
+									"props": {
+										"y": 9.5,
+										"x": 21.5,
+										"skin": "image/main/lock.png",
+										"name": "towerlock"
+									},
+									"compId": 1071
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "Box",
+			"props": {
+				"width": 640,
+				"visible": true,
+				"top": 7,
+				"mouseThrough": true,
+				"left": 0,
+				"hitTestPrior": false,
+				"height": 1136,
+				"alpha": 1
+			},
+			"compId": 44,
+			"child": [
+				{
+					"type": "Box",
+					"props": {
+						"x": 320,
+						"width": 640,
+						"var": "_item_clamp",
+						"top": 6,
+						"height": 360,
+						"anchorY": 0,
+						"anchorX": 0.5,
+						"alpha": 1
+					},
+					"compId": 550
+				},
+				{
+					"type": "Image",
+					"props": {
+						"y": 311,
+						"x": 600,
+						"visible": false,
+						"var": "_item",
+						"skin": "image/effect/item.png",
+						"anchorY": 0.5,
+						"anchorX": 0.5
+					},
+					"compId": 425
+				},
+				{
+					"type": "Image",
+					"props": {
+						"top": 49,
+						"skin": "image/main/24.png",
+						"left": 10
+					},
+					"compId": 1008,
+					"child": [
+						{
+							"type": "Label",
+							"props": {
+								"y": 16.5,
+								"x": 52,
+								"width": 100,
+								"var": "_game_diamond_label",
+								"valign": "middle",
+								"text": "123456",
+								"strokeColor": "#3a3225",
+								"stroke": 1,
+								"height": 30,
+								"fontSize": 24,
+								"color": "#ffffff",
+								"align": "center"
+							},
+							"compId": 1009
+						}
+					]
+				},
+				{
+					"type": "Image",
+					"props": {
+						"top": 105,
+						"skin": "image/ui/money_bg.png",
+						"left": 10
+					},
+					"compId": 127,
+					"child": [
+						{
+							"type": "Label",
+							"props": {
+								"var": "lab_money",
+								"text": "5000",
+								"fontSize": 24,
+								"font": "Helvetica",
+								"color": "#ffffff",
+								"centerY": 5,
+								"centerX": 17,
+								"bold": true,
+								"align": "center"
+							},
+							"compId": 46
+						}
+					]
+				},
+				{
+					"type": "Image",
+					"props": {
+						"top": 168,
+						"skin": "image/ui/hp.png",
+						"left": 13
+					},
+					"compId": 128,
+					"child": [
+						{
+							"type": "Label",
+							"props": {
+								"y": 21.5,
+								"x": 61,
+								"width": 49,
+								"var": "lab_hp",
+								"text": "60",
+								"height": 30,
+								"fontSize": 24,
+								"font": "Helvetica",
+								"color": "#ffffff",
+								"bold": true,
+								"align": "center"
+							},
+							"compId": 130
+						},
+						{
+							"type": "Image",
+							"props": {
+								"y": 42,
+								"x": 32,
+								"visible": false,
+								"var": "sub_blood",
+								"skin": "image/ui/blood.png",
+								"anchorY": 0.5,
+								"anchorX": 0.5,
+								"alpha": 0
+							},
+							"compId": 746
+						}
+					]
+				},
+				{
+					"type": "Image",
+					"props": {
+						"var": "normal_title_container",
+						"top": 119,
+						"skin": "image/ui/level_bg.png",
+						"centerX": 198
+					},
+					"compId": 129,
+					"child": [
+						{
+							"type": "Label",
+							"props": {
+								"y": 9,
+								"wordWrap": false,
+								"width": 42,
+								"var": "lab_maxLevel",
+								"valign": "middle",
+								"text": "70",
+								"strokeColor": "#24487F",
+								"stroke": 2,
+								"italic": false,
+								"height": 31,
+								"fontSize": 18,
+								"font": "SimHei",
+								"color": "#b2d5f6",
+								"centerX": 46,
+								"bold": true,
+								"align": "left"
+							},
+							"compId": 820
+						},
+						{
+							"type": "Label",
+							"props": {
+								"wordWrap": false,
+								"width": 42,
+								"valign": "middle",
+								"text": "/",
+								"strokeColor": "#24487F",
+								"stroke": 2,
+								"italic": false,
+								"height": 31,
+								"fontSize": 18,
+								"font": "SimHei",
+								"color": "#ffffff",
+								"centerY": -3,
+								"centerX": 13,
+								"bold": true,
+								"align": "center"
+							},
+							"compId": 819
+						},
+						{
+							"type": "Label",
+							"props": {
+								"wordWrap": false,
+								"width": 42,
+								"valign": "middle",
+								"text": "Level ",
+								"strokeColor": "#24487F",
+								"stroke": 2,
+								"italic": false,
+								"height": 31,
+								"fontSize": 16,
+								"font": "SimHei",
+								"color": "#ffffff",
+								"centerY": -4,
+								"centerX": -57,
+								"bold": true,
+								"align": "center"
+							},
+							"compId": 818
+						},
+						{
+							"type": "Label",
+							"props": {
+								"wordWrap": false,
+								"width": 56,
+								"var": "lab_level",
+								"valign": "middle",
+								"text": "55",
+								"strokeColor": "#24487F",
+								"stroke": 2,
+								"italic": false,
+								"height": 24,
+								"fontSize": 24,
+								"font": "SimHei",
+								"color": "#ffffff",
+								"centerY": -5,
+								"centerX": -24,
+								"bold": true,
+								"align": "right"
+							},
+							"compId": 131
+						}
+					]
+				},
+				{
+					"type": "Image",
+					"props": {
+						"var": "around_title_container",
+						"top": 119,
+						"skin": "image/ui/level_bg.png",
+						"centerX": 198
+					},
+					"compId": 993,
+					"child": [
+						{
+							"type": "Label",
+							"props": {
+								"wordWrap": false,
+								"width": 42,
+								"valign": "middle",
+								"text": "Level",
+								"strokeColor": "#24487F",
+								"stroke": 2,
+								"italic": false,
+								"height": 31,
+								"fontSize": 16,
+								"font": "SimHei",
+								"color": "#ffffff",
+								"centerY": -6,
+								"centerX": -24,
+								"bold": true,
+								"align": "center"
+							},
+							"compId": 996
+						},
+						{
+							"type": "Label",
+							"props": {
+								"wordWrap": false,
+								"width": 56,
+								"var": "_around_title_label",
+								"valign": "middle",
+								"text": "55",
+								"strokeColor": "#24487F",
+								"stroke": 2,
+								"italic": false,
+								"height": 24,
+								"fontSize": 24,
+								"font": "SimHei",
+								"color": "#ffffff",
+								"centerY": -6,
+								"centerX": 31,
+								"bold": true,
+								"align": "left"
+							},
+							"compId": 997
+						}
+					]
+				},
+				{
+					"type": "Image",
+					"props": {
+						"visible": false,
+						"top": 103,
+						"skin": "image/ui/score.png",
+						"left": 10
+					},
+					"compId": 132,
+					"child": [
+						{
+							"type": "Label",
+							"props": {
+								"text": "60",
+								"fontSize": 30,
+								"font": "Helvetica",
+								"color": "#ffffff",
+								"centerY": 4,
+								"centerX": 103,
+								"bold": true
+							},
+							"compId": 133
+						}
+					]
+				},
+				{
+					"type": "Image",
+					"props": {
+						"width": 640,
+						"visible": false,
+						"var": "_ui_guide",
+						"height": 463.5,
+						"centerY": -224,
+						"centerX": 0
+					},
+					"compId": 153,
+					"child": [
+						{
+							"type": "Image",
+							"props": {
+								"y": 438,
+								"x": 229,
+								"var": "btn_closeGuide",
+								"skin": "image/ui/continue3.png"
+							},
+							"compId": 154
+						}
+					]
+				},
+				{
+					"type": "Image",
+					"props": {
+						"width": 640,
+						"visible": true,
+						"var": "_win",
+						"height": 192,
+						"centerY": -139,
+						"centerX": 640,
+						"anchorY": 0.5,
+						"anchorX": 0.5,
+						"alpha": 0
+					},
+					"compId": 161,
+					"child": [
+						{
+							"type": "Image",
+							"props": {
+								"var": "_winlight",
+								"skin": "image/effect/sulight.png",
+								"centerY": 9,
+								"centerX": 0,
+								"anchorY": 0.5,
+								"anchorX": 0.5,
+								"alpha": 0
+							},
+							"compId": 842
+						},
+						{
+							"type": "Image",
+							"props": {
+								"var": "_winfont",
+								"skin": "image/effect/successfont.png",
+								"scaleY": 1.5,
+								"scaleX": 1.5,
+								"centerY": 9,
+								"centerX": 0,
+								"anchorY": 0.5,
+								"anchorX": 0.5,
+								"alpha": 0
+							},
+							"compId": 843
+						}
+					]
+				},
+				{
+					"type": "Image",
+					"props": {
+						"width": 640,
+						"visible": true,
+						"var": "_lose",
+						"height": 192,
+						"centerY": -140,
+						"centerX": 640,
+						"anchorY": 0.5,
+						"anchorX": 0.5,
+						"alpha": 0
+					},
+					"compId": 162,
+					"child": [
+						{
+							"type": "Box",
+							"props": {
+								"width": 280,
+								"var": "lostfont",
+								"scaleY": 1.5,
+								"scaleX": 1.5,
+								"height": 158,
+								"centerY": 8,
+								"centerX": 0,
+								"anchorY": 0.5,
+								"anchorX": 0.5,
+								"alpha": 0
+							},
+							"compId": 844,
+							"child": [
+								{
+									"type": "Image",
+									"props": {
+										"width": 140,
+										"var": "losefont0",
+										"skin": "image/effect/losefont0.png",
+										"rotation": 0,
+										"left": 0,
+										"height": 158,
+										"centerY": 8,
+										"anchorY": 1,
+										"anchorX": 1
+									},
+									"compId": 845
+								},
+								{
+									"type": "Image",
+									"props": {
+										"width": 140,
+										"skin": "image/effect/losefont1.png",
+										"right": 0,
+										"height": 158,
+										"centerY": 8,
+										"anchorY": 0.5,
+										"anchorX": 0.5
+									},
+									"compId": 846
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "Image",
+					"props": {
+						"y": 262,
+						"x": 318,
+						"var": "_lab",
+						"anchorY": 0.5,
+						"anchorX": 0.5
+					},
+					"compId": 646
+				},
+				{
+					"type": "Box",
+					"props": {
+						"y": 6,
+						"x": 0,
+						"width": 640,
+						"visible": false,
+						"var": "_choose_item",
+						"height": 1136
+					},
+					"compId": 426,
+					"child": [
+						{
+							"type": "Label",
+							"props": {
+								"y": -4,
+								"x": 0,
+								"width": 640,
+								"var": "_choose_back",
+								"height": 1152,
+								"bgColor": "#000000",
+								"alpha": 0.4
+							},
+							"compId": 428
+						},
+						{
+							"type": "Image",
+							"props": {
+								"skin": "image/main/18.png",
+								"centerY": -289,
+								"centerX": 0
+							},
+							"compId": 429
+						},
+						{
+							"type": "Label",
+							"props": {
+								"width": 98,
+								"visible": false,
+								"var": "_close_get_item",
+								"valign": "middle",
+								"underlineColor": "#FFFFFF",
+								"underline": true,
+								"text": "No, thanks",
+								"height": 28,
+								"fontSize": 18,
+								"color": "#FFFFFF",
+								"centerY": 143,
+								"centerX": 0,
+								"align": "center"
+							},
+							"compId": 620
+						},
+						{
+							"type": "Image",
+							"props": {
+								"skin": "image/main/6.png",
+								"centerY": -90,
+								"centerX": -200
+							},
+							"compId": 431,
+							"child": [
+								{
+									"type": "Image",
+									"props": {
+										"y": 206,
+										"var": "_get_item1",
+										"skin": "image/main/56.png",
+										"centerX": 0
+									},
+									"compId": 434
+								},
+								{
+									"type": "Image",
+									"props": {
+										"skin": "image/main/ss2.png",
+										"centerY": 5,
+										"centerX": 0
+									},
+									"compId": 435
+								},
+								{
+									"type": "Image",
+									"props": {
+										"y": 41,
+										"x": 36,
+										"var": "_icon_item1",
+										"skin": "image/main/31.png"
+									},
+									"compId": 436
+								},
+								{
+									"type": "Image",
+									"props": {
+										"y": 111.5,
+										"x": 94,
+										"skin": "image/main/19.png"
+									},
+									"compId": 433,
+									"child": [
+										{
+											"type": "Label",
+											"props": {
+												"y": 9,
+												"x": 7.5,
+												"width": 43,
+												"var": "_num_item1",
+												"valign": "middle",
+												"text": "99",
+												"height": 21,
+												"fontSize": 20,
+												"color": "#ffffff",
+												"align": "center"
+											},
+											"compId": 438
+										}
+									]
+								},
+								{
+									"type": "Label",
+									"props": {
+										"y": 9,
+										"width": 100,
+										"var": "_name_item1",
+										"valign": "middle",
+										"text": "冰冻道具",
+										"strokeColor": "#000000",
+										"stroke": 2,
+										"height": 32,
+										"fontSize": 23,
+										"color": "#ffffff",
+										"centerX": 0,
+										"bold": true,
+										"align": "center"
+									},
+									"compId": 437
+								}
+							]
+						},
+						{
+							"type": "Image",
+							"props": {
+								"skin": "image/main/6.png",
+								"centerY": -90,
+								"centerX": 0
+							},
+							"compId": 439,
+							"child": [
+								{
+									"type": "Image",
+									"props": {
+										"y": 204,
+										"var": "_get_item2",
+										"skin": "image/main/56.png",
+										"centerX": 0
+									},
+									"compId": 440
+								},
+								{
+									"type": "Image",
+									"props": {
+										"skin": "image/main/ss2.png",
+										"centerY": 3,
+										"centerX": 0
+									},
+									"compId": 441
+								},
+								{
+									"type": "Image",
+									"props": {
+										"y": 39,
+										"x": 36,
+										"var": "_icon_item2",
+										"skin": "image/main/31.png"
+									},
+									"compId": 442
+								},
+								{
+									"type": "Image",
+									"props": {
+										"y": 109.5,
+										"x": 94,
+										"skin": "image/main/19.png"
+									},
+									"compId": 443,
+									"child": [
+										{
+											"type": "Label",
+											"props": {
+												"y": 7,
+												"x": 7.5,
+												"width": 43,
+												"var": "_num_item2",
+												"valign": "middle",
+												"text": "99",
+												"height": 21,
+												"fontSize": 20,
+												"color": "#ffffff",
+												"align": "center"
+											},
+											"compId": 444
+										}
+									]
+								},
+								{
+									"type": "Label",
+									"props": {
+										"y": 4,
+										"width": 100,
+										"var": "_name_item2",
+										"valign": "middle",
+										"text": "冰冻道具",
+										"strokeColor": "#000000",
+										"stroke": 2,
+										"height": 32,
+										"fontSize": 23,
+										"color": "#ffffff",
+										"centerX": 0,
+										"bold": true,
+										"align": "center"
+									},
+									"compId": 453
+								}
+							]
+						},
+						{
+							"type": "Image",
+							"props": {
+								"skin": "image/main/6.png",
+								"centerY": -89,
+								"centerX": 200
+							},
+							"compId": 446,
+							"child": [
+								{
+									"type": "Image",
+									"props": {
+										"y": 205,
+										"var": "_get_item3",
+										"skin": "image/main/56.png",
+										"centerX": 0
+									},
+									"compId": 447
+								},
+								{
+									"type": "Image",
+									"props": {
+										"skin": "image/main/ss2.png",
+										"centerY": 4,
+										"centerX": 0
+									},
+									"compId": 448
+								},
+								{
+									"type": "Image",
+									"props": {
+										"y": 39,
+										"x": 36,
+										"var": "_icon_item3",
+										"skin": "image/main/31.png"
+									},
+									"compId": 449
+								},
+								{
+									"type": "Image",
+									"props": {
+										"y": 109.5,
+										"x": 94,
+										"skin": "image/main/19.png"
+									},
+									"compId": 450,
+									"child": [
+										{
+											"type": "Label",
+											"props": {
+												"y": 7,
+												"x": 7.5,
+												"width": 43,
+												"var": "_num_item3",
+												"valign": "middle",
+												"text": "99",
+												"height": 21,
+												"fontSize": 20,
+												"color": "#ffffff",
+												"align": "center"
+											},
+											"compId": 451
+										}
+									]
+								},
+								{
+									"type": "Label",
+									"props": {
+										"y": 4,
+										"width": 100,
+										"var": "_name_item3",
+										"valign": "middle",
+										"text": "冰冻道具",
+										"strokeColor": "#000000",
+										"stroke": 2,
+										"height": 32,
+										"fontSize": 23,
+										"color": "#ffffff",
+										"centerX": 0,
+										"bold": true,
+										"align": "center"
+									},
+									"compId": 454
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "Image",
+					"props": {
+						"y": 9,
+						"x": 0,
+						"width": 640,
+						"visible": false,
+						"var": "_red",
+						"pivotY": 0.5,
+						"pivotX": 0.5,
+						"height": 1136,
+						"alpha": 0
+					},
+					"compId": 753
+				},
+				{
+					"type": "Image",
+					"props": {
+						"y": 9,
+						"x": 0,
+						"width": 640,
+						"visible": false,
+						"var": "_red1",
+						"pivotY": 0.5,
+						"pivotX": 0.5,
+						"height": 1136,
+						"alpha": 0
+					},
+					"compId": 750
+				},
+				{
+					"type": "Image",
+					"props": {
+						"y": 9,
+						"x": 0,
+						"width": 640,
+						"visible": false,
+						"var": "_red2",
+						"pivotY": 0.5,
+						"pivotX": 0.5,
+						"height": 1136,
+						"alpha": 0
+					},
+					"compId": 748,
+					"child": [
+						{
+							"type": "Image",
+							"props": {
+								"width": 640,
+								"pivotY": 0.5,
+								"pivotX": 0.5,
+								"height": 161,
+								"centerY": -171,
+								"centerX": 0
+							},
+							"compId": 751
+						},
+						{
+							"type": "Image",
+							"props": {
+								"width": 503,
+								"pivotY": 0.5,
+								"pivotX": 0.5,
+								"height": 101,
+								"centerY": -172,
+								"centerX": 0
+							},
+							"compId": 752
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "Box",
+			"props": {
+				"y": 11,
+				"x": 0,
+				"width": 640,
+				"visible": false,
+				"var": "_setting",
+				"height": 1136
+			},
+			"compId": 202,
+			"child": [
+				{
+					"type": "Label",
+					"props": {
+						"y": -8,
+						"x": 0,
+						"width": 640,
+						"var": "_mainBG",
+						"height": 1162,
+						"bgColor": "#000000",
+						"alpha": 0.3
+					},
+					"compId": 203
+				},
+				{
+					"type": "Box",
+					"props": {
+						"y": 17,
+						"x": 0,
+						"width": 640,
+						"height": 1126
+					},
+					"compId": 209,
+					"child": [
+						{
+							"type": "Image",
+							"props": {
+								"y": 426,
+								"x": 109,
+								"skin": "image/main/tips.png"
+							},
+							"compId": 739,
+							"child": [
+								{
+									"type": "Image",
+									"props": {
+										"y": -9,
+										"x": 176,
+										"skin": "image/main/menu.png"
+									},
+									"compId": 740
+								}
+							]
+						},
+						{
+							"type": "Image",
+							"props": {
+								"var": "btn_continue",
+								"skin": "image/main/continue2.png",
+								"centerY": -63,
+								"centerX": 0
+							},
+							"compId": 205
+						},
+						{
+							"type": "Image",
+							"props": {
+								"var": "btn_restart",
+								"skin": "image/main/restart2.png",
+								"centerY": 13,
+								"centerX": 0
+							},
+							"compId": 206
+						},
+						{
+							"type": "Image",
+							"props": {
+								"var": "btn_back",
+								"skin": "image/main/back.png",
+								"centerY": 89,
+								"centerX": 0
+							},
+							"compId": 424
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "Box",
+			"props": {
+				"y": 2,
+				"x": 0,
+				"width": 640,
+				"visible": true,
+				"var": "_mainui",
+				"height": 1148,
+				"anchorY": 0,
+				"anchorX": 0
+			},
+			"compId": 210,
+			"child": [
+				{
+					"type": "Box",
+					"props": {
+						"y": 10,
+						"x": 0,
+						"width": 640,
+						"visible": true,
+						"var": "_bottom",
+						"height": 1136,
+						"anchorY": 0,
+						"anchorX": 0
+					},
+					"compId": 217,
+					"child": [
+						{
+							"type": "Image",
+							"props": {
+								"y": -7,
+								"x": 0,
+								"width": 640,
+								"var": "mainBG",
+								"height": 1200
+							},
+							"compId": 215
+						},
+						{
+							"type": "Box",
+							"props": {
+								"y": 10,
+								"x": 0,
+								"width": 640,
+								"var": "_top",
+								"height": 200
+							},
+							"compId": 235,
+							"child": [
+								{
+									"type": "Image",
+									"props": {
+										"top": -4,
+										"skin": "image/main/24.png",
+										"left": 8
+									},
+									"compId": 236,
+									"child": [
+										{
+											"type": "Label",
+											"props": {
+												"y": 16.5,
+												"x": 52,
+												"width": 100,
+												"var": "_diamond",
+												"valign": "middle",
+												"text": "123456",
+												"strokeColor": "#3a3225",
+												"stroke": 1,
+												"height": 30,
+												"fontSize": 24,
+												"color": "#ffffff",
+												"align": "center"
+											},
+											"compId": 240
+										}
+									]
+								},
+								{
+									"type": "Image",
+									"props": {
+										"var": "btn_lucky",
+										"top": 50,
+										"skin": "image/main/22.png",
+										"left": 6
+									},
+									"compId": 237
+								},
+								{
+									"type": "Image",
+									"props": {
+										"var": "btn_sign",
+										"top": 52,
+										"skin": "image/main/17.png",
+										"left": 112
+									},
+									"compId": 238
+								},
+								{
+									"type": "Image",
+									"props": {
+										"y": 58.5,
+										"x": 341,
+										"width": 98,
+										"visible": false,
+										"var": "rank_open",
+										"skin": "image/main/more.png",
+										"height": 96
+									},
+									"compId": 718
+								},
+								{
+									"type": "Image",
+									"props": {
+										"y": 50,
+										"x": 221,
+										"var": "btn_diamondgift",
+										"skin": "image/main/diamond_gift.png"
+									},
+									"compId": 909
+								}
+							]
+						},
+						{
+							"type": "Box",
+							"props": {
+								"var": "newMainui",
+								"top": 250,
+								"right": 0,
+								"left": 0,
+								"bottom": 0
+							},
+							"compId": 1072,
+							"child": [
+								{
+									"type": "Image",
+									"props": {
+										"skin": "image/main/main_level1.png",
+										"name": "_newlevel_1",
+										"centerY": -380,
+										"centerX": 0
+									},
+									"compId": 1079,
+									"child": [
+										{
+											"type": "Label",
+											"props": {
+												"y": 69,
+												"x": 379,
+												"text": "Quick game for new",
+												"strokeColor": "#976217",
+												"stroke": 2,
+												"fontSize": 18,
+												"color": "#ffffff",
+												"bold": true
+											},
+											"compId": 1083
+										},
+										{
+											"type": "Label",
+											"props": {
+												"y": 117,
+												"x": 389,
+												"text": "Progress: 0/30",
+												"strokeColor": "#ffffff",
+												"stroke": 0,
+												"name": "_newlevel_label_1",
+												"fontSize": 18,
+												"color": "#7f5124",
+												"bold": true
+											},
+											"compId": 1084
+										}
+									]
+								},
+								{
+									"type": "Image",
+									"props": {
+										"x": 39,
+										"skin": "image/main/main_level2.png",
+										"name": "_newlevel_2",
+										"centerY": -140
+									},
+									"compId": 1073,
+									"child": [
+										{
+											"type": "Label",
+											"props": {
+												"y": 20,
+												"x": 148.5,
+												"text": "Level up\\nNormal levels",
+												"strokeColor": "#2e7909",
+												"stroke": 2,
+												"fontSize": 18,
+												"color": "#ffffff",
+												"bold": true
+											},
+											"compId": 1086
+										},
+										{
+											"type": "Label",
+											"props": {
+												"y": 146,
+												"x": 134.66162109375,
+												"text": "Progress: 0/30",
+												"strokeColor": "#ffffff",
+												"stroke": 0,
+												"name": "_newlevel_label_2",
+												"fontSize": 18,
+												"color": "#51732c",
+												"bold": true
+											},
+											"compId": 1087
+										},
+										{
+											"type": "Image",
+											"props": {
+												"skin": "image/main/main_level2_mask.png",
+												"name": "_newlevel_mask_2"
+											},
+											"compId": 1088
+										},
+										{
+											"type": "Image",
+											"props": {
+												"y": 38,
+												"x": 20,
+												"skin": "image/main/main_lock.png",
+												"name": "_newlevel_lock_2"
+											},
+											"compId": 1089
+										}
+									]
+								},
+								{
+									"type": "Image",
+									"props": {
+										"x": 299,
+										"skin": "image/main/main_level3.png",
+										"name": "_newlevel_3",
+										"centerY": -147
+									},
+									"compId": 1080,
+									"child": [
+										{
+											"type": "Label",
+											"props": {
+												"y": 20,
+												"x": 36,
+												"text": "Hard difficulty\\nMore new levels",
+												"strokeColor": "#175987",
+												"stroke": 2,
+												"fontSize": 18,
+												"color": "#ffffff",
+												"bold": true
+											},
+											"compId": 1090
+										},
+										{
+											"type": "Label",
+											"props": {
+												"y": 147,
+												"x": 54.0654296875,
+												"text": "Progress: 0/30",
+												"strokeColor": "#ffffff",
+												"stroke": 0,
+												"name": "_newlevel_label_3",
+												"fontSize": 18,
+												"color": "#345987",
+												"bold": true
+											},
+											"compId": 1091
+										},
+										{
+											"type": "Image",
+											"props": {
+												"skin": "image/main/main_level3_mask.png",
+												"name": "_newlevel_mask_3"
+											},
+											"compId": 1092
+										},
+										{
+											"type": "Image",
+											"props": {
+												"y": 11,
+												"x": 174.5,
+												"skin": "image/main/main_lock.png",
+												"name": "_newlevel_lock_3"
+											},
+											"compId": 1093
+										}
+									]
+								},
+								{
+									"type": "Image",
+									"props": {
+										"x": 39,
+										"skin": "image/main/main_level4.png",
+										"name": "_newlevel_4",
+										"centerY": 71
+									},
+									"compId": 1081,
+									"child": [
+										{
+											"type": "Label",
+											"props": {
+												"y": 149,
+												"x": 398,
+												"text": "For challenge \\nAdvanced Player",
+												"strokeColor": "#872f17",
+												"stroke": 2,
+												"fontSize": 18,
+												"color": "#ffffff",
+												"bold": true
+											},
+											"compId": 1094
+										},
+										{
+											"type": "Label",
+											"props": {
+												"y": 77,
+												"x": 397,
+												"text": "Progress: 0/30",
+												"strokeColor": "#ffffff",
+												"stroke": 0,
+												"name": "_newlevel_label_4",
+												"fontSize": 18,
+												"color": "#a15144",
+												"bold": true
+											},
+											"compId": 1095
+										},
+										{
+											"type": "Image",
+											"props": {
+												"skin": "image/main/main_level4_mask.png",
+												"name": "_newlevel_mask_4"
+											},
+											"compId": 1096
+										},
+										{
+											"type": "Image",
+											"props": {
+												"y": 40,
+												"x": 140,
+												"skin": "image/main/main_lock.png",
+												"name": "_newlevel_lock_4"
+											},
+											"compId": 1097
+										}
+									]
+								},
+								{
+									"type": "Image",
+									"props": {
+										"x": 39,
+										"skin": "image/main/main_level5.png",
+										"name": "_newlevel_5",
+										"centerY": 244
+									},
+									"compId": 1082,
+									"child": [
+										{
+											"type": "Label",
+											"props": {
+												"y": 31,
+												"x": 239,
+												"text": "Exceed yourself\\nEndless mode",
+												"strokeColor": "#1b486b",
+												"stroke": 2,
+												"fontSize": 18,
+												"color": "#ffffff",
+												"bold": true
+											},
+											"compId": 1098
+										},
+										{
+											"type": "Label",
+											"props": {
+												"y": 82,
+												"x": 36,
+												"text": "Progress: 0/30",
+												"strokeColor": "#ffffff",
+												"stroke": 0,
+												"name": "_newlevel_label_5",
+												"fontSize": 18,
+												"color": "#237e8f",
+												"bold": true
+											},
+											"compId": 1099
+										},
+										{
+											"type": "Image",
+											"props": {
+												"skin": "image/main/main_level5_mask.png",
+												"name": "_newlevel_mask_5"
+											},
+											"compId": 1100
+										},
+										{
+											"type": "Image",
+											"props": {
+												"y": 9,
+												"x": 449,
+												"width": 78,
+												"skin": "image/main/main_lock.png",
+												"name": "_newlevel_lock_5",
+												"height": 100
+											},
+											"compId": 1101
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "Image",
+							"props": {
+								"width": 495,
+								"visible": false,
+								"var": "_level_bg",
+								"height": 620,
+								"centerY": -16,
+								"centerX": 0,
+								"anchorY": 0.5,
+								"anchorX": 0.5,
+								"alpha": 1
+							},
+							"compId": 226,
+							"child": [
+								{
+									"type": "Image",
+									"props": {
+										"y": -46,
+										"x": 9,
+										"width": 495,
+										"var": "level_bg",
+										"height": 415
+									},
+									"compId": 912
+								},
+								{
+									"type": "Image",
+									"props": {
+										"y": -54,
+										"x": 8,
+										"var": "window_top",
+										"skin": "image/main/window_top_1.png"
+									},
+									"compId": 910
+								},
+								{
+									"type": "Image",
+									"props": {
+										"y": 345,
+										"x": 8,
+										"var": "window_bottom",
+										"skin": "image/main/window_bottom_1.png"
+									},
+									"compId": 911
+								},
+								{
+									"type": "Image",
+									"props": {
+										"y": -61,
+										"x": 99.5,
+										"var": "btn_normalmode",
+										"skin": "image/main/mode_1_1.png"
+									},
+									"compId": 913
+								},
+								{
+									"type": "Image",
+									"props": {
+										"y": -61,
+										"x": 259.5,
+										"var": "btn_aroundmode",
+										"skin": "image/main/mode_2_1.png"
+									},
+									"compId": 914,
+									"child": [
+										{
+											"type": "Image",
+											"props": {
+												"y": -7,
+												"x": 130,
+												"width": 27,
+												"var": "_around_mode_lock",
+												"skin": "image/main/lock.png",
+												"height": 36
+											},
+											"compId": 964
+										}
+									]
+								},
+								{
+									"type": "Image",
+									"props": {
+										"y": 293.5,
+										"x": 152.5,
+										"skin": "image/main/levelback.png"
+									},
+									"compId": 578,
+									"child": [
+										{
+											"type": "Label",
+											"props": {
+												"y": 2,
+												"x": 0,
+												"width": 189,
+												"var": "main_level_view",
+												"valign": "middle",
+												"text": "label",
+												"height": 33,
+												"fontSize": 20,
+												"color": "#d9e8fd",
+												"align": "center"
+											},
+											"compId": 579
+										}
+									]
+								},
+								{
+									"type": "Image",
+									"props": {
+										"y": 340,
+										"width": 493,
+										"skin": "image/main/14.png",
+										"name": "mapinfo",
+										"height": 173,
+										"centerX": 13
+									},
+									"compId": 229,
+									"child": [
+										{
+											"type": "List",
+											"props": {
+												"y": 9,
+												"x": 4,
+												"width": 474,
+												"var": "_map_list",
+												"spaceX": 0,
+												"repeatY": 1,
+												"repeatX": 4,
+												"height": 140,
+												"elasticEnabled": false
+											},
+											"compId": 915,
+											"child": [
+												{
+													"type": "Box",
+													"props": {
+														"y": 10,
+														"x": 0,
+														"width": 134,
+														"renderType": "render",
+														"height": 98
+													},
+													"compId": 916,
+													"child": [
+														{
+															"type": "Image",
+															"props": {
+																"skin": "image/main/normal_bg.png",
+																"name": "_map_select"
+															},
+															"compId": 917
+														},
+														{
+															"type": "Image",
+															"props": {
+																"skin": "image/main/map_icon_1_1.png",
+																"name": "_map_icon",
+																"centerY": 0.5,
+																"centerX": 0.5
+															},
+															"compId": 918
+														},
+														{
+															"type": "Image",
+															"props": {
+																"skin": "image/main/lock.png",
+																"scaleY": 0.8,
+																"scaleX": 0.8,
+																"name": "_map_lock",
+																"centerY": 0.5,
+																"centerX": 0.5
+															},
+															"compId": 920
+														},
+														{
+															"type": "Image",
+															"props": {
+																"skin": "image/main/tongguan.png",
+																"name": "_map_pass",
+																"centerY": -4,
+																"centerX": 0
+															},
+															"compId": 921
+														},
+														{
+															"type": "Image",
+															"props": {
+																"skin": "image/main/map_name_1_1.png",
+																"name": "_map_name",
+																"centerY": 27,
+																"centerX": 0
+															},
+															"compId": 919
+														},
+														{
+															"type": "Image",
+															"props": {
+																"y": 0,
+																"x": 132,
+																"skin": "image/main/normal_line.png",
+																"name": "_map_line"
+															},
+															"compId": 922
+														}
+													]
+												}
+											]
+										},
+										{
+											"type": "Box",
+											"props": {
+												"y": 0,
+												"x": 0,
+												"visible": false,
+												"var": "around"
+											},
+											"compId": 949,
+											"child": [
+												{
+													"type": "Box",
+													"props": {
+														"y": 17,
+														"x": 45,
+														"width": 134,
+														"name": "_around_map_1",
+														"height": 98
+													},
+													"compId": 942,
+													"child": [
+														{
+															"type": "Image",
+															"props": {
+																"skin": "image/main/normal_bg.png",
+																"name": "_map_select"
+															},
+															"compId": 943
+														},
+														{
+															"type": "Image",
+															"props": {
+																"skin": "image/main/map_icon_1_1.png",
+																"name": "_map_icon",
+																"centerY": 0.5,
+																"centerX": 0.5
+															},
+															"compId": 944
+														},
+														{
+															"type": "Image",
+															"props": {
+																"skin": "image/main/lock.png",
+																"scaleY": 0.8,
+																"scaleX": 0.8,
+																"name": "_map_lock",
+																"centerY": 0.5,
+																"centerX": 0.5
+															},
+															"compId": 945
+														},
+														{
+															"type": "Image",
+															"props": {
+																"skin": "image/main/map_name_1_1.png",
+																"name": "_map_name",
+																"centerY": 27,
+																"centerX": 0
+															},
+															"compId": 947
+														},
+														{
+															"type": "Image",
+															"props": {
+																"y": 0,
+																"x": 132,
+																"skin": "image/main/normal_line.png",
+																"name": "_map_line"
+															},
+															"compId": 948
+														}
+													]
+												},
+												{
+													"type": "Box",
+													"props": {
+														"y": 18,
+														"x": 178,
+														"width": 134,
+														"name": "_around_map_2",
+														"height": 98
+													},
+													"compId": 950,
+													"child": [
+														{
+															"type": "Image",
+															"props": {
+																"skin": "image/main/normal_bg.png",
+																"name": "_map_select"
+															},
+															"compId": 951
+														},
+														{
+															"type": "Image",
+															"props": {
+																"skin": "image/main/map_icon_1_1.png",
+																"name": "_map_icon",
+																"centerY": 0.5,
+																"centerX": 0.5
+															},
+															"compId": 952
+														},
+														{
+															"type": "Image",
+															"props": {
+																"skin": "image/main/lock.png",
+																"scaleY": 0.8,
+																"scaleX": 0.8,
+																"name": "_map_lock",
+																"centerY": 0.5,
+																"centerX": 0.5
+															},
+															"compId": 953
+														},
+														{
+															"type": "Image",
+															"props": {
+																"skin": "image/main/map_name_1_1.png",
+																"name": "_map_name",
+																"centerY": 27,
+																"centerX": 0
+															},
+															"compId": 955
+														},
+														{
+															"type": "Image",
+															"props": {
+																"y": 0,
+																"x": 132,
+																"skin": "image/main/normal_line.png",
+																"name": "_map_line"
+															},
+															"compId": 956
+														}
+													]
+												},
+												{
+													"type": "Box",
+													"props": {
+														"y": 18,
+														"x": 311,
+														"width": 134,
+														"name": "_around_map_3",
+														"height": 98
+													},
+													"compId": 957,
+													"child": [
+														{
+															"type": "Image",
+															"props": {
+																"skin": "image/main/normal_bg.png",
+																"name": "_map_select"
+															},
+															"compId": 958
+														},
+														{
+															"type": "Image",
+															"props": {
+																"skin": "image/main/map_icon_1_1.png",
+																"name": "_map_icon",
+																"centerY": 0.5,
+																"centerX": 0.5
+															},
+															"compId": 959
+														},
+														{
+															"type": "Image",
+															"props": {
+																"skin": "image/main/lock.png",
+																"scaleY": 0.8,
+																"scaleX": 0.8,
+																"name": "_map_lock",
+																"centerY": 0.5,
+																"centerX": 0.5
+															},
+															"compId": 960
+														},
+														{
+															"type": "Image",
+															"props": {
+																"skin": "image/main/map_name_1_1.png",
+																"name": "_map_name",
+																"centerY": 27,
+																"centerX": 0
+															},
+															"compId": 962
+														},
+														{
+															"type": "Image",
+															"props": {
+																"y": 0,
+																"x": 132,
+																"skin": "image/main/normal_line.png",
+																"name": "_map_line"
+															},
+															"compId": 963
+														}
+													]
+												}
+											]
+										},
+										{
+											"type": "Image",
+											"props": {
+												"y": 119,
+												"x": 244,
+												"var": "btn_continueGame",
+												"skin": "image/main/continue.png"
+											},
+											"compId": 376
+										},
+										{
+											"type": "Image",
+											"props": {
+												"y": 117,
+												"x": -16,
+												"var": "btn_restartGame",
+												"skin": "image/main/restart.png"
+											},
+											"compId": 377
+										}
+									]
+								},
+								{
+									"type": "Image",
+									"props": {
+										"y": 23,
+										"width": 205,
+										"visible": false,
+										"skin": "image/main/1.png",
+										"height": 44,
+										"centerX": -137
+									},
+									"compId": 233,
+									"child": [
+										{
+											"type": "Label",
+											"props": {
+												"width": 158,
+												"var": "_SceneName",
+												"valign": "middle",
+												"text": "草地",
+												"strokeColor": "#3765B9",
+												"stroke": 2,
+												"height": 43,
+												"fontSize": 30,
+												"font": "Helvetica",
+												"color": "#FFFFFF",
+												"centerY": 6,
+												"centerX": -24,
+												"bold": true,
+												"align": "center"
+											},
+											"compId": 234
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "Image",
+							"props": {
+								"x": 0,
+								"width": 640,
+								"visible": false,
+								"var": "_bottom_bg",
+								"height": 111,
+								"bottom": -10
+							},
+							"compId": 218
+						},
+						{
+							"type": "Image",
+							"props": {
+								"x": 320,
+								"width": 643,
+								"visible": false,
+								"var": "_bottom_bg2",
+								"height": 209,
+								"bottom": 140,
+								"anchorY": 1,
+								"anchorX": 0.5,
+								"alpha": 1
+							},
+							"compId": 219,
+							"child": [
+								{
+									"type": "List",
+									"props": {
+										"y": 11,
+										"x": 0,
+										"width": 641,
+										"var": "_towerlist",
+										"spaceX": 10,
+										"repeatY": 1,
+										"repeatX": 5,
+										"height": 226
+									},
+									"compId": 222,
+									"child": [
+										{
+											"type": "Box",
+											"props": {
+												"y": 25,
+												"x": 2,
+												"width": 136,
+												"renderType": "render",
+												"height": 184
+											},
+											"compId": 223,
+											"child": [
+												{
+													"type": "Image",
+													"props": {
+														"y": 7,
+														"x": 0,
+														"skin": "image/main/unlocktower.png",
+														"name": "lock"
+													},
+													"compId": 476
+												},
+												{
+													"type": "Image",
+													"props": {
+														"y": -33,
+														"x": 12.5,
+														"skin": "image/main/select_bg.png",
+														"name": "select_bg"
+													},
+													"compId": 965
+												},
+												{
+													"type": "Image",
+													"props": {
+														"y": -5,
+														"x": 16.5,
+														"skin": "image/ui/tower1.png",
+														"name": "icon"
+													},
+													"compId": 225
+												},
+												{
+													"type": "Image",
+													"props": {
+														"y": 8,
+														"x": 37,
+														"visible": false,
+														"skin": "image/main/lock.png",
+														"scaleY": 1,
+														"scaleX": 1,
+														"name": "lockpic"
+													},
+													"compId": 788
+												},
+												{
+													"type": "Image",
+													"props": {
+														"y": -19,
+														"x": 86,
+														"skin": "image/main/XX.png",
+														"name": "_btn_tower_message"
+													},
+													"compId": 481
+												},
+												{
+													"type": "Image",
+													"props": {
+														"y": 104,
+														"x": 23,
+														"skin": "image/main/towernameback.png",
+														"name": "namebase",
+														"alpha": 1
+													},
+													"compId": 479
+												},
+												{
+													"type": "Label",
+													"props": {
+														"y": 103,
+														"x": 23,
+														"width": 95,
+														"valign": "middle",
+														"text": "塔名称",
+														"strokeColor": "#7D4D15",
+														"stroke": 2,
+														"name": "tower_name",
+														"height": 24,
+														"fontSize": 20,
+														"color": "#ffffff",
+														"align": "center"
+													},
+													"compId": 480
+												},
+												{
+													"type": "Image",
+													"props": {
+														"y": 129,
+														"x": 18,
+														"width": 105,
+														"visible": false,
+														"skin": "image/main/PriceD1.png",
+														"name": "PD",
+														"height": 29
+													},
+													"compId": 783,
+													"child": [
+														{
+															"type": "Image",
+															"props": {
+																"y": 1,
+																"x": 0,
+																"visible": false,
+																"skin": "image/main/Jewels.png"
+															},
+															"compId": 784
+														}
+													]
+												},
+												{
+													"type": "Label",
+													"props": {
+														"y": 130,
+														"x": 22,
+														"width": 97,
+														"valign": "middle",
+														"strokeColor": "#000000",
+														"stroke": 1,
+														"name": "Price",
+														"height": 25,
+														"gray": false,
+														"fontSize": 20,
+														"color": "#00d8ff",
+														"align": "center"
+													},
+													"compId": 787
+												},
+												{
+													"type": "Image",
+													"props": {
+														"y": 130,
+														"x": 29,
+														"visible": false,
+														"skin": "image/main/qd.png",
+														"name": "QD"
+													},
+													"compId": 798
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "Box",
+							"props": {
+								"x": -1,
+								"width": 640,
+								"visible": false,
+								"var": "developContainer",
+								"height": 150,
+								"bottom": 10
+							},
+							"compId": 966,
+							"child": [
+								{
+									"type": "Image",
+									"props": {
+										"y": 4.5,
+										"x": 51,
+										"width": 538,
+										"var": "develop_bg",
+										"skin": "image/main/develop_bg_1.png",
+										"height": 139
+									},
+									"compId": 967,
+									"child": [
+										{
+											"type": "Label",
+											"props": {
+												"y": 25,
+												"x": 18,
+												"width": 173,
+												"var": "develop_damage_level",
+												"text": "攻击力[Lv.99]",
+												"strokeColor": "#38465f",
+												"stroke": 3,
+												"height": 29,
+												"fontSize": 24,
+												"color": "#f6e16a",
+												"bold": true,
+												"align": "left"
+											},
+											"compId": 968
+										},
+										{
+											"type": "Label",
+											"props": {
+												"y": 25,
+												"x": 185,
+												"width": 72,
+												"var": "develop_damage_current",
+												"text": "9999",
+												"strokeColor": "#38465f",
+												"stroke": 3,
+												"height": 29,
+												"fontSize": 28,
+												"color": "#f6e16a",
+												"bold": true,
+												"align": "right"
+											},
+											"compId": 970
+										},
+										{
+											"type": "Label",
+											"props": {
+												"y": 25,
+												"x": 311,
+												"width": 72,
+												"var": "develop_damage_next",
+												"text": "9999",
+												"strokeColor": "#38465f",
+												"stroke": 3,
+												"height": 29,
+												"fontSize": 28,
+												"color": "#1bb522",
+												"bold": true,
+												"align": "left"
+											},
+											"compId": 971
+										},
+										{
+											"type": "Image",
+											"props": {
+												"y": 27.5,
+												"x": 264,
+												"var": "develop_damage_arrow",
+												"skin": "image/main/develop_arrow.png"
+											},
+											"compId": 972
+										},
+										{
+											"type": "Image",
+											"props": {
+												"y": 39,
+												"x": 451,
+												"var": "btn_develop_damage",
+												"skin": "image/main/develop_button.png",
+												"anchorY": 0.5,
+												"anchorX": 0.5
+											},
+											"compId": 973,
+											"child": [
+												{
+													"type": "Image",
+													"props": {
+														"y": 3,
+														"x": 8,
+														"var": "icon_develop_damage",
+														"skin": "image/main/develop_diamond.png"
+													},
+													"compId": 974
+												},
+												{
+													"type": "Label",
+													"props": {
+														"y": 12,
+														"x": 41.5,
+														"width": 100,
+														"var": "develop_damage_price",
+														"text": "100K",
+														"height": 24,
+														"fontSize": 24,
+														"color": "#894222",
+														"bold": true,
+														"align": "center"
+													},
+													"compId": 975
+												}
+											]
+										},
+										{
+											"type": "Label",
+											"props": {
+												"y": 84.5,
+												"x": 18,
+												"width": 173,
+												"var": "develop_cd_level",
+												"text": "攻击间隔[Lv.99]",
+												"strokeColor": "#38465f",
+												"stroke": 3,
+												"height": 29,
+												"fontSize": 24,
+												"color": "#8ce3f4",
+												"bold": true,
+												"align": "left"
+											},
+											"compId": 976
+										},
+										{
+											"type": "Label",
+											"props": {
+												"y": 85,
+												"x": 185,
+												"width": 72,
+												"var": "develop_cd_current",
+												"text": "9999",
+												"strokeColor": "#38465f",
+												"stroke": 3,
+												"height": 29,
+												"fontSize": 28,
+												"color": "#8ce3f4",
+												"bold": true,
+												"align": "right"
+											},
+											"compId": 977
+										},
+										{
+											"type": "Label",
+											"props": {
+												"y": 85,
+												"x": 311,
+												"width": 72,
+												"var": "develop_cd_next",
+												"text": "9999",
+												"strokeColor": "#38465f",
+												"stroke": 3,
+												"height": 29,
+												"fontSize": 28,
+												"color": "#1bb522",
+												"bold": true,
+												"align": "left"
+											},
+											"compId": 978
+										},
+										{
+											"type": "Image",
+											"props": {
+												"y": 86,
+												"x": 264,
+												"var": "develop_cd_arrow",
+												"skin": "image/main/develop_arrow.png"
+											},
+											"compId": 979
+										},
+										{
+											"type": "Image",
+											"props": {
+												"y": 97,
+												"x": 451,
+												"var": "btn_develop_cd",
+												"skin": "image/main/develop_button.png",
+												"anchorY": 0.5,
+												"anchorX": 0.5
+											},
+											"compId": 980,
+											"child": [
+												{
+													"type": "Image",
+													"props": {
+														"y": 3,
+														"x": 8,
+														"var": "icon_develop_cd",
+														"skin": "image/main/develop_diamond.png"
+													},
+													"compId": 981
+												},
+												{
+													"type": "Label",
+													"props": {
+														"y": 12,
+														"x": 41.5,
+														"width": 100,
+														"var": "develop_cd_price",
+														"text": "100K",
+														"height": 24,
+														"fontSize": 24,
+														"color": "#894222",
+														"bold": true,
+														"align": "center"
+													},
+													"compId": 982
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "Label",
+					"props": {
+						"width": 640,
+						"visible": false,
+						"var": "first_once",
+						"mouseEnabled": true,
+						"height": 1176,
+						"color": "#000000",
+						"centerY": 10,
+						"centerX": 0,
+						"bgColor": "#000000",
+						"anchorY": 0.5,
+						"anchorX": 0.5,
+						"alpha": 0.8
+					},
+					"compId": 850
+				},
+				{
+					"type": "Image",
+					"props": {
+						"visible": false,
+						"var": "btn_startgame",
+						"skin": "image/main/start.png",
+						"centerY": 179,
+						"centerX": 1,
+						"anchorY": 0.5,
+						"anchorX": 0.5
+					},
+					"compId": 375
+				},
+				{
+					"type": "Image",
+					"props": {
+						"visible": false,
+						"var": "_main_tips",
+						"skin": "image/main/tips.png",
+						"centerY": 227,
+						"centerX": 33
+					},
+					"compId": 387,
+					"child": [
+						{
+							"type": "Image",
+							"props": {
+								"y": 4,
+								"x": 148,
+								"skin": "image/main/tips_tower.png"
+							},
+							"compId": 701
+						},
+						{
+							"type": "Image",
+							"props": {
+								"y": 66,
+								"x": 42,
+								"skin": "image/main/towernameback.png"
+							},
+							"compId": 581
+						},
+						{
+							"type": "Image",
+							"props": {
+								"y": 221,
+								"x": 147,
+								"skin": "image/main/tipsnei3.png"
+							},
+							"compId": 700
+						},
+						{
+							"type": "Image",
+							"props": {
+								"y": 163,
+								"x": 147,
+								"skin": "image/main/tipsnei4.png"
+							},
+							"compId": 699
+						},
+						{
+							"type": "Image",
+							"props": {
+								"y": 61,
+								"x": 147,
+								"skin": "image/main/tipsnei1.png"
+							},
+							"compId": 580
+						},
+						{
+							"type": "Label",
+							"props": {
+								"y": 64,
+								"width": 100,
+								"var": "_title_tips_1",
+								"valign": "middle",
+								"text": "塔的名称",
+								"strokeColor": "#7D4D15",
+								"stroke": 2,
+								"height": 24,
+								"fontSize": 20,
+								"color": "#ffffff",
+								"centerX": -122,
+								"align": "center"
+							},
+							"compId": 388
+						},
+						{
+							"type": "Image",
+							"props": {
+								"y": 167,
+								"x": 306,
+								"var": "atack_fire1",
+								"skin": "image/main/Firenum.png",
+								"alpha": 0
+							},
+							"compId": 583
+						},
+						{
+							"type": "Image",
+							"props": {
+								"y": 167,
+								"x": 326,
+								"var": "atack_fire2",
+								"skin": "image/main/Firenum.png",
+								"alpha": 0
+							},
+							"compId": 582
+						},
+						{
+							"type": "Image",
+							"props": {
+								"y": 167,
+								"x": 346,
+								"var": "atack_fire3",
+								"skin": "image/main/Firenum.png",
+								"alpha": 0
+							},
+							"compId": 584
+						},
+						{
+							"type": "Image",
+							"props": {
+								"y": 238,
+								"x": 275,
+								"skin": "image/main/lineviewK.png"
+							},
+							"compId": 585
+						},
+						{
+							"type": "Image",
+							"props": {
+								"y": 238,
+								"x": 292,
+								"skin": "image/main/lineviewK.png"
+							},
+							"compId": 586
+						},
+						{
+							"type": "Image",
+							"props": {
+								"y": 238,
+								"x": 309,
+								"skin": "image/main/lineviewK.png"
+							},
+							"compId": 587
+						},
+						{
+							"type": "Image",
+							"props": {
+								"y": 238,
+								"x": 326,
+								"skin": "image/main/lineviewK.png"
+							},
+							"compId": 588
+						},
+						{
+							"type": "Image",
+							"props": {
+								"y": 238,
+								"x": 326,
+								"var": "tower_range4",
+								"skin": "image/main/lineviewN.png",
+								"alpha": 1
+							},
+							"compId": 592
+						},
+						{
+							"type": "Image",
+							"props": {
+								"y": 238,
+								"x": 309,
+								"var": "tower_range3",
+								"skin": "image/main/lineviewN.png",
+								"alpha": 1
+							},
+							"compId": 591
+						},
+						{
+							"type": "Image",
+							"props": {
+								"y": 238,
+								"x": 292,
+								"var": "tower_range2",
+								"skin": "image/main/lineviewN.png",
+								"alpha": 0
+							},
+							"compId": 590
+						},
+						{
+							"type": "Image",
+							"props": {
+								"y": 238,
+								"x": 275,
+								"var": "tower_range1",
+								"skin": "image/main/lineviewN.png",
+								"alpha": 0
+							},
+							"compId": 589
+						},
+						{
+							"type": "Image",
+							"props": {
+								"y": 102,
+								"x": 37,
+								"var": "tips_icon",
+								"skin": "image/ui/tower2.png"
+							},
+							"compId": 593
+						},
+						{
+							"type": "Label",
+							"props": {
+								"y": 59,
+								"x": 145,
+								"wordWrap": true,
+								"width": 236,
+								"var": "_content_tips_1",
+								"valign": "middle",
+								"text": "塔的内容塔的内容塔的内容塔的内容塔的内容塔的内容塔的内容塔的内容",
+								"strokeColor": "#444342",
+								"stroke": 1,
+								"height": 83,
+								"fontSize": 20,
+								"color": "#ffffff",
+								"align": "center"
+							},
+							"compId": 389
+						},
+						{
+							"type": "Label",
+							"props": {
+								"y": 164,
+								"width": 134,
+								"var": "_p_tips_1",
+								"valign": "middle",
+								"text": "Attack:255",
+								"strokeColor": "#4d270a",
+								"stroke": 1,
+								"height": 27,
+								"fontSize": 22,
+								"color": "#f5d245",
+								"centerX": 8,
+								"bold": true,
+								"align": "center"
+							},
+							"compId": 393
+						},
+						{
+							"type": "Label",
+							"props": {
+								"y": 230.5,
+								"width": 115,
+								"valign": "middle",
+								"text": "Sight",
+								"strokeColor": "#083605",
+								"stroke": 1,
+								"height": 27,
+								"fontSize": 20,
+								"color": "#87DC2B",
+								"centerX": -6,
+								"bold": true,
+								"align": "center"
+							},
+							"compId": 390
+						},
+						{
+							"type": "Image",
+							"props": {
+								"y": 17,
+								"x": 397,
+								"var": "_btn_close_tips_1",
+								"skin": "image/main/X.png"
+							},
+							"compId": 394
+						},
+						{
+							"type": "Image",
+							"props": {
+								"y": 225.5,
+								"x": 45.5,
+								"width": 91,
+								"skin": "image/main/PriceD1.png",
+								"height": 31
+							},
+							"compId": 594,
+							"child": [
+								{
+									"type": "Image",
+									"props": {
+										"y": 2,
+										"x": 4,
+										"skin": "image/main/smallmoney.png"
+									},
+									"compId": 595
+								},
+								{
+									"type": "Label",
+									"props": {
+										"y": 6,
+										"x": 32,
+										"width": 48,
+										"var": "tips_price",
+										"valign": "middle",
+										"text": "label",
+										"height": 20,
+										"fontSize": 16,
+										"color": "#fee47e",
+										"align": "center"
+									},
+									"compId": 596
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "Label",
+					"props": {
+						"y": -10,
+						"x": 0,
+						"width": 640,
+						"visible": false,
+						"var": "_mainzz",
+						"height": 1400,
+						"bgColor": "#1b1717",
+						"alpha": 0.6
+					},
+					"compId": 245
+				},
+				{
+					"type": "Box",
+					"props": {
+						"y": -83,
+						"x": 0,
+						"width": 640,
+						"visible": false,
+						"var": "_sign",
+						"height": 1168
+					},
+					"compId": 241,
+					"child": [
+						{
+							"type": "Image",
+							"props": {
+								"y": 192,
+								"width": 609,
+								"var": "sign_bg",
+								"pivotY": 0.5,
+								"pivotX": 0.5,
+								"height": 786,
+								"centerX": 0
+							},
+							"compId": 242,
+							"child": [
+								{
+									"type": "Box",
+									"props": {
+										"y": 77,
+										"x": 8,
+										"width": 589,
+										"height": 712
+									},
+									"compId": 248,
+									"child": [
+										{
+											"type": "Image",
+											"props": {
+												"y": 150,
+												"x": 110,
+												"var": "selectnow",
+												"skin": "image/main/sige_now.png",
+												"anchorY": 0.5,
+												"anchorX": 0.5,
+												"alpha": 0
+											},
+											"compId": 653
+										},
+										{
+											"type": "Image",
+											"props": {
+												"y": 151,
+												"x": 110,
+												"width": 176,
+												"var": "sign1",
+												"height": 198,
+												"anchorY": 0.5,
+												"anchorX": 0.5
+											},
+											"compId": 249,
+											"child": [
+												{
+													"type": "Label",
+													"props": {
+														"y": 0,
+														"x": 0,
+														"width": 172,
+														"valign": "middle",
+														"text": "Day 1",
+														"height": 48,
+														"fontSize": 24,
+														"font": "Helvetica",
+														"color": "#A2562D",
+														"bold": true,
+														"align": "center"
+													},
+													"compId": 648
+												},
+												{
+													"type": "Image",
+													"props": {
+														"var": "icon_sign1",
+														"skin": "image/main/55.png",
+														"scaleY": 1,
+														"scaleX": 1,
+														"centerY": 0,
+														"centerX": 0
+													},
+													"compId": 265
+												},
+												{
+													"type": "Label",
+													"props": {
+														"y": 154,
+														"x": 8,
+														"width": 159,
+														"var": "sign1_name",
+														"valign": "middle",
+														"text": "label",
+														"height": 37,
+														"fontSize": 18,
+														"color": "#A2562D",
+														"bold": true,
+														"align": "center"
+													},
+													"compId": 654
+												},
+												{
+													"type": "Image",
+													"props": {
+														"y": 0,
+														"x": 2,
+														"width": 169,
+														"var": "sign_mask1",
+														"skin": "image/main/masksign.png",
+														"height": 194
+													},
+													"compId": 660,
+													"child": [
+														{
+															"type": "Image",
+															"props": {
+																"y": 44,
+																"x": 33,
+																"skin": "image/main/sigemask.png"
+															},
+															"compId": 671
+														}
+													]
+												}
+											]
+										},
+										{
+											"type": "Image",
+											"props": {
+												"y": 150,
+												"x": 286,
+												"width": 176,
+												"var": "sign2",
+												"height": 198,
+												"anchorY": 0.5,
+												"anchorX": 0.5
+											},
+											"compId": 250,
+											"child": [
+												{
+													"type": "Label",
+													"props": {
+														"y": 0,
+														"x": 0,
+														"width": 172,
+														"valign": "middle",
+														"text": "Day 2",
+														"height": 48,
+														"fontSize": 24,
+														"font": "Helvetica",
+														"color": "#A2562D",
+														"bold": true,
+														"align": "center"
+													},
+													"compId": 649
+												},
+												{
+													"type": "Image",
+													"props": {
+														"var": "icon_sign2",
+														"skin": "image/main/31.png",
+														"scaleY": 1,
+														"scaleX": 1,
+														"centerY": 0,
+														"centerX": 0
+													},
+													"compId": 263
+												},
+												{
+													"type": "Label",
+													"props": {
+														"y": 154,
+														"x": 8,
+														"width": 159,
+														"var": "sign2_name",
+														"valign": "middle",
+														"text": "label",
+														"height": 37,
+														"fontSize": 18,
+														"color": "#A2562D",
+														"bold": true,
+														"align": "center"
+													},
+													"compId": 655
+												},
+												{
+													"type": "Image",
+													"props": {
+														"y": 0,
+														"x": 2,
+														"width": 169,
+														"var": "sign_mask2",
+														"skin": "image/main/masksign.png",
+														"height": 194
+													},
+													"compId": 368,
+													"child": [
+														{
+															"type": "Image",
+															"props": {
+																"y": 44,
+																"x": 33,
+																"skin": "image/main/sigemask.png"
+															},
+															"compId": 672
+														}
+													]
+												}
+											]
+										},
+										{
+											"type": "Image",
+											"props": {
+												"y": 150,
+												"x": 464,
+												"width": 176,
+												"var": "sign3",
+												"height": 198,
+												"anchorY": 0.5,
+												"anchorX": 0.5
+											},
+											"compId": 251,
+											"child": [
+												{
+													"type": "Label",
+													"props": {
+														"y": 0,
+														"x": 0,
+														"width": 172,
+														"valign": "middle",
+														"text": "Day 3",
+														"height": 48,
+														"fontSize": 24,
+														"font": "Helvetica",
+														"color": "#A2562D",
+														"bold": true,
+														"align": "center"
+													},
+													"compId": 650
+												},
+												{
+													"type": "Image",
+													"props": {
+														"var": "icon_sign3",
+														"skin": "image/main/33.png",
+														"scaleY": 1,
+														"scaleX": 1,
+														"centerY": 0,
+														"centerX": 0
+													},
+													"compId": 266
+												},
+												{
+													"type": "Label",
+													"props": {
+														"y": 154,
+														"x": 8,
+														"width": 159,
+														"var": "sign3_name",
+														"valign": "middle",
+														"text": "label",
+														"height": 37,
+														"fontSize": 18,
+														"color": "#A2562D",
+														"bold": true,
+														"align": "center"
+													},
+													"compId": 656
+												},
+												{
+													"type": "Image",
+													"props": {
+														"y": 0,
+														"x": 2,
+														"width": 169,
+														"var": "sign_mask3",
+														"skin": "image/main/masksign.png",
+														"height": 194
+													},
+													"compId": 661,
+													"child": [
+														{
+															"type": "Image",
+															"props": {
+																"y": 44,
+																"x": 33,
+																"skin": "image/main/sigemask.png"
+															},
+															"compId": 673
+														}
+													]
+												}
+											]
+										},
+										{
+											"type": "Image",
+											"props": {
+												"y": 359,
+												"x": 110,
+												"width": 176,
+												"var": "sign4",
+												"height": 198,
+												"anchorY": 0.5,
+												"anchorX": 0.5
+											},
+											"compId": 252,
+											"child": [
+												{
+													"type": "Label",
+													"props": {
+														"y": 0,
+														"x": 0,
+														"width": 172,
+														"valign": "middle",
+														"text": "Day 4",
+														"height": 48,
+														"fontSize": 24,
+														"font": "Helvetica",
+														"color": "#A2562D",
+														"bold": true,
+														"align": "center"
+													},
+													"compId": 651
+												},
+												{
+													"type": "Image",
+													"props": {
+														"x": 0,
+														"var": "icon_sign4",
+														"skin": "image/main/hp.png",
+														"scaleY": 1,
+														"scaleX": 1,
+														"centerY": 0,
+														"centerX": 0
+													},
+													"compId": 268
+												},
+												{
+													"type": "Label",
+													"props": {
+														"y": 154,
+														"x": 8,
+														"width": 159,
+														"var": "sign4_name",
+														"valign": "middle",
+														"text": "label",
+														"height": 37,
+														"fontSize": 18,
+														"color": "#A2562D",
+														"bold": true,
+														"align": "center"
+													},
+													"compId": 657
+												},
+												{
+													"type": "Image",
+													"props": {
+														"y": 0,
+														"x": 2,
+														"width": 169,
+														"var": "sign_mask4",
+														"skin": "image/main/masksign.png",
+														"height": 194
+													},
+													"compId": 662,
+													"child": [
+														{
+															"type": "Image",
+															"props": {
+																"y": 44.5,
+																"x": 33.5,
+																"skin": "image/main/sigemask.png"
+															},
+															"compId": 667
+														}
+													]
+												}
+											]
+										},
+										{
+											"type": "Image",
+											"props": {
+												"y": 359,
+												"x": 288,
+												"width": 176,
+												"var": "sign5",
+												"height": 198,
+												"anchorY": 0.5,
+												"anchorX": 0.5
+											},
+											"compId": 253,
+											"child": [
+												{
+													"type": "Label",
+													"props": {
+														"y": 1,
+														"x": 0,
+														"width": 172,
+														"valign": "middle",
+														"text": "Day 5",
+														"height": 48,
+														"fontSize": 24,
+														"font": "Helvetica",
+														"color": "#A2562D",
+														"bold": true,
+														"align": "center"
+													},
+													"compId": 652
+												},
+												{
+													"type": "Image",
+													"props": {
+														"var": "icon_sign5",
+														"skin": "image/main/X3.png",
+														"scaleY": 1,
+														"scaleX": 1,
+														"centerY": 1,
+														"centerX": 0
+													},
+													"compId": 269
+												},
+												{
+													"type": "Label",
+													"props": {
+														"y": 155,
+														"x": 8,
+														"width": 159,
+														"var": "sign5_name",
+														"valign": "middle",
+														"text": "label",
+														"height": 37,
+														"fontSize": 18,
+														"color": "#A2562D",
+														"bold": true,
+														"align": "center"
+													},
+													"compId": 658
+												},
+												{
+													"type": "Image",
+													"props": {
+														"y": 1,
+														"x": 2,
+														"width": 169,
+														"var": "sign_mask5",
+														"skin": "image/main/masksign.png",
+														"height": 194
+													},
+													"compId": 663,
+													"child": [
+														{
+															"type": "Image",
+															"props": {
+																"y": 45.5,
+																"x": 33.5,
+																"skin": "image/main/sigemask.png"
+															},
+															"compId": 668
+														}
+													]
+												}
+											]
+										},
+										{
+											"type": "Image",
+											"props": {
+												"y": 357,
+												"x": 464,
+												"width": 176,
+												"var": "sign6",
+												"height": 198,
+												"anchorY": 0.5,
+												"anchorX": 0.5
+											},
+											"compId": 254,
+											"child": [
+												{
+													"type": "Label",
+													"props": {
+														"y": 1,
+														"x": 0,
+														"width": 172,
+														"valign": "middle",
+														"text": "Day 6",
+														"height": 48,
+														"fontSize": 24,
+														"font": "Helvetica",
+														"color": "#A2562D",
+														"bold": true,
+														"align": "center"
+													},
+													"compId": 261
+												},
+												{
+													"type": "Image",
+													"props": {
+														"var": "icon_sign6",
+														"skin": "image/main/35.png",
+														"scaleY": 1,
+														"scaleX": 1,
+														"centerY": 1,
+														"centerX": -2
+													},
+													"compId": 270
+												},
+												{
+													"type": "Label",
+													"props": {
+														"y": 155,
+														"x": 8,
+														"width": 159,
+														"var": "sign6_name",
+														"valign": "middle",
+														"text": "label",
+														"height": 37,
+														"fontSize": 18,
+														"color": "#A2562D",
+														"bold": true,
+														"align": "center"
+													},
+													"compId": 659
+												},
+												{
+													"type": "Image",
+													"props": {
+														"y": 1,
+														"x": 2,
+														"width": 169,
+														"var": "sign_mask6",
+														"skin": "image/main/masksign.png",
+														"height": 194
+													},
+													"compId": 664,
+													"child": [
+														{
+															"type": "Image",
+															"props": {
+																"y": 45.5,
+																"x": 33.5,
+																"skin": "image/main/sigemask.png"
+															},
+															"compId": 669
+														}
+													]
+												}
+											]
+										},
+										{
+											"type": "Image",
+											"props": {
+												"y": 559,
+												"x": 285,
+												"width": 526,
+												"var": "sign7",
+												"height": 189,
+												"anchorY": 0.5,
+												"anchorX": 0.5
+											},
+											"compId": 255,
+											"child": [
+												{
+													"type": "Image",
+													"props": {
+														"y": 1,
+														"x": -17,
+														"width": 564,
+														"var": "sign_mask7",
+														"skin": "image/main/43.png",
+														"height": 189,
+														"anchorY": 0,
+														"anchorX": 0
+													},
+													"compId": 373,
+													"child": [
+														{
+															"type": "Image",
+															"props": {
+																"y": 43,
+																"x": 231,
+																"skin": "image/main/sigemask.png"
+															},
+															"compId": 670
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"type": "Label",
+									"props": {
+										"y": 845,
+										"x": 218.224609375,
+										"visible": false,
+										"var": "btn_signx1",
+										"underlineColor": "#DDD8D8",
+										"underline": true,
+										"text": "Claim Reward",
+										"fontSize": 24,
+										"color": "#DDD8D8",
+										"bold": true
+									},
+									"compId": 665
+								},
+								{
+									"type": "Image",
+									"props": {
+										"var": "btn_signx2",
+										"skin": "image/main/sigedb.png",
+										"centerY": 394,
+										"centerX": 0
+									},
+									"compId": 247
+								},
+								{
+									"type": "Image",
+									"props": {
+										"y": 75,
+										"x": 551,
+										"width": 34,
+										"var": "btn_closeSign",
+										"skin": "image/main/X.png",
+										"height": 35
+									},
+									"compId": 378
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "Box",
+					"props": {
+						"y": 7,
+						"x": 0,
+						"width": 640,
+						"visible": false,
+						"var": "_lucky",
+						"height": 1136
+					},
+					"compId": 303,
+					"child": [
+						{
+							"type": "Image",
+							"props": {
+								"width": 565,
+								"var": "lucky_bg",
+								"pivotY": 0.5,
+								"pivotX": 0.5,
+								"height": 558,
+								"centerY": 1,
+								"centerX": 0
+							},
+							"compId": 332,
+							"child": [
+								{
+									"type": "Image",
+									"props": {
+										"y": 37.5,
+										"x": 35,
+										"var": "_lucy_mask"
+									},
+									"compId": 716
+								},
+								{
+									"type": "Image",
+									"props": {
+										"y": -73.5,
+										"x": 100,
+										"skin": "image/main/round_titile.png"
+									},
+									"compId": 705
+								},
+								{
+									"type": "Image",
+									"props": {
+										"y": 1,
+										"x": 524,
+										"width": 37,
+										"var": "btn_close_lucky",
+										"skin": "image/main/X.png",
+										"height": 37
+									},
+									"compId": 333
+								},
+								{
+									"type": "Image",
+									"props": {
+										"var": "btn_start_lucky",
+										"skin": "image/main/36.png",
+										"centerY": -5,
+										"centerX": 0
+									},
+									"compId": 334,
+									"child": [
+										{
+											"type": "Label",
+											"props": {
+												"y": 123,
+												"x": 50,
+												"width": 109,
+												"var": "_luck_times",
+												"valign": "middle",
+												"text": "Left: 2",
+												"strokeColor": "#723A0C",
+												"stroke": 1,
+												"italic": false,
+												"height": 18,
+												"fontSize": 18,
+												"color": "#ffffff",
+												"bold": true,
+												"align": "left"
+											},
+											"compId": 707
+										},
+										{
+											"type": "Image",
+											"props": {
+												"y": 108,
+												"x": 3,
+												"width": 46,
+												"var": "_luck_icon",
+												"skin": "image/ui/buff_ads.png",
+												"height": 44
+											},
+											"compId": 1105
+										}
+									]
+								},
+								{
+									"type": "Image",
+									"props": {
+										"y": 111,
+										"x": 118,
+										"var": "luck1",
+										"skin": "image/main/a1.png",
+										"anchorY": 0.5,
+										"anchorX": 0.5
+									},
+									"compId": 335,
+									"child": [
+										{
+											"type": "Image",
+											"props": {
+												"var": "img_luck_1",
+												"skin": "image/main/31_1.png",
+												"centerY": 0,
+												"centerX": 0
+											},
+											"compId": 343
+										},
+										{
+											"type": "Image",
+											"props": {
+												"y": 121,
+												"x": 63,
+												"var": "imn_1",
+												"skin": "image/main/roundname.png",
+												"anchorY": 0.5,
+												"anchorX": 0.5
+											},
+											"compId": 708
+										},
+										{
+											"type": "Label",
+											"props": {
+												"y": 112,
+												"x": 18,
+												"width": 95,
+												"var": "lab_lucky_1",
+												"valign": "middle",
+												"text": "物品名称",
+												"strokeColor": "#5F3A13",
+												"stroke": 1,
+												"height": 18,
+												"fontSize": 20,
+												"color": "#FFFFFF",
+												"centerY": 63,
+												"centerX": 0,
+												"bold": true,
+												"align": "center"
+											},
+											"compId": 344
+										}
+									]
+								},
+								{
+									"type": "Image",
+									"props": {
+										"y": 111,
+										"x": 285,
+										"var": "luck2",
+										"skin": "image/main/a1.png",
+										"anchorY": 0.5,
+										"anchorX": 0.5
+									},
+									"compId": 336,
+									"child": [
+										{
+											"type": "Image",
+											"props": {
+												"var": "img_luck_2",
+												"skin": "image/main/33.png",
+												"centerY": 0,
+												"centerX": 0
+											},
+											"compId": 345
+										},
+										{
+											"type": "Image",
+											"props": {
+												"y": 121,
+												"x": 63,
+												"var": "imn_2",
+												"skin": "image/main/roundname.png",
+												"anchorY": 0.5,
+												"anchorX": 0.5
+											},
+											"compId": 709
+										},
+										{
+											"type": "Label",
+											"props": {
+												"width": 95,
+												"var": "lab_lucky_2",
+												"valign": "middle",
+												"text": "物品名称",
+												"strokeColor": "#5F3A13",
+												"stroke": 1,
+												"height": 18,
+												"fontSize": 20,
+												"color": "#FFFFFF",
+												"centerY": 63,
+												"centerX": 0,
+												"bold": true,
+												"align": "center"
+											},
+											"compId": 346
+										}
+									]
+								},
+								{
+									"type": "Image",
+									"props": {
+										"y": 111,
+										"x": 450,
+										"var": "luck3",
+										"skin": "image/main/a1.png",
+										"anchorY": 0.5,
+										"anchorX": 0.5
+									},
+									"compId": 337,
+									"child": [
+										{
+											"type": "Image",
+											"props": {
+												"var": "img_luck_3",
+												"skin": "image/main/33.png",
+												"centerY": 0,
+												"centerX": 0
+											},
+											"compId": 347
+										},
+										{
+											"type": "Image",
+											"props": {
+												"y": 121,
+												"x": 63,
+												"var": "imn_3",
+												"skin": "image/main/roundname.png",
+												"anchorY": 0.5,
+												"anchorX": 0.5
+											},
+											"compId": 710
+										},
+										{
+											"type": "Label",
+											"props": {
+												"width": 95,
+												"var": "lab_lucky_3",
+												"valign": "middle",
+												"text": "物品名称",
+												"strokeColor": "#5F3A13",
+												"stroke": 1,
+												"height": 18,
+												"fontSize": 20,
+												"color": "#FFFFFF",
+												"centerY": 63,
+												"centerX": 0,
+												"bold": true,
+												"align": "center"
+											},
+											"compId": 348
+										}
+									]
+								},
+								{
+									"type": "Image",
+									"props": {
+										"y": 274,
+										"x": 118,
+										"var": "luck8",
+										"skin": "image/main/a1.png",
+										"anchorY": 0.5,
+										"anchorX": 0.5
+									},
+									"compId": 338,
+									"child": [
+										{
+											"type": "Image",
+											"props": {
+												"var": "img_luck_8",
+												"skin": "image/main/33.png",
+												"centerY": 0,
+												"centerX": 0
+											},
+											"compId": 349
+										},
+										{
+											"type": "Image",
+											"props": {
+												"y": 121,
+												"x": 63,
+												"var": "imn_8",
+												"skin": "image/main/roundname.png",
+												"anchorY": 0.5,
+												"anchorX": 0.5
+											},
+											"compId": 712
+										},
+										{
+											"type": "Label",
+											"props": {
+												"width": 95,
+												"var": "lab_lucky_8",
+												"valign": "middle",
+												"text": "物品名称",
+												"strokeColor": "#5F3A13",
+												"stroke": 1,
+												"height": 18,
+												"fontSize": 20,
+												"color": "#FFFFFF",
+												"centerY": 63,
+												"centerX": 0,
+												"bold": true,
+												"align": "center"
+											},
+											"compId": 350
+										}
+									]
+								},
+								{
+									"type": "Image",
+									"props": {
+										"y": 266,
+										"x": 451,
+										"var": "luck4",
+										"skin": "image/main/a1.png",
+										"anchorY": 0.5,
+										"anchorX": 0.5
+									},
+									"compId": 339,
+									"child": [
+										{
+											"type": "Image",
+											"props": {
+												"var": "img_luck_4",
+												"skin": "image/main/33.png",
+												"centerY": 0,
+												"centerX": 0
+											},
+											"compId": 351
+										},
+										{
+											"type": "Image",
+											"props": {
+												"y": 121,
+												"x": 63,
+												"var": "imn_4",
+												"skin": "image/main/roundname.png",
+												"anchorY": 0.5,
+												"anchorX": 0.5
+											},
+											"compId": 711
+										},
+										{
+											"type": "Label",
+											"props": {
+												"width": 95,
+												"var": "lab_lucky_4",
+												"valign": "middle",
+												"text": "物品名称",
+												"strokeColor": "#5F3A13",
+												"stroke": 1,
+												"height": 28,
+												"fontSize": 20,
+												"color": "#FFFFFF",
+												"centerY": 63,
+												"centerX": 0,
+												"bold": true,
+												"align": "center"
+											},
+											"compId": 352
+										}
+									]
+								},
+								{
+									"type": "Image",
+									"props": {
+										"y": 426,
+										"x": 118,
+										"var": "luck7",
+										"skin": "image/main/a1.png",
+										"anchorY": 0.5,
+										"anchorX": 0.5
+									},
+									"compId": 340,
+									"child": [
+										{
+											"type": "Image",
+											"props": {
+												"var": "img_luck_7",
+												"skin": "image/main/33.png",
+												"centerY": 1,
+												"centerX": 0
+											},
+											"compId": 353
+										},
+										{
+											"type": "Image",
+											"props": {
+												"y": 122,
+												"x": 63,
+												"var": "imn_7",
+												"skin": "image/main/roundname.png",
+												"anchorY": 0.5,
+												"anchorX": 0.5
+											},
+											"compId": 713
+										},
+										{
+											"type": "Label",
+											"props": {
+												"width": 95,
+												"var": "lab_lucky_7",
+												"valign": "middle",
+												"text": "物品名称",
+												"strokeColor": "#5F3A13",
+												"stroke": 1,
+												"height": 18,
+												"fontSize": 20,
+												"color": "#FFFFFF",
+												"centerY": 64,
+												"centerX": 0,
+												"bold": true,
+												"align": "center"
+											},
+											"compId": 354
+										}
+									]
+								},
+								{
+									"type": "Image",
+									"props": {
+										"y": 426,
+										"x": 282.5,
+										"var": "luck6",
+										"skin": "image/main/a1.png",
+										"anchorY": 0.5,
+										"anchorX": 0.5
+									},
+									"compId": 341,
+									"child": [
+										{
+											"type": "Image",
+											"props": {
+												"var": "img_luck_6",
+												"skin": "image/main/33.png",
+												"centerY": 1,
+												"centerX": 0
+											},
+											"compId": 355
+										},
+										{
+											"type": "Image",
+											"props": {
+												"y": 122,
+												"x": 63,
+												"var": "imn_6",
+												"skin": "image/main/roundname.png",
+												"anchorY": 0.5,
+												"anchorX": 0.5
+											},
+											"compId": 714
+										},
+										{
+											"type": "Label",
+											"props": {
+												"width": 95,
+												"var": "lab_lucky_6",
+												"valign": "middle",
+												"text": "物品名称",
+												"strokeColor": "#5F3A13",
+												"stroke": 1,
+												"height": 18,
+												"fontSize": 20,
+												"color": "#FFFFFF",
+												"centerY": 64,
+												"centerX": 0,
+												"bold": true,
+												"align": "center"
+											},
+											"compId": 356
+										}
+									]
+								},
+								{
+									"type": "Image",
+									"props": {
+										"y": 426,
+										"x": 451,
+										"var": "luck5",
+										"skin": "image/main/a1.png",
+										"anchorY": 0.5,
+										"anchorX": 0.5
+									},
+									"compId": 342,
+									"child": [
+										{
+											"type": "Image",
+											"props": {
+												"var": "img_luck_5",
+												"skin": "image/main/33.png",
+												"centerY": 1,
+												"centerX": 0
+											},
+											"compId": 357
+										},
+										{
+											"type": "Image",
+											"props": {
+												"y": 122,
+												"x": 63,
+												"var": "imn_5",
+												"skin": "image/main/roundname.png",
+												"anchorY": 0.5,
+												"anchorX": 0.5
+											},
+											"compId": 715
+										},
+										{
+											"type": "Label",
+											"props": {
+												"width": 95,
+												"var": "lab_lucky_5",
+												"valign": "middle",
+												"text": "物品名称",
+												"strokeColor": "#5F3A13",
+												"stroke": 1,
+												"height": 18,
+												"fontSize": 20,
+												"color": "#FFFFFF",
+												"centerY": 64,
+												"centerX": 0,
+												"bold": true,
+												"align": "center"
+											},
+											"compId": 358
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "Box",
+					"props": {
+						"x": 0,
+						"width": 640,
+						"visible": false,
+						"var": "_diamondgift",
+						"height": 1136
+					},
+					"compId": 984,
+					"child": [
+						{
+							"type": "Image",
+							"props": {
+								"skin": "image/main/tips.png",
+								"name": "gift_window",
+								"centerY": 0,
+								"centerX": 0
+							},
+							"compId": 985,
+							"child": [
+								{
+									"type": "Image",
+									"props": {
+										"y": 78,
+										"x": 51.5,
+										"skin": "image/main/tipsnei2.png"
+									},
+									"compId": 986,
+									"child": [
+										{
+											"type": "Label",
+											"props": {
+												"y": 31,
+												"x": 88,
+												"text": "Get",
+												"strokeColor": "#555e6c",
+												"stroke": 3,
+												"fontSize": 24,
+												"color": "#ffffff",
+												"bold": true
+											},
+											"compId": 990
+										},
+										{
+											"type": "Image",
+											"props": {
+												"y": 29.5,
+												"x": 161,
+												"skin": "image/main/Jewels.png"
+											},
+											"compId": 991
+										},
+										{
+											"type": "Label",
+											"props": {
+												"y": 31,
+												"x": 200,
+												"var": "gift_label",
+												"text": "x100",
+												"strokeColor": "#555e6c",
+												"stroke": 3,
+												"fontSize": 24,
+												"color": "#ffffff",
+												"bold": true
+											},
+											"compId": 992
+										}
+									]
+								},
+								{
+									"type": "Image",
+									"props": {
+										"y": 202,
+										"x": 133,
+										"var": "btn_gifthave",
+										"skin": "image/main/get.png"
+									},
+									"compId": 989
+								},
+								{
+									"type": "Image",
+									"props": {
+										"y": -7.5,
+										"x": 157.5,
+										"skin": "image/main/title_name_2.png",
+										"name": "gift_title"
+									},
+									"compId": 987
+								},
+								{
+									"type": "Image",
+									"props": {
+										"y": 13,
+										"x": 386,
+										"var": "btn_giftclose",
+										"skin": "image/main/X.png"
+									},
+									"compId": 988
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "Image",
+					"props": {
+						"visible": false,
+						"var": "_main_locktip",
+						"skin": "image/main/locktips.png",
+						"centerY": 4,
+						"centerX": 1
+					},
+					"compId": 890
+				}
+			]
+		},
+		{
+			"type": "Label",
+			"props": {
+				"width": 640,
+				"visible": false,
+				"var": "tczz",
+				"pivotY": 0.5,
+				"pivotX": 0.5,
+				"mouseEnabled": true,
+				"height": 1400,
+				"centerY": 0,
+				"centerX": 2,
+				"bgColor": "#1b1717",
+				"alpha": 0.6
+			},
+			"compId": 735
+		},
+		{
+			"type": "Image",
+			"props": {
+				"width": 640,
+				"visible": false,
+				"var": "_viewSelect",
+				"height": 100,
+				"centerY": 133,
+				"centerX": 0,
+				"anchorY": 0.5,
+				"anchorX": 0.5
+			},
+			"compId": 881,
+			"child": [
+				{
+					"type": "Image",
+					"props": {
+						"var": "_nextMap",
+						"skin": "image/main/win_next.png",
+						"centerY": 8,
+						"centerX": 145
+					},
+					"compId": 883
+				},
+				{
+					"type": "Image",
+					"props": {
+						"var": "_backMain",
+						"skin": "image/main/win_back.png",
+						"centerY": 10,
+						"centerX": -145
+					},
+					"compId": 885
+				}
+			]
+		},
+		{
+			"type": "Image",
+			"props": {
+				"visible": false,
+				"var": "lucky_tips",
+				"skin": "image/main/tips.png",
+				"centerY": 9,
+				"centerX": 0,
+				"alpha": 1
+			},
+			"compId": 362,
+			"child": [
+				{
+					"type": "Image",
+					"props": {
+						"var": "btn_lucky_get",
+						"skin": "image/main/get2.png",
+						"centerY": 72,
+						"centerX": 0
+					},
+					"compId": 364
+				},
+				{
+					"type": "Image",
+					"props": {
+						"y": -2,
+						"x": 158,
+						"skin": "image/main/5.png"
+					},
+					"compId": 365
+				},
+				{
+					"type": "Image",
+					"props": {
+						"width": 92,
+						"skin": "image/main/k1.png",
+						"height": 92,
+						"centerY": -43,
+						"centerX": 0,
+						"anchorY": 0.5,
+						"anchorX": 0.5
+					},
+					"compId": 731
+				},
+				{
+					"type": "Image",
+					"props": {
+						"width": 88,
+						"var": "luck_icon",
+						"skin": "image/main/hp.png",
+						"height": 88,
+						"centerY": -43,
+						"centerX": 0,
+						"anchorY": 0.5,
+						"anchorX": 0.5
+					},
+					"compId": 366
+				},
+				{
+					"type": "Label",
+					"props": {
+						"y": 141,
+						"x": 144,
+						"width": 137,
+						"var": "luck_num",
+						"valign": "middle",
+						"text": "Bomb*20",
+						"strokeColor": "#084168",
+						"stroke": 2,
+						"height": 39,
+						"fontSize": 16,
+						"color": "#ffffff",
+						"bold": true,
+						"align": "center"
+					},
+					"compId": 474
+				}
+			]
+		},
+		{
+			"type": "Image",
+			"props": {
+				"visible": false,
+				"var": "get_view2",
+				"skin": "image/main/tips.png",
+				"pivotY": 0.5,
+				"pivotX": 0.5,
+				"centerY": 8,
+				"centerX": 0
+			},
+			"compId": 762,
+			"child": [
+				{
+					"type": "Image",
+					"props": {
+						"y": -5,
+						"x": 157.5,
+						"skin": "image/main/5.png"
+					},
+					"compId": 763
+				},
+				{
+					"type": "Image",
+					"props": {
+						"y": 63,
+						"x": 31,
+						"width": 357,
+						"skin": "image/main/tipsnei2.png",
+						"height": 146
+					},
+					"compId": 766
+				},
+				{
+					"type": "List",
+					"props": {
+						"y": 73,
+						"x": 51,
+						"width": 321,
+						"visible": true,
+						"var": "_list_get",
+						"spaceX": 7,
+						"repeatY": 1,
+						"repeatX": 0,
+						"height": 128
+					},
+					"compId": 681,
+					"child": [
+						{
+							"type": "Box",
+							"props": {
+								"y": 2,
+								"x": 0,
+								"width": 102,
+								"renderType": "render",
+								"height": 128
+							},
+							"compId": 682,
+							"child": [
+								{
+									"type": "Image",
+									"props": {
+										"y": 2,
+										"x": 0,
+										"width": 100,
+										"visible": true,
+										"skin": "image/main/k1.png",
+										"scaleY": 1,
+										"scaleX": 1,
+										"height": 100
+									},
+									"compId": 692
+								},
+								{
+									"type": "Image",
+									"props": {
+										"width": 89,
+										"skin": "image/main/33.png",
+										"scaleY": 1,
+										"scaleX": 1,
+										"name": "icon",
+										"height": 89,
+										"centerY": -12,
+										"centerX": -1
+									},
+									"compId": 694
+								},
+								{
+									"type": "Label",
+									"props": {
+										"width": 100,
+										"valign": "middle",
+										"text": "Unlock Radiant tower",
+										"strokeColor": "#084168",
+										"stroke": 2,
+										"name": "vname",
+										"height": 29,
+										"fontSize": 16,
+										"color": "#ffffff",
+										"centerY": 47,
+										"centerX": -1,
+										"bold": true,
+										"align": "center"
+									},
+									"compId": 764
+								}
+							]
+						},
+						{
+							"type": "Image",
+							"props": {
+								"y": -54,
+								"x": 344,
+								"width": 25,
+								"var": "close_view2",
+								"skin": "image/main/X.png",
+								"height": 25
+							},
+							"compId": 695
+						}
+					]
+				},
+				{
+					"type": "Image",
+					"props": {
+						"y": 221,
+						"x": 134,
+						"var": "close_view3",
+						"skin": "image/main/get2.png"
+					},
+					"compId": 765
+				}
+			]
+		},
+		{
+			"type": "Image",
+			"props": {
+				"y": 326,
+				"x": 108.5,
+				"visible": false,
+				"var": "get_view",
+				"skin": "image/main/tips.png",
+				"scaleY": 1,
+				"scaleX": 1
+			},
+			"compId": 463,
+			"child": [
+				{
+					"type": "Image",
+					"props": {
+						"y": -8,
+						"x": 154,
+						"skin": "image/main/5.png"
+					},
+					"compId": 737
+				},
+				{
+					"type": "Image",
+					"props": {
+						"y": 84.5,
+						"x": 162,
+						"width": 92,
+						"skin": "image/main/k1.png",
+						"height": 92
+					},
+					"compId": 738,
+					"child": [
+						{
+							"type": "Image",
+							"props": {
+								"y": 4,
+								"x": 2,
+								"var": "get_obj_view",
+								"skin": "image/main/33.png",
+								"scaleY": 1,
+								"scaleX": 1
+							},
+							"compId": 464
+						}
+					]
+				},
+				{
+					"type": "Image",
+					"props": {
+						"y": 220,
+						"x": 134,
+						"var": "close_view",
+						"skin": "image/main/get2.png"
+					},
+					"compId": 465
+				},
+				{
+					"type": "Label",
+					"props": {
+						"y": 177.5,
+						"x": 162,
+						"width": 90,
+						"var": "get_view_name",
+						"valign": "middle",
+						"text": "label",
+						"strokeColor": "#084168",
+						"stroke": 2,
+						"height": 31,
+						"fontSize": 16,
+						"color": "#ffffff",
+						"bold": true,
+						"align": "center"
+					},
+					"compId": 676
+				}
+			]
+		},
+		{
+			"type": "Image",
+			"props": {
+				"visible": false,
+				"var": "_tips_diamond",
+				"skin": "image/main/tips.png",
+				"centerY": 12,
+				"centerX": 0
+			},
+			"compId": 413,
+			"child": [
+				{
+					"type": "Image",
+					"props": {
+						"y": 61.5,
+						"x": 51.5,
+						"skin": "image/main/tipsnei2.png"
+					},
+					"compId": 703
+				},
+				{
+					"type": "Image",
+					"props": {
+						"y": 12,
+						"x": 384,
+						"var": "_btn_close_diamond",
+						"skin": "image/main/X.png"
+					},
+					"compId": 414
+				},
+				{
+					"type": "Label",
+					"props": {
+						"y": -5.5,
+						"width": 137,
+						"valign": "middle",
+						"text": "Need Gem",
+						"strokeColor": "#623313",
+						"stroke": 2,
+						"height": 35,
+						"fontSize": 30,
+						"color": "#f5f06e",
+						"centerX": 0,
+						"bold": true,
+						"align": "center"
+					},
+					"compId": 415
+				},
+				{
+					"type": "Image",
+					"props": {
+						"y": 178,
+						"x": 143,
+						"var": "_btn_get_diamond",
+						"skin": "image/main/56.png"
+					},
+					"compId": 416
+				},
+				{
+					"type": "Label",
+					"props": {
+						"y": 88,
+						"x": 71,
+						"width": 283,
+						"valign": "middle",
+						"text": "Watch video, get 50 gems.",
+						"strokeColor": "#A15614",
+						"stroke": 2,
+						"height": 35,
+						"fontSize": 20,
+						"color": "#fffefe",
+						"align": "center"
+					},
+					"compId": 418
+				}
+			]
+		},
+		{
+			"type": "Image",
+			"props": {
+				"visible": false,
+				"var": "_GGTS",
+				"centerY": 7,
+				"centerX": 0,
+				"anchorY": 0.5,
+				"anchorX": 0.5
+			},
+			"compId": 834
+		},
+		{
+			"type": "Image",
+			"props": {
+				"visible": false,
+				"var": "_fuhuo",
+				"skin": "image/main/tips.png",
+				"centerY": 6,
+				"centerX": 0
+			},
+			"compId": 789,
+			"child": [
+				{
+					"type": "Image",
+					"props": {
+						"y": 66.5,
+						"x": 51.5,
+						"skin": "image/main/tipsnei2.png"
+					},
+					"compId": 790
+				},
+				{
+					"type": "Image",
+					"props": {
+						"y": 17,
+						"x": 384,
+						"var": "_close_fuhuo",
+						"skin": "image/main/X.png"
+					},
+					"compId": 791
+				},
+				{
+					"type": "Image",
+					"props": {
+						"y": 192,
+						"x": 125,
+						"var": "_btn_fuhuo",
+						"skin": "image/main/fuhuo.png"
+					},
+					"compId": 793
+				},
+				{
+					"type": "Label",
+					"props": {
+						"y": 76,
+						"x": 70,
+						"wordWrap": true,
+						"width": 283,
+						"valign": "middle",
+						"text": "Revive to continue, or progress ",
+						"strokeColor": "#343940",
+						"stroke": 2,
+						"height": 70,
+						"fontSize": 20,
+						"color": "#ffffff",
+						"align": "left"
+					},
+					"compId": 794,
+					"child": [
+						{
+							"type": "Label",
+							"props": {
+								"y": 33,
+								"x": 82,
+								"wordWrap": true,
+								"width": 49,
+								"valign": "middle",
+								"text": "to 1",
+								"strokeColor": "#343940",
+								"stroke": 2,
+								"height": 32,
+								"fontSize": 20,
+								"color": "#f84a4a",
+								"align": "left"
+							},
+							"compId": 796
+						}
+					]
+				},
+				{
+					"type": "Image",
+					"props": {
+						"y": -1,
+						"x": 176.5,
+						"skin": "image/main/ts_title.png"
+					},
+					"compId": 795
+				},
+				{
+					"type": "Label",
+					"props": {
+						"y": 250,
+						"x": 168.5,
+						"visible": false,
+						"var": "_close_fuhuo2",
+						"underlineColor": "#b7b7b7",
+						"underline": true,
+						"text": "Back",
+						"fontSize": 20,
+						"color": "#b7b7b7",
+						"bold": true
+					},
+					"compId": 799
+				}
+			]
+		},
+		{
+			"type": "Box",
+			"props": {
+				"y": 10,
+				"x": 10,
+				"width": 640,
+				"visible": false,
+				"var": "around_gameover",
+				"height": 1136
+			},
+			"compId": 998,
+			"child": [
+				{
+					"type": "Image",
+					"props": {
+						"skin": "image/main/tips.png",
+						"name": "giameover_window",
+						"centerY": 0,
+						"centerX": 0
+					},
+					"compId": 999,
+					"child": [
+						{
+							"type": "Image",
+							"props": {
+								"y": 62.5,
+								"x": 51.5,
+								"skin": "image/main/tipsnei2.png"
+							},
+							"compId": 1000,
+							"child": [
+								{
+									"type": "Label",
+									"props": {
+										"y": 31,
+										"x": 88,
+										"text": "Get",
+										"strokeColor": "#555e6c",
+										"stroke": 3,
+										"fontSize": 24,
+										"color": "#ffffff",
+										"bold": true
+									},
+									"compId": 1001
+								},
+								{
+									"type": "Image",
+									"props": {
+										"y": 29.5,
+										"x": 161,
+										"skin": "image/main/Jewels.png"
+									},
+									"compId": 1002
+								},
+								{
+									"type": "Label",
+									"props": {
+										"y": 31,
+										"x": 200,
+										"var": "gameover_count",
+										"text": "x100",
+										"strokeColor": "#555e6c",
+										"stroke": 3,
+										"fontSize": 24,
+										"color": "#ffffff",
+										"bold": true
+									},
+									"compId": 1003
+								}
+							]
+						},
+						{
+							"type": "Image",
+							"props": {
+								"y": 172,
+								"x": 134.5,
+								"width": 154,
+								"var": "btn_gameover2",
+								"skin": "image/main/40.png",
+								"height": 49
+							},
+							"compId": 1004
+						},
+						{
+							"type": "Image",
+							"props": {
+								"y": -7.5,
+								"x": 157.5,
+								"skin": "image/main/title_name_1.png",
+								"name": "gift_title"
+							},
+							"compId": 1005
+						},
+						{
+							"type": "Label",
+							"props": {
+								"y": 235,
+								"x": 151.5,
+								"width": 120,
+								"var": "btn_gameover1",
+								"underlineColor": "#ffffff",
+								"underline": true,
+								"text": "Claim",
+								"mouseEnabled": true,
+								"height": 30,
+								"fontSize": 22,
+								"color": "#ffffff",
+								"bold": true,
+								"align": "center"
+							},
+							"compId": 1007
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "Image",
+			"props": {
+				"visible": false,
+				"var": "_tips_get",
+				"skin": "image/main/tips.png",
+				"centerY": 6,
+				"centerX": 0
+			},
+			"compId": 419,
+			"child": [
+				{
+					"type": "Label",
+					"props": {
+						"y": 4,
+						"width": 110,
+						"valign": "middle",
+						"text": "Get Reward",
+						"strokeColor": "#623313",
+						"stroke": 2,
+						"height": 24,
+						"fontSize": 24,
+						"color": "#f5f06e",
+						"centerX": -1,
+						"bold": true,
+						"align": "center"
+					},
+					"compId": 421
+				},
+				{
+					"type": "Image",
+					"props": {
+						"y": 79,
+						"x": 51,
+						"skin": "image/main/tipsnei2.png"
+					},
+					"compId": 702
+				},
+				{
+					"type": "Image",
+					"props": {
+						"y": 179,
+						"width": 181,
+						"var": "btn_get_reward",
+						"skin": "image/main/40.png",
+						"height": 58,
+						"centerX": -2
+					},
+					"compId": 422
+				},
+				{
+					"type": "Label",
+					"props": {
+						"y": 78,
+						"x": 49,
+						"wordWrap": false,
+						"width": 322,
+						"var": "_lab_reward",
+						"valign": "middle",
+						"text": "Get              X50",
+						"strokeColor": "#A15614",
+						"stroke": 2,
+						"height": 86,
+						"fontSize": 20,
+						"color": "#fffefe",
+						"align": "center"
+					},
+					"compId": 423
+				},
+				{
+					"type": "Image",
+					"props": {
+						"width": 49,
+						"var": "_rewardimg",
+						"skin": "image/main/samll_round.png",
+						"height": 50,
+						"centerY": -27,
+						"centerX": 22,
+						"anchorY": 0.5,
+						"anchorX": 0.5
+					},
+					"compId": 802
+				},
+				{
+					"type": "Label",
+					"props": {
+						"y": 244,
+						"x": 193.3515625,
+						"visible": true,
+						"var": "_close_tips",
+						"valign": "middle",
+						"underlineColor": "#ffffff",
+						"underline": true,
+						"text": "Get",
+						"fontSize": 18,
+						"color": "#ffffff",
+						"bold": true,
+						"align": "center"
+					},
+					"compId": 803
+				},
+				{
+					"type": "Image",
+					"props": {
+						"y": 15,
+						"x": 385,
+						"visible": false,
+						"var": "_close_tips2",
+						"skin": "image/main/X.png"
+					},
+					"compId": 804
+				},
+				{
+					"type": "Image",
+					"props": {
+						"y": 165,
+						"x": 722,
+						"width": 63,
+						"var": "shareBtn",
+						"stateNum": 1,
+						"skin": "image/ui/fengxiang.png",
+						"height": 73
+					},
+					"compId": 1106
+				}
+			]
+		},
+		{
+			"type": "Image",
+			"props": {
+				"visible": false,
+				"var": "tip_share_cancel",
+				"skin": "image/main/sharetips.png",
+				"centerY": 3,
+				"centerX": 1
+			},
+			"compId": 893
+		},
+		{
+			"type": "Image",
+			"props": {
+				"visible": false,
+				"var": "tip_unlock_tower",
+				"skin": "image/main/locktips_2.png",
+				"centerY": 4,
+				"centerX": 1,
+				"anchorY": 0.5,
+				"anchorX": 0.5
+			},
+			"compId": 892
+		},
+		{
+			"type": "Label",
+			"props": {
+				"y": 379,
+				"x": 2,
+				"width": 642,
+				"visible": false,
+				"var": "testLabel",
+				"valign": "middle",
+				"text": "广告次数已用完，明天再来吧~",
+				"strokeColor": "#000000",
+				"stroke": 3,
+				"height": 32,
+				"fontSize": 24,
+				"color": "#ffffff",
+				"align": "center"
+			},
+			"compId": 907
+		},
+		{
+			"type": "Box",
+			"props": {
+				"width": 640,
+				"var": "_tipContainer",
+				"height": 1136
+			},
+			"compId": 983
+		}
+	],
+	"loadList": [
+		"image/ui/pause.png",
+		"image/ui/speed.png",
+		"image/ui/setting1.png",
+		"image/ui/buff_icon.png",
+		"image/ui/buff_number.png",
+		"image/ui/buff_ads.png",
+		"image/main/ss.png",
+		"image/main/55_1.png",
+		"image/main/kanshipin.png",
+		"image/main/19.png",
+		"image/main/Jewels.png",
+		"image/main/32_1.png",
+		"image/main/31_1.png",
+		"image/ui/select1.png",
+		"image/ui/choose.png",
+		"image/ui/choose2.png",
+		"image/ui/levelup.png",
+		"image/main/19_1.png",
+		"image/ui/sell.png",
+		"image/ui/help.png",
+		"image/main/tips.png",
+		"image/main/towernameback.png",
+		"image/main/tips_tower.png",
+		"image/main/tipsnei1.png",
+		"image/main/tipsnei4.png",
+		"image/main/tipsnei3.png",
+		"image/main/Firenum.png",
+		"image/main/lineviewK.png",
+		"image/main/lineviewN.png",
+		"image/ui/tower2.png",
+		"image/main/X.png",
+		"image/main/PriceD1.png",
+		"image/main/smallmoney.png",
+		"image/main/unlocktower.png",
+		"image/ui/tower1.png",
+		"image/main/20.png",
+		"image/ui/game_itembg_1.png",
+		"image/ui/game_tower_1.png",
+		"image/ui/game_pricebg_1.png",
+		"image/ui/gold.png",
+		"image/main/lock.png",
+		"image/effect/item.png",
+		"image/main/24.png",
+		"image/ui/money_bg.png",
+		"image/ui/hp.png",
+		"image/ui/blood.png",
+		"image/ui/level_bg.png",
+		"image/ui/score.png",
+		"image/ui/continue3.png",
+		"image/effect/sulight.png",
+		"image/effect/successfont.png",
+		"image/effect/losefont0.png",
+		"image/effect/losefont1.png",
+		"image/main/18.png",
+		"image/main/6.png",
+		"image/main/56.png",
+		"image/main/ss2.png",
+		"image/main/31.png",
+		"image/main/menu.png",
+		"image/main/continue2.png",
+		"image/main/restart2.png",
+		"image/main/back.png",
+		"image/main/22.png",
+		"image/main/17.png",
+		"image/main/more.png",
+		"image/main/diamond_gift.png",
+		"image/main/main_level1.png",
+		"image/main/main_level2.png",
+		"image/main/main_level2_mask.png",
+		"image/main/main_lock.png",
+		"image/main/main_level3.png",
+		"image/main/main_level3_mask.png",
+		"image/main/main_level4.png",
+		"image/main/main_level4_mask.png",
+		"image/main/main_level5.png",
+		"image/main/main_level5_mask.png",
+		"image/main/window_top_1.png",
+		"image/main/window_bottom_1.png",
+		"image/main/mode_1_1.png",
+		"image/main/mode_2_1.png",
+		"image/main/levelback.png",
+		"image/main/14.png",
+		"image/main/normal_bg.png",
+		"image/main/map_icon_1_1.png",
+		"image/main/tongguan.png",
+		"image/main/map_name_1_1.png",
+		"image/main/normal_line.png",
+		"image/main/continue.png",
+		"image/main/restart.png",
+		"image/main/1.png",
+		"image/main/select_bg.png",
+		"image/main/XX.png",
+		"image/main/qd.png",
+		"image/main/develop_bg_1.png",
+		"image/main/develop_arrow.png",
+		"image/main/develop_button.png",
+		"image/main/develop_diamond.png",
+		"image/main/start.png",
+		"image/main/sige_now.png",
+		"image/main/55.png",
+		"image/main/masksign.png",
+		"image/main/sigemask.png",
+		"image/main/33.png",
+		"image/main/hp.png",
+		"image/main/X3.png",
+		"image/main/35.png",
+		"image/main/43.png",
+		"image/main/sigedb.png",
+		"image/main/round_titile.png",
+		"image/main/36.png",
+		"image/main/a1.png",
+		"image/main/roundname.png",
+		"image/main/tipsnei2.png",
+		"image/main/get.png",
+		"image/main/title_name_2.png",
+		"image/main/locktips.png",
+		"image/main/win_next.png",
+		"image/main/win_back.png",
+		"image/main/get2.png",
+		"image/main/5.png",
+		"image/main/k1.png",
+		"image/main/fuhuo.png",
+		"image/main/ts_title.png",
+		"image/main/40.png",
+		"image/main/title_name_1.png",
+		"image/main/samll_round.png",
+		"image/ui/fengxiang.png",
+		"image/main/sharetips.png",
+		"image/main/locktips_2.png"
+	],
+	"loadList3D": []
+}

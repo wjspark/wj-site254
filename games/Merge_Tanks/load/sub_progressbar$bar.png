@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Error>
+  <Code>NoSuchKey</Code>
+  <Message>The specified key does not exist.</Message>
+  <RequestId>6694E99810A93F3533A36AF2</RequestId>
+  <HostId>ali-src.ahagamecenter.com</HostId>
+  <Key>h5games/gzhuandougame/Merge_Tanks/load/sub_progressbar$bar.png</Key>
+</Error>

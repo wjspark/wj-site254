@@ -1,0 +1,86 @@
+{
+  "features": {
+    "highscores": 1,
+    "rewarded": 1,
+    "leaderboard": 0,
+    "multiplayer": 0,
+    "standalone": 1,
+    "credits": 0,
+    "multiplayer_local": 1,
+    "audio": 1,
+    "login": 0,
+    "payment": 0,
+    "external_mute": 1
+  },
+  "game_i18n": {},
+  "game_info": {
+    "client_version": "10.0.0",
+    "api_version": "2.2",
+    "forced_mode": {
+      "state": {
+        "level": {
+          "description": "Level to start at.",
+          "type": "number",
+          "min": 1,
+          "max": 2000
+        },
+        "booster_swap": {
+          "description": "Amount of swap boosters",
+          "type": "number",
+          "min": 0
+        },
+        "booster_shovel": {
+          "description": "Amount of shovel boosters",
+          "type": "number",
+          "min": 0
+        },
+        "booster_beehive": {
+          "description": "Amount of beehive boosters",
+          "type": "number",
+          "min": 0
+        },
+        "has_prebooster_bees": {
+          "description": "Start with bees prebooster",
+          "type": "boolean"
+        },
+        "has_prebooster_ladybugs": {
+          "description": "Start with ladybugs prebooster",
+          "type": "boolean"
+        },
+        "has_prebooster_butterfly": {
+          "description": "Start with buttefly prebooster",
+          "type": "boolean"
+        }
+      },
+      "override": {
+        "maximum_moves": {
+          "description": "Ability to adjust the maximum amount of moves",
+          "type": "number",
+          "min": "1"
+        },
+        "hide_ui": {
+          "description": "Hide UI. Possible values are: \"coins\", \"counter\", \"back_button\" and \"texture_buttons\"",
+          "type": "array",
+          "values": ["coins", "counter", "back_button"]
+        }
+      }
+    }
+  },
+  "aid": "A1234-5",
+  "logging": false,
+  "api": "famobi",
+  "name": "Google GameSnacks",
+  "more_games_url": "",
+  "more_games_button_image": "logo",
+  "show_splash": "",
+  "splash_duration": 3000,
+  "branch": "master",
+  "gameParams": {
+    "ad_type": "off"
+  },
+  "menuless": true,
+  "disable_console": false,
+  "includeJS": [],
+  "version": "ce674c02",
+  "supportedLanguages": []
+}

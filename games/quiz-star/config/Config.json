@@ -1,0 +1,39 @@
+{
+	"Boosters":
+	{
+		"DeleteBlankItem":
+		{
+			"Price":20,
+			"Inventory":2
+		},
+		"ShowAnswer":
+		{
+			"Price":50,
+			"Inventory":2
+		}
+	},
+	
+	"QuestionTime": {
+		"Solo" : 10,
+		"HeadToHead": 10
+	},
+	"H2HMatchValue": 100,
+	"SoloMatchValue": 50,
+	"H2HWinGiftValue": 500,
+	"AdPreviewTimer": 5,
+	"RewardedCoin": 200,
+	
+	"AchievementRewardValue":
+	[
+		["3QuestionCategory", "200", "Answer 3 question in each category",0],
+    	["WinARound", "50", "win a round without any wrong questions",0],
+    	["Answer50","100", "Answer 50 questions correctly",0],
+		["Answer100","150", "Answer 100 questions correctly",0],
+		["Answer200","250", "Answer 200 questions correctly",0],
+    	["20Player", "300", "Play with 20 player",0],
+		["Win10H2H","200", "Win 10 H2H games",0],
+		["Win50H2H","300", "Win 50 H2H games",0],
+    	["Score500In10Solo", "150", "Score 500 in 10 solo games",0],
+    	["5FreeCoinAds", "200", "watch 5 ads to get free coins",0]
+	]
+}
