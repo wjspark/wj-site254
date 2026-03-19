@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://securepubads.g.doubleclick.net">
   <link rel="dns-prefetch" href="https://securepubads.g.doubleclick.net">
   <link rel="preload" href="https://securepubads.g.doubleclick.net/tag/js/gpt.js" as="script">
-  <script src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+  <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
   <script>
   window.googletag = window.googletag || {cmd: []};
   googletag.cmd.push(function() {
@@ -60,9 +60,7 @@ body {
 <header class="site-header">
   <a href="../index.html" class="site-logo"><img src="../images/logo.png" alt="PlayH5Game" style="height: 40px; vertical-align: middle;"></a>
 </header>
-<div class="play-section" id="play-section" style="display: none;">
-<iframe id="play-frame" src="../games/quiz-star/index.html" style="width:100%;border:none;" allowfullscreen></iframe>
-</div>
+
 <div class="top-section">
 <img class="top-icon" id="game-icon" src="../images/quiz-star.webp"/>
 <div class="game-info">
@@ -111,18 +109,14 @@ body {
 <script src="script.js"></script>
 <iframe id="google_ads_top_frame" name="google_ads_top_frame" style="display: none; position: fixed; left: -999px; top: -999px; width: 0px; height: 0px;"></iframe>
 <script>
-// Play button navigation script
 (function() {
+  const games = ['Amazing-bubble-breaker.html', 'american-football-challenge.html', 'awaken-the-ocean.html', 'BallSortPuzzle.html', 'Basketball_REAL.html', 'blastify2.html', 'blend-fruits.html', 'BlobOpera.html', 'blockup-puzzle.html', 'bubble-up-endless.html', 'bubble-up.html', 'Bus_Parking_King.html', 'candyCrush.html', 'Christmas_Connect.html', 'Circles.html', 'CocktailSort.html', 'color-tunnel.html', 'connect-merge.html', 'CubeJump.html', 'Dance_Battle.html', 'dd-knots.html', 'dd-pick-it.html', 'dd-sand-sort-puzzle.html', 'Differences_Find.html', 'DrawIn.html', 'Dream_Home_Merge_Design.html', 'emoji-flow.html', 'endlessseige.html', 'equalz.html', 'fill-pix.html', 'fill.html', 'filling-lines.html', 'fours.html', 'free-birds.html', 'Freekick_Football_3D.html', 'fruitmas.html', 'FruitMaster.html', 'Galaxy_Attack.html', 'garden-bloom.html', 'HappyGlass.html', 'Hexagon_Block_Sort.html', 'house-paint.html', 'jigsaw-casual.html', 'king-of-mahjong.html', 'knife-hit.html', 'Magic_Tiles3_Online_Z.html', 'mahjong-classic.html', 'MarketSort.html', 'match-arena.html', 'memory-match.html', 'merge-face.html', 'merge-heroes-fix.html', 'merge-push.html', 'Merge_Gun_Elite_Shooting.html', 'Merge_love.html', 'Merge_Tanks.html', 'mini-golf.html', 'Monster-duo.html', 'motox3m1.html', 'motox3m3.html', 'motox3m5.html', 'MoveTheCar.html', 'Music_Line_3D.html', 'Music_Surf_Christmas.html', 'number-maze.html', 'omino.html', 'onet-paradise.html', 'onet-world.html', 'Onet_Link.html', 'parking-way.html', 'ParkingOut.html', 'Parking_Slot.html', 'parkmania.html', 'Penguin_Slide.html', 'Perfect_Piano_2.html', 'PianoTitle.html', 'pixel-match.html', 'plinko-frenzy.html', 'pool8.html', 'PowerPopBlast.html', 'pretty-tiles.html', 'push-it.html', 'rolly-vortex.html', 'ruin.html', 'scooer_hero.html', 'shapes-puzzle.html', 'shikaku.html', 'slide.html', 'sorting-balls.html', 'space-monsters.html', 'Space_Shooter.html', 'sporos.html', 'sport-challenge.html', 'Spot-the-differences.html', 'SquArea.html', 'StickMerge.html', 'subway-surfers_san-francisco.html', 'Subway_Surfer_Marrakesh.html', 'swipe-cubes.html', 'TakeOff.html', 'tap-tap-dunk.html', 'taxi-pick-up.html', 'tetra-blocks.html', 'tiny-cars.html', 'tooncup.html', 'towerDefense.html', 'traffic-tap-puzzle.html', 'wooden-slide.html', 'word-clues.html', 'words-of-wonders.html', 'world-puzzle.html'];
   document.addEventListener('DOMContentLoaded', function() {
     const playButton = document.querySelector('.play-button');
-    const playSection = document.getElementById('play-section');
-    const playFrame = document.getElementById('play-frame');
-
     if (playButton) {
-      playButton.addEventListener('click', function(e) {
-        e.preventDefault();
-        playSection.style.display = 'block';
-        playButton.style.display = 'none';
+      playButton.addEventListener('click', function() {
+        const randomGame = games[Math.floor(Math.random() * games.length)];
+        window.location.href = randomGame;
       });
     }
   });

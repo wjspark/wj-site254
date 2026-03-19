@@ -1,1 +1,0 @@
-window.MA_RUNTIME_CONFIG = {"lua_hotfix":"print(\"test\")","maintenance":"1664950000"};

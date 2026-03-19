@@ -1,1 +1,0 @@
-window.isAdBlockActive=!1;
