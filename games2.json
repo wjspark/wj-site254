@@ -1,0 +1,512 @@
+{
+  "code": 200,
+  "message": "success",
+  "data": {
+    "list": [
+      {
+        "id": "1",
+        "name": "2048",
+        "title": "2048",
+        "coverUrl": "/2048/icon_banana.png",
+        "category": "Puzzle",
+        "rating": 4.9,
+        "description": "Merge numbered tiles and reach 2048 in this classic addictive number puzzle game.",
+        "gameUrl": "/2048/e7f92ba8-48a8-4001-8b27-95508dba83a2/index.html"
+      },
+      {
+        "id": "2",
+        "name": "67 Game",
+        "title": "67 Game",
+        "coverUrl": "/67 Game/icon_banana.png",
+        "category": "Casual",
+        "rating": 4.6,
+        "description": "Enjoy 67 unique mini-game challenges in this fun casual mobile collection.",
+        "gameUrl": "/67 Game/aa105997-dd7e-4586-86f2-6ee2f98a93b7/index.html"
+      },
+      {
+        "id": "3",
+        "name": "American Football REAL",
+        "title": "American Football REAL",
+        "coverUrl": "/American Football REAL/icon_banana.png",
+        "category": "Sports",
+        "rating": 4.6,
+        "description": "Real American football with touchdowns, tackles, and thrilling gameplay for sports fans.",
+        "gameUrl": "/American Football REAL/6cab4ce9-2bd5-4213-912b-582997e585b7/index.html"
+      },
+      {
+        "id": "4",
+        "name": "Animal Obby",
+        "title": "Animal Obby",
+        "coverUrl": "/Animal Obby/icon_banana.png",
+        "category": "Platformer",
+        "rating": 4.9,
+        "description": "Jump and dodge obstacles as a cute animal in this fun obstacle course game.",
+        "gameUrl": "/Animal Obby/f8092de5-e0fa-485a-819c-3d6ad24acf59/index.html"
+      },
+      {
+        "id": "5",
+        "name": "Beauty Salon",
+        "title": "Beauty Salon",
+        "coverUrl": "/Beauty Salon/icon_banana.png",
+        "category": "Casual",
+        "rating": 4.6,
+        "description": "Style clients with makeup, hair, and nail designs in your own beauty salon.",
+        "gameUrl": "/Beauty Salon/2b25f0a1-c12d-4c91-a853-9fdcf74d7548/index.html"
+      },
+      {
+        "id": "6",
+        "name": "Big Shot Boxing",
+        "title": "Big Shot Boxing",
+        "coverUrl": "/Big Shot Boxing/icon_banana.png",
+        "category": "Sports",
+        "rating": 4.4,
+        "description": "Train your boxer and knock out opponents to become the ultimate boxing champion.",
+        "gameUrl": "/Big Shot Boxing/6983759c-a65f-4c21-af3e-6b10cc69ca8f/index.html"
+      },
+      {
+        "id": "7",
+        "name": "Blocky Blast Puzzle",
+        "title": "Blocky Blast Puzzle",
+        "coverUrl": "/Blocky Blast Puzzle/icon_banana.png",
+        "category": "Puzzle",
+        "rating": 4.6,
+        "description": "Place blocks to clear lines and score high in this satisfying block puzzle game.",
+        "gameUrl": "/Blocky Blast Puzzle/ef6cb1bf-51ef-4ec4-89fc-693b895e231e/index.html"
+      },
+      {
+        "id": "8",
+        "name": "Blumgi Bounce",
+        "title": "Blumgi Bounce",
+        "coverUrl": "/Blumgi Bounce/icon_banana.png",
+        "category": "Arcade",
+        "rating": 4.5,
+        "description": "Bounce through colorful levels, collect stars, and dodge obstacles in this arcade game.",
+        "gameUrl": "/Blumgi Bounce/d90fbbbc-eb66-4372-85ed-7f6d93cf2515/index.html"
+      },
+      {
+        "id": "9",
+        "name": "Blumgi Merge",
+        "title": "Blumgi Merge",
+        "coverUrl": "/Blumgi Merge/icon_banana.png",
+        "category": "Puzzle",
+        "rating": 4.6,
+        "description": "Merge matching characters to discover new ones and fill your collection in this relaxing game.",
+        "gameUrl": "/Blumgi Merge/75172735-eab9-4db7-97bd-8ef3889ac3ed/index.html"
+      },
+      {
+        "id": "10",
+        "name": "Brain Test_ Tricky Puzzles",
+        "title": "Brain Test: Tricky Puzzles",
+        "coverUrl": "/Brain Test_ Tricky Puzzles/icon_banana.png",
+        "category": "Puzzle",
+        "rating": 4.9,
+        "description": "Solve clever riddles and tricky brain teasers that challenge your logic and thinking.",
+        "gameUrl": "/Brain Test_ Tricky Puzzles/7279cc90-edc4-4854-8b66-b8911f746ebb/index.html"
+      },
+      {
+        "id": "11",
+        "name": "Bubbles",
+        "title": "Bubbles",
+        "coverUrl": "/Bubbles/icon_banana.png",
+        "category": "Casual",
+        "rating": 4.5,
+        "description": "Pop colorful bubble clusters by matching colors in this relaxing casual bubble game.",
+        "gameUrl": "/Bubbles/c8e948fc-91f6-44a1-b0f1-0dfa84f4ec11/index.html"
+      },
+      {
+        "id": "12",
+        "name": "Casual Chess",
+        "title": "Casual Chess",
+        "coverUrl": "/Casual Chess/icon_banana.png",
+        "category": "Board",
+        "rating": 4.6,
+        "description": "Play chess with intuitive controls and helpful hints for all skill levels.",
+        "gameUrl": "/Casual Chess/e8ec2604-d4c7-489f-8851-ad494cbb4900/index.html"
+      },
+      {
+        "id": "13",
+        "name": "Classic Chess",
+        "title": "Classic Chess",
+        "coverUrl": "/Classic Chess/icon_banana.png",
+        "category": "Board",
+        "rating": 4.8,
+        "description": "Challenge smart AI in this clean and timeless classic chess board game.",
+        "gameUrl": "/Classic Chess/dc382221-ecd6-4ad5-ab90-0c1562fcb8d1/index.html"
+      },
+      {
+        "id": "14",
+        "name": "Collect n Evolve",
+        "title": "Collect n Evolve",
+        "coverUrl": "/Collect n Evolve/icon_banana.png",
+        "category": "Casual",
+        "rating": 4.7,
+        "description": "Collect and evolve unique characters to build the ultimate team in this idle game.",
+        "gameUrl": "/Collect n Evolve/63a075d4-ecdd-47a0-958b-7d39185035a0/index.html"
+      },
+      {
+        "id": "15",
+        "name": "Color Artist",
+        "title": "Color Artist",
+        "coverUrl": "/Color Artist/icon_banana.png",
+        "category": "Casual",
+        "rating": 4.9,
+        "description": "Paint beautiful artwork in this relaxing and creative color-by-number mobile game.",
+        "gameUrl": "/Color Artist/5728452f-a9b9-4a02-b712-a79c900cd73d/index.html"
+      },
+      {
+        "id": "16",
+        "name": "Diva Makeup Studio",
+        "title": "Diva Makeup Studio",
+        "coverUrl": "/Diva Makeup Studio/icon_banana.png",
+        "category": "Dress-Up",
+        "rating": 4.7,
+        "description": "Create glamorous looks with makeup and accessories in this fun beauty dress-up game.",
+        "gameUrl": "/Diva Makeup Studio/be3460c3-52a9-4a05-a361-6f3cc1fc76a9/index.html"
+      },
+      {
+        "id": "17",
+        "name": "Drive Mad",
+        "title": "Drive Mad",
+        "coverUrl": "/Drive Mad/icon_banana.png",
+        "category": "Racing",
+        "rating": 4.8,
+        "description": "Survive crazy physics driving challenges on impossible roads in this addictive racing game.",
+        "gameUrl": "/Drive Mad/0add2eac-2e2f-4786-8b30-d32f3edb38e4/index.html"
+      },
+      {
+        "id": "18",
+        "name": "Fear Response",
+        "title": "Fear Response",
+        "coverUrl": "/Fear Response/icon_banana.png",
+        "category": "Horror",
+        "rating": 4.5,
+        "description": "Survive terrifying encounters and uncover dark mysteries in this thrilling mobile horror game.",
+        "gameUrl": "/Fear Response/5e3d11a2-82d0-4849-9de2-d679889210e1/index.html"
+      },
+      {
+        "id": "19",
+        "name": "Flat Baseball",
+        "title": "Flat Baseball",
+        "coverUrl": "/Flat Baseball/icon_banana.png",
+        "category": "Sports",
+        "rating": 4.5,
+        "description": "Swing for home runs in this fun and casual flat-style baseball mobile game.",
+        "gameUrl": "/Flat Baseball/77e6d3ba-21ac-442d-bad8-9ae32ed4304d/index.html"
+      },
+      {
+        "id": "20",
+        "name": "Fruity Party",
+        "title": "Fruity Party",
+        "coverUrl": "/Fruity Party/icon_banana.png",
+        "category": "Casual",
+        "rating": 4.8,
+        "description": "Merge colorful fruits to score big in this cheerful and addictive casual party game.",
+        "gameUrl": "/Fruity Party/7013aae7-e1a1-4204-8861-2826d636e512/index.html"
+      },
+      {
+        "id": "21",
+        "name": "Hospital Stories_ Doctor Soccer",
+        "title": "Hospital Stories: Doctor Soccer",
+        "coverUrl": "/Hospital Stories_ Doctor Soccer/icon_banana.png",
+        "category": "Simulation",
+        "rating": 4.9,
+        "description": "Combine hospital management and soccer in this quirky and fun casual simulation game.",
+        "gameUrl": "/Hospital Stories_ Doctor Soccer/4ff53ea2-588c-4f91-87c9-418578859be2/index.html"
+      },
+      {
+        "id": "22",
+        "name": "Idle Mining Empire",
+        "title": "Idle Mining Empire",
+        "coverUrl": "/Idle Mining Empire/icon_banana.png",
+        "category": "Idle",
+        "rating": 4.6,
+        "description": "Build a mining empire, upgrade equipment, and earn passive income in this idle game.",
+        "gameUrl": "/Idle Mining Empire/e2e0a985-ae42-4530-869e-2690d302879d/index.html"
+      },
+      {
+        "id": "23",
+        "name": "Jump Only",
+        "title": "Jump Only",
+        "coverUrl": "/Jump Only/icon_banana.png",
+        "category": "Arcade",
+        "rating": 4.8,
+        "description": "Master precise jumps on challenging platforms in this minimalist and addictive arcade game.",
+        "gameUrl": "/Jump Only/1fdda797-d4c0-489d-aa3b-e481bdba4079/index.html"
+      },
+      {
+        "id": "24",
+        "name": "KPop Concert Dress Up",
+        "title": "KPop Concert Dress Up",
+        "coverUrl": "/KPop Concert Dress Up/icon_banana.png",
+        "category": "Dress-Up",
+        "rating": 4.7,
+        "description": "Dress your K-pop star in trendy outfits and accessories for the perfect concert look.",
+        "gameUrl": "/KPop Concert Dress Up/09616a15-6400-4c1a-8293-e36976877a21/index.html"
+      },
+      {
+        "id": "25",
+        "name": "Level Devil",
+        "title": "Level Devil",
+        "coverUrl": "/Level Devil/icon_banana.png",
+        "category": "Puzzle",
+        "rating": 4.4,
+        "description": "Dodge sneaky traps and unexpected tricks in this devilishly fun puzzle platformer game.",
+        "gameUrl": "/Level Devil/469f883d-297d-4d9a-ae2c-149670562872/index.html"
+      },
+      {
+        "id": "26",
+        "name": "Magic Battleground",
+        "title": "Magic battleground",
+        "coverUrl": "/Magic Battleground/icon_banana.png",
+        "category": "Action",
+        "rating": 4.6,
+        "description": "Battle mythical enemies using powerful magic spells in this enchanting mobile action game.",
+        "gameUrl": "/Magic Battleground/e8d281c1-24d7-470f-8521-a42545c81ee5/index.html"
+      },
+      {
+        "id": "27",
+        "name": "Mahjong",
+        "title": "Mahjong Deluxe 2",
+        "coverUrl": "/Mahjong/icon_banana.png",
+        "category": "Board",
+        "rating": 4.5,
+        "description": "Match identical tiles to clear the board in this classic Mahjong solitaire game.",
+        "gameUrl": "/Mahjong/48700e34-bc3a-45e8-85e7-fe57b31aa026/index.html"
+      },
+      {
+        "id": "28",
+        "name": "Mechabots",
+        "title": "Mechabots",
+        "coverUrl": "/Mechabots/icon_banana.png",
+        "category": "Action",
+        "rating": 4.4,
+        "description": "Pilot powerful robots in intense battle arenas to destroy opponents and dominate.",
+        "gameUrl": "/Mechabots/dad92e11-9078-4ff5-9352-f3ddbd6f010e/index.html"
+      },
+      {
+        "id": "29",
+        "name": "Misland",
+        "title": "Misland",
+        "coverUrl": "/Misland/icon_banana.png",
+        "category": "Idle",
+        "rating": 4.6,
+        "description": "Build your island paradise, unlock resources, and expand in this relaxing idle game.",
+        "gameUrl": "/Misland/9632eb50-38e4-4b06-a323-6377fce2af85/index.html"
+      },
+      {
+        "id": "30",
+        "name": "Monkey Mart",
+        "title": "Monkey Mart",
+        "coverUrl": "/Monkey Mart/icon_banana.png",
+        "category": "Simulation",
+        "rating": 4.9,
+        "description": "Manage a monkey-run supermarket, grow produce, and serve customers in this fun game.",
+        "gameUrl": "/Monkey Mart/4dbc26ac-2bcf-4173-ae3d-7dc413d48a60/index.html"
+      },
+      {
+        "id": "31",
+        "name": "Onet Master",
+        "title": "Onet Master",
+        "coverUrl": "/Onet Master/icon_banana.png",
+        "category": "Puzzle",
+        "rating": 4.5,
+        "description": "Connect matching tile pairs by drawing paths to clear the board in this Onet game.",
+        "gameUrl": "/Onet Master/714c1f1a-597d-410a-890a-6978d46bc6b6/index.html"
+      },
+      {
+        "id": "32",
+        "name": "Ping Pong Go!",
+        "title": "Ping Pong Go!",
+        "coverUrl": "/Ping Pong Go!/icon_banana.png",
+        "category": "Sports",
+        "rating": 4.6,
+        "description": "Serve, smash, and rally your way to victory in this fast and addictive ping pong game.",
+        "gameUrl": "/Ping Pong Go!/fd2b713f-fda7-4de7-bd92-9ac98f0f9e69/index.html"
+      },
+      {
+        "id": "33",
+        "name": "Plane Wars",
+        "title": "Plane Wars",
+        "coverUrl": "/Plane Wars/icon_banana.png",
+        "category": "Shooter",
+        "rating": 4.5,
+        "description": "Pilot a fighter plane and shoot down waves of enemy aircraft in this mobile shooter.",
+        "gameUrl": "/Plane Wars/d8fefc31-225d-4751-a8f0-72ae6e341065/index.html"
+      },
+      {
+        "id": "34",
+        "name": "Plonky",
+        "title": "Plonky",
+        "coverUrl": "/Plonky/icon_banana.png",
+        "category": "Casual",
+        "rating": 4.9,
+        "description": "Flip and bounce through cheerful levels in this cute and charming casual physics game.",
+        "gameUrl": "/Plonky/f570bdd9-2931-41f8-ae6d-919efd864f7b/index.html"
+      },
+      {
+        "id": "35",
+        "name": "Push Titans",
+        "title": "Push Titans",
+        "coverUrl": "/Push Titans/icon_banana.png",
+        "category": "Action",
+        "rating": 4.7,
+        "description": "Push giant titans off platforms using strategy in this satisfying physics-based action game.",
+        "gameUrl": "/Push Titans/c5ad497c-b728-42e1-8125-48e8f874ea89/index.html"
+      },
+      {
+        "id": "36",
+        "name": "Shenzhen Mahjong",
+        "title": "Shenzhen Mahjong",
+        "coverUrl": "/Shenzhen Mahjong/icon_banana.png",
+        "category": "Board",
+        "rating": 4.6,
+        "description": "Enjoy traditional Chinese Mahjong with authentic Shenzhen rules in this classic board game.",
+        "gameUrl": "/Shenzhen Mahjong/0aa9d87c-ed5e-4688-93c8-aed62899b5dc/index.html"
+      },
+      {
+        "id": "37",
+        "name": "Slime Laboratory",
+        "title": "Slime Laboratory",
+        "coverUrl": "/Slime Laboratory/icon_banana.png",
+        "category": "Platformer",
+        "rating": 4.8,
+        "description": "Guide slime through tricky laboratory levels by squeezing through gaps in this platformer.",
+        "gameUrl": "/Slime Laboratory/d204b346-0756-4ceb-a607-475aef44d8ca/index.html"
+      },
+      {
+        "id": "38",
+        "name": "SnapStyle Dress Up",
+        "title": "SnapStyle Dress Up",
+        "coverUrl": "/SnapStyle Dress Up/icon_banana.png",
+        "category": "Dress-Up",
+        "rating": 4.7,
+        "description": "Mix trendy fashion pieces to create stylish outfits in this fun mobile dress-up game.",
+        "gameUrl": "/SnapStyle Dress Up/74826f5b-0fc7-4667-9304-cfe41df81180/index.html"
+      },
+      {
+        "id": "39",
+        "name": "Snow Plow",
+        "title": "Snow Plow",
+        "coverUrl": "/Snow Plow/icon_banana.png",
+        "category": "Simulation",
+        "rating": 4.6,
+        "description": "Clear snow-covered roads with your plow truck in this satisfying winter driving game.",
+        "gameUrl": "/Snow Plow/f9901904-79ab-4060-8369-752e19fbba40/index.html"
+      },
+      {
+        "id": "40",
+        "name": "Solitaire Klondike 2.0",
+        "title": "Solitaire Klondike 2.0",
+        "coverUrl": "/Solitaire Klondike 2.0/icon_banana.png",
+        "category": "Card",
+        "rating": 4.4,
+        "description": "Play classic Klondike Solitaire with smooth controls, daily challenges, and multiple themes.",
+        "gameUrl": "/Solitaire Klondike 2.0/830a6253-c7e8-4c96-90a1-bd676a083f36/index.html"
+      },
+      {
+        "id": "41",
+        "name": "Spades",
+        "title": "Spades",
+        "coverUrl": "/Spades/icon_banana.png",
+        "category": "Card",
+        "rating": 4.9,
+        "description": "Bid and win tricks with your partner in this strategic classic Spades card game.",
+        "gameUrl": "/Spades/c44ea9ea-5c79-4a33-be9e-da7208864d4b/index.html"
+      },
+      {
+        "id": "42",
+        "name": "Super Liquid Soccer",
+        "title": "Super Liquid Soccer",
+        "coverUrl": "/Super Liquid Soccer/icon_banana.png",
+        "category": "Sports",
+        "rating": 4.7,
+        "description": "Play physics-based liquid soccer with wobbly players and unpredictable fun action.",
+        "gameUrl": "/Super Liquid Soccer/addb372a-e8dc-4fc3-9d60-e7bac6f7274f/index.html"
+      },
+      {
+        "id": "43",
+        "name": "Sweet World",
+        "title": "Sweet World",
+        "coverUrl": "/Sweet World/icon_banana.png",
+        "category": "Puzzle",
+        "rating": 4.9,
+        "description": "Match sweet candies and solve colorful puzzles in this delightful sugary world game.",
+        "gameUrl": "/Sweet World/23ef2590-07a0-481c-8693-c1e7f9340154/index.html"
+      },
+      {
+        "id": "44",
+        "name": "Tag",
+        "title": "Tag",
+        "coverUrl": "/Tag/icon_banana.png",
+        "category": "Arcade",
+        "rating": 4.6,
+        "description": "Chase and tag opponents in fast-paced multiplayer tag gameplay on mobile.",
+        "gameUrl": "/Tag/00dae3d4-c760-4f62-a2c5-6ec53808e160/index.html"
+      },
+      {
+        "id": "45",
+        "name": "Temple of Boom",
+        "title": "Temple of Boom",
+        "coverUrl": "/Temple of Boom/icon_banana.png",
+        "category": "Action",
+        "rating": 4.5,
+        "description": "Blast through ancient temple rooms with guns and explosives in this action shooter.",
+        "gameUrl": "/Temple of Boom/40ca118d-5709-4238-832f-1846e52dc34e/index.html"
+      },
+      {
+        "id": "46",
+        "name": "Tower Emoji Defense",
+        "title": "Tower Emoji Defense",
+        "coverUrl": "/Tower Emoji Defense/icon_banana.png",
+        "category": "Strategy",
+        "rating": 4.6,
+        "description": "Place emoji towers to defend against waves of enemies in this fun tower defense game.",
+        "gameUrl": "/Tower Emoji Defense/4305bb9d-f262-4c70-af5c-8cf42d986901/index.html"
+      },
+      {
+        "id": "47",
+        "name": "Tricky Witch",
+        "title": "Tricky Witch",
+        "coverUrl": "/Tricky Witch/icon_banana.png",
+        "category": "Puzzle",
+        "rating": 4.7,
+        "description": "Help a mischievous witch solve tricky magical puzzles and cast clever spells.",
+        "gameUrl": "/Tricky Witch/c24344ee-5ca7-4fc4-8710-afb183180e15/index.html"
+      },
+      {
+        "id": "48",
+        "name": "Watermelon Drop",
+        "title": "Watermelon Drop",
+        "coverUrl": "/Watermelon Drop/icon_banana.png",
+        "category": "Puzzle",
+        "rating": 4.8,
+        "description": "Drop and merge fruits to create a giant watermelon in this satisfying physics puzzle.",
+        "gameUrl": "/Watermelon Drop/e5620ce4-45aa-4ce8-9042-8fafbfb0788f/index.html"
+      },
+      {
+        "id": "49",
+        "name": "We Become What We Behold",
+        "title": "We Become What We Behold",
+        "coverUrl": "/We Become What We Behold/icon_banana.png",
+        "category": "Casual",
+        "rating": 4.6,
+        "description": "Observe and influence society through your camera lens in this thought-provoking casual game.",
+        "gameUrl": "/We Become What We Behold/c2e2e416-d187-42ef-a501-85ff9c905ad4/index.html"
+      },
+      {
+        "id": "50",
+        "name": "Zombie Merge",
+        "title": "Zombie Merge",
+        "coverUrl": "/Zombie Merge/icon_banana.png",
+        "category": "Idle",
+        "rating": 4.6,
+        "description": "Merge zombies to create powerful undead armies and dominate in this idle merge game.",
+        "gameUrl": "/Zombie Merge/39dee0b2-7290-470f-a182-10571f170d27/index.html"
+      }
+    ],
+    "total": 50,
+    "page": 1,
+    "pageSize": 50,
+    "hasMore": false
+  }
+}
