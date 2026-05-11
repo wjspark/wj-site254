@@ -8,7 +8,20 @@ let observer = null;
 async function fetchGames() {
   try {
     const response = await fetch("games.json");
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
     conf = await response.json();
+
+    if (!Array.isArray(conf)) {
+      console.warn("games.json format error: not an array, attempting to extract list");
+      if (conf && conf.data && Array.isArray(conf.data.list)) {
+        conf = conf.data.list;
+      } else {
+        throw new Error("Invalid JSON format");
+      }
+    }
+
     conf = shuffleArray(conf);
 
     topGames(0, 2, "top-games");
@@ -29,25 +42,31 @@ function shuffleArray(array) {
 }
 
 function topGames(startIndex, endIndex, containerId) {
-  if (!conf) return;
+  if (!conf || !Array.isArray(conf)) return;
   const gameList = document.getElementById(containerId);
   if (!gameList) return;
   gameList.innerHTML = "";
   const fragment = document.createDocumentFragment();
-  conf.slice(startIndex, endIndex).forEach((game) => {
-    fragment.appendChild(generateGameItem(game));
-  });
+  const games = conf.slice(startIndex, endIndex);
+  if (Array.isArray(games)) {
+    games.forEach((game) => {
+      fragment.appendChild(generateGameItem(game));
+    });
+  }
   gameList.appendChild(fragment);
 }
 
 function newGames(startIndex, endIndex, containerId) {
-  if (!conf) return;
+  if (!conf || !Array.isArray(conf)) return;
   const gameList = document.getElementById(containerId);
   if (!gameList) return;
   const fragment = document.createDocumentFragment();
-  conf.slice(startIndex, endIndex).forEach((game) => {
-    fragment.appendChild(generateGameItem(game));
-  });
+  const games = conf.slice(startIndex, endIndex);
+  if (Array.isArray(games)) {
+    games.forEach((game) => {
+      fragment.appendChild(generateGameItem(game));
+    });
+  }
   gameList.appendChild(fragment);
 }
 
@@ -75,8 +94,9 @@ function generateGameItem(game) {
 
 function loadMore() {
   if (loading) return;
+  if (!conf || !Array.isArray(conf)) return;
   if ((currentPage + 1) * itemsPerPage >= conf.length) {
-    observer.disconnect();
+    if (observer) observer.disconnect();
     return;
   }
   loading = true;
@@ -85,7 +105,7 @@ function loadMore() {
   loading = false;
 
   requestAnimationFrame(() => {
-    if (sentinel.getBoundingClientRect().top < window.innerHeight) {
+    if (sentinel && sentinel.getBoundingClientRect().top < window.innerHeight) {
       loadMore();
     }
   });
@@ -93,7 +113,12 @@ function loadMore() {
 
 function setUpObserver() {
   sentinel = document.createElement("div");
-  document.getElementById("new-games").after(sentinel);
+  const newGamesContainer = document.getElementById("new-games");
+  if (newGamesContainer) {
+    newGamesContainer.after(sentinel);
+  } else {
+    return;
+  }
 
   observer = new IntersectionObserver((entries) => {
     if (entries[0].isIntersecting) loadMore();
@@ -102,4 +127,3 @@ function setUpObserver() {
 }
 
 fetchGames();
-
