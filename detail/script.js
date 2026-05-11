@@ -50,14 +50,18 @@ window.addEventListener('DOMContentLoaded', () => {
 
   const interval = setInterval(() => {
     percent += 2;
-    if (percent <= 100) {
-      progress.style.width = `${percent}%`;
-      progress.textContent = `${percent}%`;
+    if (progress) {
+      if (percent <= 100) {
+        progress.style.width = `${percent}%`;
+        progress.textContent = `${percent}%`;
+      }
+      if (percent >= 100) {
+        progress.style.width = '100%';
+        progress.textContent = 'Play';
+      }
     }
     if (percent >= 100) {
       clearInterval(interval);
-      progress.style.width = '100%';
-      progress.textContent = 'Play';
       isReady = true;
       if (playButton) {
         playButton.style.cursor = 'pointer';
