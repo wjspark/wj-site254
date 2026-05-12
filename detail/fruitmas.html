@@ -71,14 +71,46 @@
 </div>
 <script src="script.js"></script>
 <script>
+
 (function() {
-  const games = ['Amazing-bubble-breaker.html', 'american-football-challenge.html', 'awaken-the-ocean.html', 'BallSortPuzzle.html', 'Basketball_REAL.html', 'blastify2.html', 'blend-fruits.html', 'BlobOpera.html', 'blockup-puzzle.html', 'bubble-up-endless.html', 'bubble-up.html', 'Bus_Parking_King.html', 'candyCrush.html', 'Christmas_Connect.html', 'Circles.html', 'CocktailSort.html', 'color-tunnel.html', 'connect-merge.html', 'CubeJump.html', 'Dance_Battle.html', 'dd-knots.html', 'dd-pick-it.html', 'dd-sand-sort-puzzle.html', 'Differences_Find.html', 'DrawIn.html', 'Dream_Home_Merge_Design.html', 'emoji-flow.html', 'endlessseige.html', 'equalz.html', 'fill-pix.html', 'fill.html', 'filling-lines.html', 'fours.html', 'free-birds.html', 'Freekick_Football_3D.html', 'FruitMaster.html', 'Galaxy_Attack.html', 'garden-bloom.html', 'HappyGlass.html', 'Hexagon_Block_Sort.html', 'house-paint.html', 'jigsaw-casual.html', 'king-of-mahjong.html', 'knife-hit.html', 'Magic_Tiles3_Online_Z.html', 'mahjong-classic.html', 'MarketSort.html', 'match-arena.html', 'memory-match.html', 'merge-face.html', 'merge-heroes-fix.html', 'merge-push.html', 'Merge_Gun_Elite_Shooting.html', 'Merge_love.html', 'Merge_Tanks.html', 'mini-golf.html', 'Monster-duo.html', 'motox3m1.html', 'motox3m3.html', 'motox3m5.html', 'MoveTheCar.html', 'Music_Line_3D.html', 'Music_Surf_Christmas.html', 'number-maze.html', 'omino.html', 'onet-paradise.html', 'onet-world.html', 'Onet_Link.html', 'parking-way.html', 'ParkingOut.html', 'Parking_Slot.html', 'parkmania.html', 'Penguin_Slide.html', 'Perfect_Piano_2.html', 'PianoTitle.html', 'pixel-match.html', 'plinko-frenzy.html', 'pool8.html', 'PowerPopBlast.html', 'pretty-tiles.html', 'push-it.html', 'quiz-star.html', 'rolly-vortex.html', 'ruin.html', 'scooer_hero.html', 'shapes-puzzle.html', 'shikaku.html', 'slide.html', 'sorting-balls.html', 'space-monsters.html', 'Space_Shooter.html', 'sporos.html', 'sport-challenge.html', 'Spot-the-differences.html', 'SquArea.html', 'StickMerge.html', 'subway-surfers_san-francisco.html', 'Subway_Surfer_Marrakesh.html', 'swipe-cubes.html', 'TakeOff.html', 'tap-tap-dunk.html', 'taxi-pick-up.html', 'tetra-blocks.html', 'tiny-cars.html', 'tooncup.html', 'towerDefense.html', 'traffic-tap-puzzle.html', 'wooden-slide.html', 'word-clues.html', 'words-of-wonders.html', 'world-puzzle.html'];
+  let gameUrls = [];
+  let currentIframe = null;
+
+  function createGameIframe(gameUrl) {
+    const existingIframe = document.getElementById('game-iframe');
+    if (existingIframe) {
+      existingIframe.remove();
+    }
+    const iframe = document.createElement('iframe');
+    iframe.id = 'game-iframe';
+    iframe.src = 'https://games.nfiuh.top' + gameUrl;
+    iframe.style.width = '100%';
+    iframe.style.height = '600px';
+    iframe.style.border = 'none';
+    iframe.style.display = 'block';
+    iframe.style.margin = '20px auto';
+    document.querySelector('.top-section').appendChild(iframe);
+    currentIframe = iframe;
+  }
+
+  function loadRandomGame() {
+    if (gameUrls.length === 0) return;
+    const randomGame = gameUrls[Math.floor(Math.random() * gameUrls.length)];
+    window.open('https://games.nfiuh.top' + randomGame, '_blank');
+  }
+
+  fetch('../games2.json')
+    .then(response => response.json())
+    .then(data => {
+      gameUrls = data.data.list.map(item => item.gameUrl);
+    })
+    .catch(error => console.error('Error loading games:', error));
+
   document.addEventListener('DOMContentLoaded', function() {
     const playButton = document.querySelector('.play-button');
     if (playButton) {
       playButton.addEventListener('click', function() {
-        const randomGame = games[Math.floor(Math.random() * games.length)];
-        window.location.href = randomGame;
+        loadRandomGame();
       });
     }
   });
